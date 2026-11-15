@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <title>V / TRAINER · 本地训练</title>
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/human-bots.css">
+  <script src="/human-bots.js" defer></script>
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <aside class="sidebar">
+    <a class="brand" href="/" aria-label="V TRAINER 首页"><span class="brand-mark">V<span>/</span></span><span>TRAINER<small>LOCAL TRAINING</small></span></a>
+    <div class="nav-caption">训练控制台</div>
+    <nav aria-label="主要功能">
+      <button class="nav-item active" data-view="practice" aria-current="page"><svg viewBox="0 0 24 24"><path d="M3 12h18M12 3v18M5.6 5.6l3 3m6.8 6.8 3 3m-13.8 0 3-3m6.8-6.8 3-3"/><circle cx="12" cy="12" r="6"/></svg>架枪练习<span>01</span></button>
+      <button class="nav-item" data-view="loadout"><svg viewBox="0 0 24 24"><path d="m3 8 3-3h10l2 3h3v5H11l-2 6H5l2-7H3zm8 0h6M15 13v3h-4"/></svg>武器与皮肤<span>02</span></button>
+      <button class="nav-item" data-view="deathmatch"><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><path d="M3 20v-3a6 6 0 0 1 12 0v3M17 5a3 3 0 0 1 0 6m1 3a5 5 0 0 1 3 5v1"/></svg>人机乱斗<span>03</span></button>
+    </nav>
+    <div class="sidebar-bottom"><div id="connection" class="connection"><i></i><span>正在连接控制台</span></div><p>仅本机 · 全程离线</p><div class="shortcuts"><span><kbd>B</kbd> 原版购买页</span><span><kbd>F6</kbd> 无限子弹</span><span><kbd>Esc</kbd> 游戏设置</span><span><kbd>F10</kbd> 退出训练</span></div></div>
+  </aside>
+  <main>
+    <header class="page-header"><div><div class="eyebrow">YOUR NEXT REP STARTS HERE</div><h1 id="page-title">架枪练习</h1><p id="page-description">在地图上设置拉出路线，专注每一次预瞄和首发。</p></div><div class="header-actions"><button id="stop-button" class="button ghost" hidden>结束训练</button><button id="start-button" class="button primary"><span class="play-triangle"></span>开始训练</button></div></header>
+    <div id="notice" class="notice" role="status" hidden></div>
+    <section class="live-strip" aria-label="当前训练状态"><div><span class="live-dot" id="live-dot"></span><strong id="runtime-status">未启动</strong><small id="mode-label">架枪模式</small></div><div><small>当前地图</small><strong id="live-map">斗牛一</strong></div><div><small>击杀 / 连杀</small><strong id="live-score">0 <em>/ 0</em></strong></div><div><small>剩余时间</small><strong id="live-time">—</strong></div><div><small>在线角色</small><strong id="live-players">—</strong></div></section>
+    <section class="panel compact" aria-labelledby="local-hero-title"><div class="panel-heading"><div><h2 id="local-hero-title">你的英雄</h2><p id="hero-selection-status" aria-live="polite">正在读取当前版本支持的英雄。</p></div><label class="stack-field" for="local-hero-select">英雄<select id="local-hero-select" aria-describedby="hero-selection-status" disabled><option>捷风 · Jett</option></select></label></div></section>
+
+    <section id="view-practice" class="view active">
+      <div class="practice-grid">
+        <section class="panel map-panel"><div class="panel-heading"><div><h2>拉出路线</h2><p>依次设置起点、露出点和撤回点。</p></div><label class="select-label"><span class="sr-only">练习地图</span><select id="practice-map" class="map-select"></select></label></div>
+          <div class="map-toolbar"><div class="point-steps" role="group" aria-label="当前选点步骤"><button data-point="start" class="selected"><b>1</b>起点</button><button data-point="expose"><b>2</b>露出点</button><button data-point="retreat"><b>3</b>撤回点</button></div><button id="use-position" class="button small ghost" title="使用游戏中当前玩家脚下的位置">取玩家位置</button></div>
+          <div id="map-surface" class="map-surface" tabindex="0" role="img" aria-label="地图路线编辑器，点击选择当前步骤的位置"><img id="map-image" alt="当前地图的小地图" draggable="false" hidden><canvas id="map-overlay" width="1024" height="1024"></canvas><div id="map-placeholder" class="map-placeholder"><span class="map-cross">＋</span><strong>正在读取地图</strong><p>原小地图加载后即可选点。</p></div><div id="map-hover" class="map-hover"></div></div>
+          <div class="map-footer"><div><span class="map-key start"></span>起点<span class="map-key expose"></span>露出<span class="map-key retreat"></span>撤回</div><label>地面 Z <input id="floor-height" type="number" step="10" value="0" aria-label="选点的地面高度（厘米）"><span>cm</span></label></div>
+          <div class="route-draft"><input id="route-name" type="text" maxlength="60" placeholder="路线名称，例如 A 点箱后拉出" aria-label="路线名称"><button id="clear-route" class="button ghost">清空</button><button id="save-route" class="button secondary">保存路线</button></div><div id="draft-coordinates" class="muted small-text">点击地图开始选点；不同楼层请先调整地面高度。</div>
+        </section>
+        <div class="control-column"><section class="panel"><div class="panel-heading"><div><h2>拉出行为</h2><p>参数实时应用到当前训练。</p></div><span class="tiny-label">LIVE</span></div><label class="field-label" for="peek-rate" hidden>拉出频率<span><output id="peek-rate-value">20</output> 次 / 分钟</span></label><input id="peek-rate" hidden type="range" min="1" max="120" step="1" value="20"><div class="range-caption" hidden><span>慢节奏</span><span>高频率</span></div><div class="field-label">拉出方式</div><div id="style-options" class="style-options" role="group" aria-label="拉出方式"></div><div class="divider"></div><label class="switch-row"><span><strong>新拉出点默认开枪</strong><small>已保存敌人使用列表中的开枪设置。</small></span><input id="return-fire" type="checkbox" role="switch"></label><label class="switch-row"><span><strong>玩家无敌</strong><small>练习时忽略对玩家的伤害。</small></span><input class="invincible-toggle" type="checkbox" role="switch"></label><label class="switch-row"><span><strong>无限子弹</strong><small>与游戏内 F6 开关同步。</small></span><input class="ammo-toggle" type="checkbox" role="switch" checked></label><label class="switch-row"><span><strong>暂停机器人</strong><small>便于走位和设置路线。</small></span><input id="pause-bots" type="checkbox" role="switch"></label></section>
+          <section class="panel compact"><h2>架枪击杀反馈</h2><p>此间隔仅架枪有效。乱斗使用原版动态连杀窗口与倒计时 HUD。</p><label class="inline-field">连杀间隔<input id="streak-seconds" type="number" min="0.5" max="30" step="0.5" value="5"><span>秒</span></label><div class="info-line"><span class="info-icon">i</span>总击杀数会继续累计。</div></section>
+        </div>
+      </div>
+      <section class="panel routes-panel"><div class="panel-heading"><div><h2>拉出点 <span id="route-count" class="count">0</span></h2><p>持续模式按权重随机选点，波次模式在下方编排敌人。</p></div><button id="validate-routes" class="button ghost small">重新检查路线</button></div><div id="hold-plan-controls"></div><div id="route-list" class="route-list"><div class="empty-state">还没有保存路线。先在地图上设置三个点。</div></div><div id="wave-list"></div></section>
+    </section>
+
+    <section id="view-loadout" class="view">
+      <div class="loadout-grid"><section class="panel weapon-panel"><div class="panel-heading"><div><h2>选择武器</h2><p>也可以在游戏内按 B 打开原版购买页。</p></div><span id="weapon-count" class="count">—</span></div><div id="weapon-list" class="weapon-list"></div></section>
+        <div><section class="panel skin-panel"><div class="panel-heading"><div><h2 id="selected-weapon-title">武器外观</h2><p>切换后通过原换装流程重新装备。</p></div><span id="skin-count" class="count">—</span></div><figure id="skin-preview" class="skin-preview" aria-labelledby="skin-preview-name" aria-busy="false" data-state="empty">
+            <div class="skin-preview-heading"><figcaption><strong id="skin-preview-name">选择皮肤查看</strong><span id="skin-preview-variant">武器与炫彩的二维预览</span></figcaption><span id="skin-preview-badge" class="preview-badge">2D</span></div>
+            <div class="skin-preview-stage"><div id="skin-preview-picture" class="skin-preview-picture"></div><div id="skin-preview-placeholder" class="skin-preview-placeholder" role="status"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 3H5a2 2 0 0 0-2 2v3m13-5h3a2 2 0 0 1 2 2v3M3 16v3a2 2 0 0 0 2 2h3m8 0h3a2 2 0 0 0 2-2v-3M8 12h8m-4-4v8"/></svg><span id="skin-preview-status">选择一款皮肤后显示预览</span></div></div>
+            <p id="skin-preview-note">静态预览，动态特效请在游戏内查看。</p>
+          </figure><div class="skin-options"><label>等级<select id="skin-level" aria-label="皮肤等级"></select></label><label>炫彩<select id="skin-chroma" aria-label="皮肤炫彩"></select></label><button id="apply-skin" class="button primary">应用外观</button></div><div id="skin-application-status" class="muted small-text">选择皮肤、等级与炫彩后应用。</div><label class="search-field skin-search"><svg viewBox="0 0 24 24"><circle cx="10" cy="10" r="6"/><path d="m15 15 5 5"/></svg><input id="skin-search" type="search" placeholder="搜索这把武器的皮肤" aria-label="搜索皮肤"></label><div id="skin-list" class="skin-list"></div></section><section class="panel effects-panel"><div class="panel-heading"><div><h2>特殊皮肤效果</h2><p>按当前外观列出可控制的原有效果。</p></div></div><div id="effect-list" class="effect-list"><div class="empty-state">选择支持特殊效果的皮肤后显示。</div></div></section></div></div>
+    </section>
+
+    <section id="view-deathmatch" class="view">
+      <div class="dm-grid"><section class="panel match-panel"><div class="panel-heading"><div><h2>个人乱斗</h2><p>在标准 5v5 地图上，与水平各异的人机交手。</p></div><span class="tiny-label">FREE FOR ALL</span></div><div class="rules-display"><div><strong>40</strong><span>击杀获胜</span></div><i></i><div><strong>9:00</strong><span>时间上限</span></div><i></i><div><strong>FFA</strong><span>每人独立计分</span></div></div><label class="stack-field">地图<select id="deathmatch-map" class="map-select"></select></label><p id="map-validation" class="muted small-text"></p><label class="field-label" for="total-players">总人数<span><output id="total-players-value">14</output> 人（包含你）</span></label><input id="total-players" type="range" min="2" max="30" step="1" value="14"><div class="range-caption"><span>2 人</span><span id="maximum-players-label">30 人</span></div><p id="hero-pool-summary" class="muted small-text">每局英雄不重复。你使用捷风，机器人从其余 29 位英雄随机选取，死亡后保持本局英雄。</p><label class="inline-field">死亡后重生<input id="respawn-seconds" type="number" min="0.2" max="15" step="0.1" value="1.5"><span>秒</span></label><div class="divider"></div><label class="switch-row"><span><strong>无限子弹</strong><small>关闭时按原弹匣与备弹规则。</small></span><input class="ammo-toggle" type="checkbox" role="switch" checked></label><label class="switch-row"><span><strong>玩家无敌</strong><small>可用于熟悉地图。</small></span><input class="invincible-toggle" type="checkbox" role="switch"></label><div class="info-line"><span class="info-icon">i</span>普通乱斗关闭技能；连杀窗口、倒计时 HUD 和重置遵循原版机制。</div><button id="restart-match" class="button secondary full-width">重开本局</button></section>
+      <section class="panel difficulty-panel"><div class="panel-heading"><div><h2>人机水平</h2><a class="hb-details-link" href="#human-bots-settings">打开拟人人机详细设置</a><p>设置平均水平和浮动，同局中的每个人机分别采样。</p></div><button id="reroll-bots" class="button small ghost">重新分配水平</button></div><p id="legacy-bots-status" class="hb-legacy-note" role="status" hidden>已启用拟人人机，以下基础参数暂不参与行为。请在详细设置中修改；关闭拟人人机后可继续使用这些基础参数。</p><div id="difficulty-controls"></div><div class="difficulty-note"><span class="distribution-icon"><i></i><i></i><i></i><i></i><i></i></span><p>反应、转枪、准度和身法分别变化。机器人需要发现目标、完成转枪后才能命中。</p></div><div class="panel-subheading"><h3>本局人机</h3><span class="muted small-text">以客户端实际状态为准</span></div><div id="bot-profiles" class="bot-profiles"><div class="empty-state">进入乱斗后显示每个人机的水平与比分。</div></div></section></div>
+      <section id="human-bots-settings" class="panel" aria-label="拟人人机详细设置"><h2>拟人人机</h2><p>正在读取详细设置…</p></section>
+    </section>
+    <footer class="page-footer"><span>V / TRAINER</span><span id="save-status">设置保存在本机</span></footer>
+  </main>
+  <div id="toast" class="toast" role="status" hidden></div>
+</body>
+</html>

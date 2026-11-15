@@ -1,0 +1,182 @@
+[
+  {
+    "name": "OnCharacterGroundSound",
+    "descriptor_rva": "0xd535c50",
+    "outer_resolver_rva": "0x653f060",
+    "parameter_size": 112,
+    "flags_hex": "0124c204",
+    "parameters": [
+      {
+        "name": "ShooterCharacter",
+        "offset": 0,
+        "kind": 18
+      },
+      {
+        "name": "Events",
+        "offset": 0,
+        "kind": 18
+      },
+      {
+        "name": "Events",
+        "offset": 8,
+        "kind": 22
+      },
+      {
+        "name": "SoundLocation",
+        "offset": 24,
+        "kind": 25
+      },
+      {
+        "name": "SoundRotation",
+        "offset": 48,
+        "kind": 25
+      },
+      {
+        "name": "Perspective",
+        "offset": 72,
+        "kind": 21
+      },
+      {
+        "name": "UnderlyingType",
+        "offset": 0,
+        "kind": 0
+      },
+      {
+        "name": "SurfaceType",
+        "offset": 88,
+        "kind": 30
+      },
+      {
+        "name": "VolumeMultiplier",
+        "offset": 92,
+        "kind": 10
+      },
+      {
+        "name": "ReuseAudioComponent",
+        "offset": 96,
+        "kind": 18
+      },
+      {
+        "name": "ReturnValue",
+        "offset": 104,
+        "kind": 12
+      }
+    ]
+  },
+  {
+    "name": "AresFindOrCreateReusableAudioComponentForWorld",
+    "descriptor_rva": "0xd503520",
+    "outer_resolver_rva": "0x63f88b0",
+    "parameter_size": 88,
+    "flags_hex": "0924c204",
+    "parameters": [
+      {
+        "name": "ComponentClass",
+        "offset": 0,
+        "kind": 17
+      },
+      {
+        "name": "WorldContextObject",
+        "offset": 8,
+        "kind": 18
+      },
+      {
+        "name": "Location",
+        "offset": 16,
+        "kind": 25
+      },
+      {
+        "name": "Orientation",
+        "offset": 40,
+        "kind": 25
+      },
+      {
+        "name": "ComponentName",
+        "offset": 64,
+        "kind": 21
+      },
+      {
+        "name": "ReturnValue",
+        "offset": 80,
+        "kind": 18
+      }
+    ]
+  },
+  {
+    "name": "SetSurfaceType",
+    "descriptor_rva": "0xd502080",
+    "outer_resolver_rva": "0x63f88b0",
+    "parameter_size": 1,
+    "flags_hex": "01040204",
+    "parameters": [
+      {
+        "name": "UnderlyingType",
+        "offset": 0,
+        "kind": 0
+      },
+      {
+        "name": "AresSurfaceType",
+        "offset": 0,
+        "kind": 30
+      }
+    ]
+  },
+  {
+    "name": "SetSwitch",
+    "descriptor_rva": "0xd4b84c0",
+    "outer_resolver_rva": "0x5934710",
+    "parameter_size": 40,
+    "flags_hex": "09040204",
+    "parameters": [
+      {
+        "name": "SwitchValue",
+        "offset": 0,
+        "kind": 18
+      },
+      {
+        "name": "SwitchGroup",
+        "offset": 8,
+        "kind": 21
+      },
+      {
+        "name": "SwitchState",
+        "offset": 24,
+        "kind": 21
+      }
+    ]
+  },
+  {
+    "name": "PostAkEvent",
+    "descriptor_rva": "0xd4bad30",
+    "outer_resolver_rva": "0x59381a0",
+    "parameter_size": 56,
+    "flags_hex": "08044204",
+    "parameters": [
+      {
+        "name": "AkEvent",
+        "offset": 0,
+        "kind": 18
+      },
+      {
+        "name": "CallbackMask",
+        "offset": 8,
+        "kind": 3
+      },
+      {
+        "name": "PostEventCallback",
+        "offset": 12,
+        "kind": 26
+      },
+      {
+        "name": "InEventName",
+        "offset": 32,
+        "kind": 21
+      },
+      {
+        "name": "ReturnValue",
+        "offset": 48,
+        "kind": 3
+      }
+    ]
+  }
+]

@@ -1,0 +1,17 @@
+{
+  "name": "valoranttrainer",
+  "development_target": "native-game-client",
+  "active_development_map": 1,
+  "game_executable": "client/ShooterGame/Binaries/Win64/VALORANT-Win64-Shipping.exe",
+  "analysis_snapshot": "client/ShooterGame/Binaries/Win64/VALORANT-Win64-Shipping.exe",
+  "expected_snapshot_sha256": "147763350504d241ee20b77607d04bc85cebfedb1d8bc2f32473ca93bf8fe92f",
+  "expected_snapshot_bytes": 239005680,
+  "ghidra_home": "F:/tools/ghidra_12.1.4_PUBLIC",
+  "account_login": "forbidden",
+  "legacy_prototype": "preserved-development-stopped",
+  "distribution_mode": "portable-v1",
+  "resource_mode": "installed-readonly-v1",
+  "source_game_executable": "F:\\Riot Games\\VALORANT\\live\\ShooterGame\\Binaries\\Win64\\VALORANT-Win64-Shipping.exe",
+  "source_resource_directory": "F:\\Riot Games\\VALORANT\\live\\ShooterGame\\Content\\Paks",
+  "source_resource_manifest": ".local/development-resource-backup/source-resource-manifest.json"
+}

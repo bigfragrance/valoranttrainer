@@ -1,0 +1,52 @@
+{
+  "map_id": "ascent",
+  "points_world_cm": [
+    [
+      4482.0,
+      -4268.0,
+      410.0
+    ],
+    [
+      4516.0,
+      -4339.0,
+      410.0
+    ],
+    [
+      4550.0,
+      -4410.0,
+      410.0
+    ],
+    [
+      4570.0,
+      -4440.0,
+      410.0
+    ],
+    [
+      4590.0,
+      -4450.0,
+      410.0
+    ],
+    [
+      4687.333333333333,
+      -4456.0,
+      410.0
+    ]
+  ],
+  "node_ids": [
+    747,
+    11757,
+    11758,
+    11759,
+    11760,
+    11978
+  ],
+  "source_world_cm": [
+    4448.901367,
+    -4893.875977,
+    402.3
+  ],
+  "length_cm": 313.3763348517731,
+  "goal_error_cm": 33.77859781359073,
+  "bearing_span_deg": 25.54195710908496,
+  "scope": "Shortest path using only recorded original navigation edges; per-point original Ground/Capsule validation still required"
+}

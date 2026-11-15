@@ -1,0 +1,3099 @@
+{
+  "target": "F:\\Riot Games\\VALORANT\\live\\ShooterGame\\Binaries\\Win64\\VALORANT-Win64-Shipping.exe",
+  "bytes": 239005680,
+  "sha256": "147763350504d241ee20b77607d04bc85cebfedb1d8bc2f32473ca93bf8fe92f",
+  "method": "read-only raw ASCII/UTF-16 byte pattern scan; not execution or symbol semantics",
+  "matches": [
+    {
+      "offset": "0xa787c30",
+      "encoding": "ascii",
+      "value": "C:\\Jenkins\\ws\\wwise_v2022.1\\Wwise\\SDK\\source\\SoundEngine\\AkAudiolib\\Common\\AkVBAP.h"
+    },
+    {
+      "offset": "0xa789020",
+      "encoding": "ascii",
+      "value": "C:\\Jenkins\\ws\\wwise_v2022.1\\Wwise\\SDK\\source\\SoundEngine\\AkAudiolib\\Common\\AkConversionTable.h"
+    },
+    {
+      "offset": "0xa7890e0",
+      "encoding": "ascii",
+      "value": "C:\\Jenkins\\ws\\wwise_v2022.1\\Wwise\\SDK\\source\\SoundEngine\\AkAudiolib\\Common\\AkPluginServices.cpp"
+    },
+    {
+      "offset": "0xa789610",
+      "encoding": "ascii",
+      "value": "C:\\Jenkins\\ws\\wwise_v2022.1\\Wwise\\SDK\\include\\AK\\SoundEngine\\Common\\IAkPluginMemAlloc.h"
+    },
+    {
+      "offset": "0xa78aa50",
+      "encoding": "ascii",
+      "value": "C:\\Jenkins\\ws\\wwise_v2022.1\\Wwise\\SDK\\source\\SoundEngine\\AkAudiolib\\Common\\AkSinkBase.cpp"
+    },
+    {
+      "offset": "0xa78ab10",
+      "encoding": "ascii",
+      "value": "C:\\Jenkins\\ws\\wwise_v2022.1\\Wwise\\SDK\\source\\SoundEngine\\AkAudiolib\\Common\\AkSinkPluginParams.cpp"
+    },
+    {
+      "offset": "0xa78c100",
+      "encoding": "ascii",
+      "value": "C:\\Jenkins\\ws\\wwise_v2022.1\\Wwise\\SDK\\source\\SoundEngine\\AkAudiolib\\Common\\AkVBAP.cpp"
+    },
+    {
+      "offset": "0xa78dfa0",
+      "encoding": "ascii",
+      "value": "C:\\Jenkins\\ws\\wwise_v2022.1\\Wwise\\SDK\\source\\SoundEngine\\AkAudiolib\\Common\\AkSystemOutputMeta.cpp"
+    },
+    {
+      "offset": "0xa78e080",
+      "encoding": "ascii",
+      "value": "C:\\Jenkins\\ws\\wwise_v2022.1\\Wwise\\SDK\\source\\SoundEngine\\AkAudiolib\\Win32\\AkSinkCoreAudio.cpp"
+    },
+    {
+      "offset": "0xa7930e0",
+      "encoding": "ascii",
+      "value": "C:\\Jenkins\\ws\\wwise_v2022.1\\Wwise\\SDK\\samples\\Plugins\\AkAudioInput\\Sources\\AudioEngineFX\\AkFXSrcAudioInput.cpp"
+    },
+    {
+      "offset": "0xa793180",
+      "encoding": "ascii",
+      "value": "C:\\Jenkins\\ws\\wwise_v2022.1\\Wwise\\SDK\\samples\\Plugins\\AkAudioInput\\Sources\\AudioEngineFX\\AkFXSrcAudioInputParams.cpp"
+    },
+    {
+      "offset": "0xa7a6000",
+      "encoding": "ascii",
+      "value": "C:\\Jenkins\\ws\\wwise_v2022.1\\Wwise\\SDK\\source\\SoundEngine\\Plugins\\Effects\\AkMeter\\AkMeterFX.cpp"
+    },
+    {
+      "offset": "0xa7a6090",
+      "encoding": "ascii",
+      "value": "C:\\Jenkins\\ws\\wwise_v2022.1\\Wwise\\SDK\\source\\SoundEngine\\Plugins\\Effects\\AkMeter\\AkMeterFXParams.cpp"
+    },
+    {
+      "offset": "0xa7a6100",
+      "encoding": "ascii",
+      "value": "C:\\Jenkins\\ws\\wwise_v2022.1\\Wwise\\SDK\\source\\SoundEngine\\Plugins\\Effects\\AkMeter\\AkMeterManager.cpp"
+    },
+    {
+      "offset": "0xa7a61b0",
+      "encoding": "ascii",
+      "value": "C:\\Jenkins\\ws\\wwise_v2022.1\\Wwise\\SDK\\source\\SoundEngine\\Plugins\\Effects\\AkCompressor\\AkCompressorFX.cpp"
+    },
+    {
+      "offset": "0xa7a6320",
+      "encoding": "ascii",
+      "value": "C:\\Jenkins\\ws\\wwise_v2022.1\\Wwise\\SDK\\source\\SoundEngine\\Plugins\\Effects\\AkCompressor\\AkCompressorFXParams.cpp"
+    },
+    {
+      "offset": "0xa7a65b0",
+      "encoding": "ascii",
+      "value": "C:\\Jenkins\\ws\\wwise_v2022.1\\Wwise\\SDK\\samples\\Plugins\\AkDelay\\Sources\\AudioEngineFX\\AkDelayFX.cpp"
+    },
+    {
+      "offset": "0xa7a6650",
+      "encoding": "ascii",
+      "value": "C:\\Jenkins\\ws\\wwise_v2022.1\\Wwise\\SDK\\samples\\Plugins\\AkDelay\\Sources\\AudioEngineFX\\AkDelayFXParams.cpp"
+    },
+    {
+      "offset": "0xa7a66c0",
+      "encoding": "ascii",
+      "value": "C:\\Jenkins\\ws\\wwise_v2022.1\\Wwise\\SDK\\include\\AK\\DSP\\AkDelayLineMemory.h"
+    },
+    {
+      "offset": "0xa7a6750",
+      "encoding": "ascii",
+      "value": "C:\\Jenkins\\ws\\wwise_v2022.1\\Wwise\\SDK\\source\\SoundEngine\\Plugins\\Effects\\AkExpander\\AkExpanderFX.cpp"
+    },
+    {
+      "offset": "0xa7a67f0",
+      "encoding": "ascii",
+      "value": "C:\\Jenkins\\ws\\wwise_v2022.1\\Wwise\\SDK\\source\\SoundEngine\\Plugins\\Effects\\AkExpander\\AkExpanderFXParams.cpp"
+    },
+    {
+      "offset": "0xa7a68b0",
+      "encoding": "ascii",
+      "value": "C:\\Jenkins\\ws\\wwise_v2022.1\\Wwise\\SDK\\source\\SoundEngine\\Plugins\\Effects\\AkFlanger\\AkFlangerFX.cpp"
+    },
+    {
+      "offset": "0xa7a6920",
+      "encoding": "ascii",
+      "value": "C:\\Jenkins\\ws\\wwise_v2022.1\\Wwise\\SDK\\source\\SoundEngine\\Plugins\\Effects\\Common\\LFOMultiChannel.h"
+    },
+    {
+      "offset": "0xa7a69d0",
+      "encoding": "ascii",
+      "value": "C:\\Jenkins\\ws\\wwise_v2022.1\\Wwise\\SDK\\source\\SoundEngine\\Plugins\\Effects\\AkFlanger\\AkFlangerFXParams.cpp"
+    },
+    {
+      "offset": "0xa7a6a40",
+      "encoding": "ascii",
+      "value": "C:\\Jenkins\\ws\\wwise_v2022.1\\Wwise\\SDK\\source\\SoundEngine\\Plugins\\Effects\\Common\\UniComb.cpp"
+    },
+    {
+      "offset": "0xa7a6af0",
+      "encoding": "ascii",
+      "value": "C:\\Jenkins\\ws\\wwise_v2022.1\\Wwise\\SDK\\source\\SoundEngine\\Plugins\\Effects\\AkGain\\AkGainFX.cpp"
+    },
+    {
+      "offset": "0xa7a6b80",
+      "encoding": "ascii",
+      "value": "C:\\Jenkins\\ws\\wwise_v2022.1\\Wwise\\SDK\\source\\SoundEngine\\Plugins\\Effects\\AkGain\\AkGainFXParams.cpp"
+    },
+    {
+      "offset": "0xa7a6c30",
+      "encoding": "ascii",
+      "value": "C:\\Jenkins\\ws\\wwise_v2022.1\\Wwise\\SDK\\source\\SoundEngine\\Plugins\\Effects\\AkGuitarDistortion\\AkGuitarDistortionFX.cpp"
+    },
+    {
+      "offset": "0xa7a6ce0",
+      "encoding": "ascii",
+      "value": "C:\\Jenkins\\ws\\wwise_v2022.1\\Wwise\\SDK\\source\\SoundEngine\\Plugins\\Effects\\AkGuitarDistortion\\AkGuitarDistortionFXParams.cpp"
+    },
+    {
+      "offset": "0xa7a6d60",
+      "encoding": "ascii",
+      "value": "C:\\Jenkins\\ws\\wwise_v2022.1\\Wwise\\SDK\\source\\SoundEngine\\Plugins\\Effects\\Common\\BiquadFilterSimd.h"
+    },
+    {
+      "offset": "0xa7a6dd0",
+      "encoding": "ascii",
+      "value": "C:\\Jenkins\\ws\\wwise_v2022.1\\Wwise\\SDK\\source\\SoundEngine\\Plugins\\Common\\AkMultiBandEQ.cpp"
+    },
+    {
+      "offset": "0xa7a6e90",
+      "encoding": "ascii",
+      "value": "C:\\Jenkins\\ws\\wwise_v2022.1\\Wwise\\SDK\\source\\SoundEngine\\Plugins\\Effects\\AkHarmonizer\\AkHarmonizerFX.cpp"
+    },
+    {
+      "offset": "0xa7a6f30",
+      "encoding": "ascii",
+      "value": "C:\\Jenkins\\ws\\wwise_v2022.1\\Wwise\\SDK\\source\\SoundEngine\\Plugins\\Effects\\AkHarmonizer\\AkHarmonizerFXParams.cpp"
+    },
+    {
+      "offset": "0xa7a6fb0",
+      "encoding": "ascii",
+      "value": "C:\\Jenkins\\ws\\wwise_v2022.1\\Wwise\\SDK\\source\\SoundEngine\\Plugins\\Common\\AkPhaseVocoder.cpp"
+    },
+    {
+      "offset": "0xa7a7010",
+      "encoding": "ascii",
+      "value": "C:\\Jenkins\\ws\\wwise_v2022.1\\Wwise\\SDK\\source\\SoundEngine\\Plugins\\Common\\AkPhaseVocoderClassic.cpp"
+    },
+    {
+      "offset": "0xa7a7080",
+      "encoding": "ascii",
+      "value": "C:\\Jenkins\\ws\\wwise_v2022.1\\Wwise\\SDK\\source\\SoundEngine\\Plugins\\Effects\\Common\\DelayLineLight.cpp"
+    },
+    {
+      "offset": "0xa7a70f0",
+      "encoding": "ascii",
+      "value": "C:\\Jenkins\\ws\\wwise_v2022.1\\Wwise\\SDK\\source\\SoundEngine\\Plugins\\Common\\CircularBuffer.cpp"
+    },
+    {
+      "offset": "0xa7a7150",
+      "encoding": "ascii",
+      "value": "C:\\Jenkins\\ws\\wwise_v2022.1\\Wwise\\SDK\\source\\SoundEngine\\Plugins\\Common\\TimeWindow.cpp"
+    },
+    {
+      "offset": "0xa7a71c0",
+      "encoding": "ascii",
+      "value": "C:\\Jenkins\\ws\\wwise_v2022.1\\Wwise\\SDK\\source\\SoundEngine\\Plugins\\Common\\FreqWindow.cpp"
+    },
+    {
+      "offset": "0xa7a72a0",
+      "encoding": "ascii",
+      "value": "C:\\Jenkins\\ws\\wwise_v2022.1\\Wwise\\SDK\\source\\SoundEngine\\Plugins\\Common\\AkResamplingPhaseVocoder.cpp"
+    },
+    {
+      "offset": "0xa7a7a40",
+      "encoding": "ascii",
+      "value": "C:\\Jenkins\\ws\\wwise_v2022.1\\Wwise\\SDK\\source\\SoundEngine\\Plugins\\Effects\\AkFDNReverb\\AkFDNReverbFX.cpp"
+    },
+    {
+      "offset": "0xa7a7ae0",
+      "encoding": "ascii",
+      "value": "C:\\Jenkins\\ws\\wwise_v2022.1\\Wwise\\SDK\\source\\SoundEngine\\Plugins\\Effects\\AkFDNReverb\\AkFDNReverbFXParams.cpp"
+    },
+    {
+      "offset": "0xa7a7ba0",
+      "encoding": "ascii",
+      "value": "C:\\Jenkins\\ws\\wwise_v2022.1\\Wwise\\SDK\\source\\SoundEngine\\Plugins\\Effects\\AkParametricEQ\\AkParametricEQFX.cpp"
+    },
+    {
+      "offset": "0xa7a7c40",
+      "encoding": "ascii",
+      "value": "C:\\Jenkins\\ws\\wwise_v2022.1\\Wwise\\SDK\\source\\SoundEngine\\Plugins\\Effects\\AkParametricEQ\\AkParametricEQFXParams.cpp"
+    },
+    {
+      "offset": "0xa7a7d00",
+      "encoding": "ascii",
+      "value": "C:\\Jenkins\\ws\\wwise_v2022.1\\Wwise\\SDK\\source\\SoundEngine\\Plugins\\Effects\\AkPeakLimiter\\AkPeakLimiterFX.cpp"
+    },
+    {
+      "offset": "0xa7a7db0",
+      "encoding": "ascii",
+      "value": "C:\\Jenkins\\ws\\wwise_v2022.1\\Wwise\\SDK\\source\\SoundEngine\\Plugins\\Effects\\AkPeakLimiter\\AkPeakLimiterFXParams.cpp"
+    },
+    {
+      "offset": "0xa7a7e70",
+      "encoding": "ascii",
+      "value": "C:\\Jenkins\\ws\\wwise_v2022.1\\Wwise\\SDK\\source\\SoundEngine\\Plugins\\Effects\\AkPitchShifter\\AkPitchShifterFX.cpp"
+    },
+    {
+      "offset": "0xa7a7f10",
+      "encoding": "ascii",
+      "value": "C:\\Jenkins\\ws\\wwise_v2022.1\\Wwise\\SDK\\source\\SoundEngine\\Plugins\\Effects\\AkPitchShifter\\AkPitchShifterFXParams.cpp"
+    },
+    {
+      "offset": "0xa7a7f90",
+      "encoding": "ascii",
+      "value": "C:\\Jenkins\\ws\\wwise_v2022.1\\Wwise\\SDK\\source\\SoundEngine\\Plugins\\Common\\AkDelayPitchShift.cpp"
+    },
+    {
+      "offset": "0xa7aef60",
+      "encoding": "ascii",
+      "value": "C:\\Jenkins\\ws\\wwise_v2022.1\\Wwise\\SDK\\source\\SoundEngine\\Plugins\\Effects\\AkRoomVerb\\AkRoomVerbFX.cpp"
+    },
+    {
+      "offset": "0xa7af020",
+      "encoding": "ascii",
+      "value": "C:\\Jenkins\\ws\\wwise_v2022.1\\Wwise\\SDK\\source\\SoundEngine\\Plugins\\Effects\\AkRoomVerb\\AkRoomVerbFXParams.cpp"
+    },
+    {
+      "offset": "0xa7af090",
+      "encoding": "ascii",
+      "value": "C:\\Jenkins\\ws\\wwise_v2022.1\\Wwise\\SDK\\source\\SoundEngine\\Plugins\\Effects\\AkRoomVerb\\ERUnitDual.cpp"
+    },
+    {
+      "offset": "0xa7af100",
+      "encoding": "ascii",
+      "value": "C:\\Jenkins\\ws\\wwise_v2022.1\\Wwise\\SDK\\source\\SoundEngine\\Plugins\\Effects\\Common\\AllpassFilter.cpp"
+    },
+    {
+      "offset": "0xa7af170",
+      "encoding": "ascii",
+      "value": "C:\\Jenkins\\ws\\wwise_v2022.1\\Wwise\\SDK\\source\\SoundEngine\\Plugins\\Effects\\Common\\DelayLine.cpp"
+    },
+    {
+      "offset": "0xa7af290",
+      "encoding": "ascii",
+      "value": "C:\\Jenkins\\ws\\wwise_v2022.1\\Wwise\\SDK\\source\\SoundEngine\\Plugins\\Sources\\AkSilenceSource\\AkFXSrcSilence.cpp"
+    },
+    {
+      "offset": "0xa7af350",
+      "encoding": "ascii",
+      "value": "C:\\Jenkins\\ws\\wwise_v2022.1\\Wwise\\SDK\\source\\SoundEngine\\Plugins\\Effects\\AkStereoDelay\\AkStereoDelayFX.cpp"
+    },
+    {
+      "offset": "0xa7af3f0",
+      "encoding": "ascii",
+      "value": "C:\\Jenkins\\ws\\wwise_v2022.1\\Wwise\\SDK\\source\\SoundEngine\\Plugins\\Effects\\AkStereoDelay\\AkStereoDelayFXParams.cpp"
+    },
+    {
+      "offset": "0xa7af4d0",
+      "encoding": "ascii",
+      "value": "C:\\Jenkins\\ws\\wwise_v2022.1\\Wwise\\SDK\\source\\SoundEngine\\Plugins\\Sources\\AkSynthOne\\AkSynthOne.cpp"
+    },
+    {
+      "offset": "0xa7af570",
+      "encoding": "ascii",
+      "value": "C:\\Jenkins\\ws\\wwise_v2022.1\\Wwise\\SDK\\source\\SoundEngine\\Plugins\\Sources\\AkSynthOne\\AkSynthOneParams.cpp"
+    },
+    {
+      "offset": "0xa7af700",
+      "encoding": "ascii",
+      "value": "C:\\Jenkins\\ws\\wwise_v2022.1\\Wwise\\SDK\\source\\SoundEngine\\Plugins\\Effects\\AkTremolo\\AkTremoloFX.cpp"
+    },
+    {
+      "offset": "0xa7af7a0",
+      "encoding": "ascii",
+      "value": "C:\\Jenkins\\ws\\wwise_v2022.1\\Wwise\\SDK\\source\\SoundEngine\\Plugins\\Effects\\AkTremolo\\AkTremoloFXParams.cpp"
+    },
+    {
+      "offset": "0xa7af860",
+      "encoding": "ascii",
+      "value": "C:\\Jenkins\\ws\\wwise_v2022.1\\Wwise\\Partners\\McDSP\\McDSPFutzBox\\SoundEnginePlugin\\McDSPFutzBoxFX.cpp"
+    },
+    {
+      "offset": "0xa7af900",
+      "encoding": "ascii",
+      "value": "C:\\Jenkins\\ws\\wwise_v2022.1\\Wwise\\Partners\\McDSP\\McDSPFutzBox\\SoundEnginePlugin\\McDSPFutzBoxFXParams.cpp"
+    },
+    {
+      "offset": "0xa7af970",
+      "encoding": "ascii",
+      "value": "C:\\Jenkins\\ws\\wwise_v2022.1\\Wwise\\Partners\\McDSP\\Common\\SoundEngine\\PooledMemoryAllocator.cpp"
+    },
+    {
+      "offset": "0xa7b2270",
+      "encoding": "ascii",
+      "value": "C:\\Jenkins\\ws\\wwise_v2022.1\\Wwise\\Partners\\McDSP\\McDSPLimiter\\SoundEnginePlugin\\McDSPLimiterFX.cpp"
+    },
+    {
+      "offset": "0xa7b22e0",
+      "encoding": "ascii",
+      "value": "C:\\Jenkins\\ws\\wwise_v2022.1\\Wwise\\Partners\\McDSP\\Common\\SoundEngine\\MultiChannelSurroundProcess.inl"
+    },
+    {
+      "offset": "0xa7b2380",
+      "encoding": "ascii",
+      "value": "C:\\Jenkins\\ws\\wwise_v2022.1\\Wwise\\Partners\\McDSP\\McDSPLimiter\\SoundEnginePlugin\\McDSPLimiterFXParams.cpp"
+    },
+    {
+      "offset": "0xa7b23f0",
+      "encoding": "ascii",
+      "value": "C:\\Jenkins\\ws\\wwise_v2022.1\\Wwise\\Partners\\McDSP\\McDSPLimiter\\SoundEnginePlugin\\DSP\\LimiterProcessMonoFloatImpl.cpp"
+    },
+    {
+      "offset": "0xa7b2480",
+      "encoding": "ascii",
+      "value": "C:\\Jenkins\\ws\\wwise_v2022.1\\Wwise\\Partners\\McDSP\\McDSPLimiter\\SoundEnginePlugin\\DSP\\LimiterProcessStereoFloatImpl.cpp"
+    },
+    {
+      "offset": "0xa7b2500",
+      "encoding": "ascii",
+      "value": "C:\\Jenkins\\ws\\wwise_v2022.1\\Wwise\\Partners\\McDSP\\McDSPLimiter\\SoundEnginePlugin\\DSP\\LimiterProcessSurroundFloatImpl.cpp"
+    },
+    {
+      "offset": "0xa7b2580",
+      "encoding": "ascii",
+      "value": "C:\\Jenkins\\ws\\wwise_v2022.1\\Wwise\\Partners\\McDSP\\McDSPLimiter\\SoundEnginePlugin\\DSP\\LimiterProcessSurround71FloatImpl.cpp"
+    },
+    {
+      "offset": "0xa7b2600",
+      "encoding": "ascii",
+      "value": "C:\\Jenkins\\ws\\wwise_v2022.1\\Wwise\\Partners\\McDSP\\McDSPLimiter\\SoundEnginePlugin\\DSP\\LimiterProcessMultiChannelFloatImpl.cpp"
+    },
+    {
+      "offset": "0xa7b27a0",
+      "encoding": "ascii",
+      "value": "C:\\Jenkins\\ws\\wwise_v2022.1\\Wwise\\SDK\\source\\SoundEngine\\Plugins\\Effects\\MasteringSuite\\MasteringSuiteFX.cpp"
+    },
+    {
+      "offset": "0xa7b29fd",
+      "encoding": "ascii",
+      "value": ";KBC:\\Jenkins\\ws\\wwise_v2022.1\\Wwise\\SDK\\source\\SoundEngine\\Plugins\\Effects\\MasteringSuite\\audiomaster\\include\\audio_master_common.h"
+    },
+    {
+      "offset": "0xa7b2a90",
+      "encoding": "ascii",
+      "value": "C:\\Jenkins\\ws\\wwise_v2022.1\\Wwise\\SDK\\source\\SoundEngine\\Plugins\\Effects\\MasteringSuite\\audiomaster\\include\\modules\\compressor.h"
+    },
+    {
+      "offset": "0xa7b2b20",
+      "encoding": "ascii",
+      "value": "C:\\Jenkins\\ws\\wwise_v2022.1\\Wwise\\SDK\\source\\SoundEngine\\Plugins\\Effects\\MasteringSuite\\audiomaster\\include\\modules\\limiter.h"
+    },
+    {
+      "offset": "0xa7b2ba0",
+      "encoding": "ascii",
+      "value": "C:\\Jenkins\\ws\\wwise_v2022.1\\Wwise\\SDK\\source\\SoundEngine\\Plugins\\Effects\\MasteringSuite\\audiomaster\\include\\audio_master.h"
+    },
+    {
+      "offset": "0xa7b2c50",
+      "encoding": "ascii",
+      "value": "C:\\Jenkins\\ws\\wwise_v2022.1\\Wwise\\SDK\\source\\SoundEngine\\Plugins\\Effects\\MasteringSuite\\MasteringSuiteFXParams.cpp"
+    },
+    {
+      "offset": "0xa7b2d0e",
+      "encoding": "ascii",
+      "value": "L=C:\\Jenkins\\ws\\wwise_v2022.1\\Wwise\\SDK\\source\\SoundEngine\\Plugins\\Effects\\MasteringSuite\\ChannelContext.cpp"
+    },
+    {
+      "offset": "0xa7b3160",
+      "encoding": "ascii",
+      "value": "C:\\Jenkins\\workspace\\Wwise_Plugin\\ResonanceAudio\\platforms\\wwise\\wwise_renderer_fx.cc"
+    },
+    {
+      "offset": "0xa7b32a0",
+      "encoding": "ascii",
+      "value": "C:\\Jenkins\\workspace\\Wwise_Plugin\\ResonanceAudio\\platforms\\wwise\\wwise_room_effects_fx.cc"
+    },
+    {
+      "offset": "0xa7b3400",
+      "encoding": "ascii",
+      "value": "C:\\Jenkins\\workspace\\Wwise_Plugin\\ResonanceAudio\\platforms\\wwise\\wwise_fx_null_params.cc"
+    },
+    {
+      "offset": "0xa7b3480",
+      "encoding": "ascii",
+      "value": "C:\\Jenkins\\workspace\\Wwise_Plugin\\ResonanceAudio\\platforms\\wwise\\wwise_room_effects_fx_attachment_params.cc"
+    },
+    {
+      "offset": "0xbc79b70",
+      "encoding": "ascii",
+      "value": "SetPosition"
+    },
+    {
+      "offset": "0xbc8cd70",
+      "encoding": "ascii",
+      "value": "SetPositionInViewport"
+    },
+    {
+      "offset": "0xbd20f90",
+      "encoding": "ascii",
+      "value": "SPATIALIZATION_HRTF"
+    },
+    {
+      "offset": "0xbd425a8",
+      "encoding": "ascii",
+      "value": "Montage_SetPosition"
+    },
+    {
+      "offset": "0xbd508b0",
+      "encoding": "ascii",
+      "value": "SetPositionWithPreviousTime"
+    },
+    {
+      "offset": "0xbf03910",
+      "encoding": "ascii",
+      "value": "C:\\fbroot\\Engine\\Plugins\\Wwise\\Source\\WwiseUtils\\Private\\WwiseUnrealHelper.cpp"
+    },
+    {
+      "offset": "0xbf03c20",
+      "encoding": "ascii",
+      "value": "C:\\fbroot\\Engine\\Plugins\\Wwise\\Source\\WwiseSoundEngine\\Private\\Wwise\\WwiseSoundEngineModule.cpp"
+    },
+    {
+      "offset": "0xbf03de0",
+      "encoding": "ascii",
+      "value": "C:\\fbroot\\Engine\\Plugins\\Wwise\\Source\\WwiseSoundEngine\\Public\\Wwise\\WwiseSoundEngineModule.h"
+    },
+    {
+      "offset": "0xbf04030",
+      "encoding": "ascii",
+      "value": "C:\\fbroot\\Engine\\Plugins\\Wwise\\Source\\WwiseSoundEngine_2022_1\\Private\\Wwise\\WwiseFileLocationResolver_2022_1.cpp"
+    },
+    {
+      "offset": "0xc0d5de0",
+      "encoding": "ascii",
+      "value": "C:\\fbroot\\Engine\\Plugins\\Wwise\\Source\\WwiseConcurrency\\Private\\Wwise\\WwiseDeferredQueue.cpp"
+    },
+    {
+      "offset": "0xc0d5eb0",
+      "encoding": "ascii",
+      "value": "C:\\fbroot\\Engine\\Plugins\\Wwise\\Source\\WwiseConcurrency\\Private\\Wwise\\WwiseExecutionQueue.cpp"
+    },
+    {
+      "offset": "0xc0d6020",
+      "encoding": "ascii",
+      "value": "C:\\fbroot\\Engine\\Plugins\\Wwise\\Source\\WwiseConcurrency\\Public\\Wwise\\WwiseConcurrencyModule.h"
+    },
+    {
+      "offset": "0xc0d63b8",
+      "encoding": "ascii",
+      "value": "/Script/WwiseObjectUtils"
+    },
+    {
+      "offset": "0xc0d6fe0",
+      "encoding": "ascii",
+      "value": "C:\\fbroot\\Engine\\Plugins\\Wwise\\Source\\WwiseProcessing\\Private\\Wwise\\WwiseGlobalCallbacks.cpp"
+    },
+    {
+      "offset": "0xc0d71b0",
+      "encoding": "ascii",
+      "value": "C:\\fbroot\\Engine\\Plugins\\Wwise\\Source\\WwiseProcessing\\Public\\Wwise\\WwiseProcessingModule.h"
+    },
+    {
+      "offset": "0xc0d7568",
+      "encoding": "ascii",
+      "value": "WwiseSoundBankCookedData"
+    },
+    {
+      "offset": "0xc0d7590",
+      "encoding": "ascii",
+      "value": "C:\\fbroot\\Engine\\Plugins\\Wwise\\Source\\WwiseFileHandler\\Public\\Wwise\\WwiseFileHandlerModule.h"
+    },
+    {
+      "offset": "0xc0d7780",
+      "encoding": "ascii",
+      "value": "EWwiseSoundBankType::User"
+    },
+    {
+      "offset": "0xc0d77c8",
+      "encoding": "ascii",
+      "value": "WwiseMediaCookedData"
+    },
+    {
+      "offset": "0xc0d7828",
+      "encoding": "ascii",
+      "value": "EWwiseSoundBankType"
+    },
+    {
+      "offset": "0xc0d7840",
+      "encoding": "ascii",
+      "value": "EWwiseSoundBankType::Bus"
+    },
+    {
+      "offset": "0xc0d7860",
+      "encoding": "ascii",
+      "value": "EWwiseSoundBankType::Event"
+    },
+    {
+      "offset": "0xc0d7910",
+      "encoding": "ascii",
+      "value": "EWwiseLanguageRequirement::IsDefault"
+    },
+    {
+      "offset": "0xc0d7970",
+      "encoding": "ascii",
+      "value": "/Script/WwiseFileHandler"
+    },
+    {
+      "offset": "0xc0d79f8",
+      "encoding": "ascii",
+      "value": "EWwiseLanguageRequirement"
+    },
+    {
+      "offset": "0xc0d7a18",
+      "encoding": "ascii",
+      "value": "EWwiseLanguageRequirement::SFX"
+    },
+    {
+      "offset": "0xc0d7a38",
+      "encoding": "ascii",
+      "value": "EWwiseLanguageRequirement::IsOptional"
+    },
+    {
+      "offset": "0xc0d7a60",
+      "encoding": "ascii",
+      "value": "WwiseLanguageCookedData"
+    },
+    {
+      "offset": "0xc0d7ab0",
+      "encoding": "ascii",
+      "value": "WwiseExternalSourceCookedData"
+    },
+    {
+      "offset": "0xc0d7c80",
+      "encoding": "ascii",
+      "value": "C:\\fbroot\\Engine\\Plugins\\Wwise\\Source\\WwiseFileHandler\\Private\\Wwise\\WwiseFileHandlerBase.cpp"
+    },
+    {
+      "offset": "0xc0d8440",
+      "encoding": "ascii",
+      "value": "C:\\fbroot\\Engine\\Plugins\\Wwise\\Source\\WwiseFileHandler\\Private\\Wwise\\WwiseFileCache.cpp"
+    },
+    {
+      "offset": "0xc0d8bd0",
+      "encoding": "ascii",
+      "value": "C:\\fbroot\\Engine\\Plugins\\Wwise\\Source\\WwiseFileHandler\\Private\\Wwise\\WwiseExternalSourceManagerImpl.cpp"
+    },
+    {
+      "offset": "0xc0d8cf0",
+      "encoding": "ascii",
+      "value": "C:\\fbroot\\Engine\\Plugins\\Wwise\\Source\\WwiseFileHandler\\Private\\Wwise\\WwiseExternalSourceFileState.cpp"
+    },
+    {
+      "offset": "0xc0d90e0",
+      "encoding": "ascii",
+      "value": "C:\\fbroot\\Engine\\Plugins\\Wwise\\Source\\WwiseFileHandler\\Public\\Wwise\\WwiseStreamableFileStateInfo.h"
+    },
+    {
+      "offset": "0xc0da060",
+      "encoding": "ascii",
+      "value": "C:\\fbroot\\Engine\\Plugins\\Wwise\\Source\\WwiseFileHandler\\Private\\Wwise\\WwiseFileState.cpp"
+    },
+    {
+      "offset": "0xc0da540",
+      "encoding": "ascii",
+      "value": "C:\\fbroot\\Engine\\Plugins\\Wwise\\Source\\WwiseFileHandler\\Private\\Wwise\\WwiseSoundBankFileState.cpp"
+    },
+    {
+      "offset": "0xc0dacb0",
+      "encoding": "ascii",
+      "value": "C:\\fbroot\\Engine\\Plugins\\Wwise\\Source\\WwiseFileHandler\\Private\\Wwise\\WwiseMediaManagerImpl.cpp"
+    },
+    {
+      "offset": "0xc0db4b0",
+      "encoding": "ascii",
+      "value": "C:\\fbroot\\Engine\\Plugins\\Wwise\\Source\\WwiseFileHandler\\Private\\Wwise\\WwiseMediaFileState.cpp"
+    },
+    {
+      "offset": "0xc0db830",
+      "encoding": "ascii",
+      "value": "C:\\fbroot\\Engine\\Plugins\\Wwise\\Source\\WwiseFileHandler\\Private\\Wwise\\WwiseIOHook.cpp"
+    },
+    {
+      "offset": "0xc0dba60",
+      "encoding": "ascii",
+      "value": "C:\\fbroot\\Engine\\Plugins\\Wwise\\Source\\WwiseFileHandler\\Private\\Wwise\\WwiseIOHookImpl.cpp"
+    },
+    {
+      "offset": "0xc0dc360",
+      "encoding": "ascii",
+      "value": "C:\\fbroot\\Engine\\Plugins\\Wwise\\Source\\WwiseFileHandler\\Private\\Wwise\\WwiseFileStateTools.cpp"
+    },
+    {
+      "offset": "0xc0dc7e0",
+      "encoding": "ascii",
+      "value": "C:\\fbroot\\Engine\\Plugins\\Wwise\\Source\\WwiseFileHandler\\Private\\Wwise\\WwiseWriteFileState.cpp"
+    },
+    {
+      "offset": "0xc0dc840",
+      "encoding": "ascii",
+      "value": "C:\\fbroot\\Engine\\Plugins\\Wwise\\Source\\WwiseFileHandler\\Private\\Wwise\\WwiseSoundBankManagerImpl.cpp"
+    },
+    {
+      "offset": "0xc0dfc50",
+      "encoding": "ascii",
+      "value": "WwiseLanguageId"
+    },
+    {
+      "offset": "0xc0dfc80",
+      "encoding": "ascii",
+      "value": "WwiseInitBankCookedData"
+    },
+    {
+      "offset": "0xc0dfcc8",
+      "encoding": "ascii",
+      "value": "WwiseLocalizedAuxBusCookedData"
+    },
+    {
+      "offset": "0xc0dfd58",
+      "encoding": "ascii",
+      "value": "WwiseLocalizedEventCookedData"
+    },
+    {
+      "offset": "0xc0dfde8",
+      "encoding": "ascii",
+      "value": "EWwiseGroupType::Switch"
+    },
+    {
+      "offset": "0xc0dfe20",
+      "encoding": "ascii",
+      "value": "WwiseGameParameterCookedData"
+    },
+    {
+      "offset": "0xc0dfeb8",
+      "encoding": "ascii",
+      "value": "EWwiseGroupType"
+    },
+    {
+      "offset": "0xc0dfec8",
+      "encoding": "ascii",
+      "value": "EWwiseGroupType::Unknown"
+    },
+    {
+      "offset": "0xc0dfee8",
+      "encoding": "ascii",
+      "value": "EWwiseGroupType::State"
+    },
+    {
+      "offset": "0xc0dff38",
+      "encoding": "ascii",
+      "value": "WwiseGroupValueCookedData"
+    },
+    {
+      "offset": "0xc0dff90",
+      "encoding": "ascii",
+      "value": "WwiseGroupValueInfo"
+    },
+    {
+      "offset": "0xc0dffa8",
+      "encoding": "ascii",
+      "value": "SetWwiseShortId"
+    },
+    {
+      "offset": "0xc0dffb8",
+      "encoding": "ascii",
+      "value": "SetWwiseName"
+    },
+    {
+      "offset": "0xc0dffc8",
+      "encoding": "ascii",
+      "value": "SetWwiseGuid"
+    },
+    {
+      "offset": "0xc0dfff8",
+      "encoding": "ascii",
+      "value": "OutWwiseName"
+    },
+    {
+      "offset": "0xc0e0008",
+      "encoding": "ascii",
+      "value": "OutWwiseShortId"
+    },
+    {
+      "offset": "0xc0e0018",
+      "encoding": "ascii",
+      "value": "OutWwiseGuid"
+    },
+    {
+      "offset": "0xc0e0030",
+      "encoding": "ascii",
+      "value": "WwiseGuid"
+    },
+    {
+      "offset": "0xc0e00e8",
+      "encoding": "ascii",
+      "value": "WwiseName"
+    },
+    {
+      "offset": "0xc0e00f8",
+      "encoding": "ascii",
+      "value": "WwiseShortId"
+    },
+    {
+      "offset": "0xc0e0128",
+      "encoding": "ascii",
+      "value": "EWwiseEventSwitchContainerLoading"
+    },
+    {
+      "offset": "0xc0e0150",
+      "encoding": "ascii",
+      "value": "EWwiseEventSwitchContainerLoading::LoadOnReference"
+    },
+    {
+      "offset": "0xc0e0188",
+      "encoding": "ascii",
+      "value": "EWwiseEventSwitchContainerLoading::AlwaysLoad"
+    },
+    {
+      "offset": "0xc0e01e0",
+      "encoding": "ascii",
+      "value": "WwiseEventInfo"
+    },
+    {
+      "offset": "0xc0e0208",
+      "encoding": "ascii",
+      "value": "GetWwiseName"
+    },
+    {
+      "offset": "0xc0e0218",
+      "encoding": "ascii",
+      "value": "GetWwiseGuid"
+    },
+    {
+      "offset": "0xc0e02b0",
+      "encoding": "ascii",
+      "value": "GetWwiseShortId"
+    },
+    {
+      "offset": "0xc0e02c0",
+      "encoding": "ascii",
+      "value": "WwiseAuxBusCookedData"
+    },
+    {
+      "offset": "0xc0e0328",
+      "encoding": "ascii",
+      "value": "EWwiseEventDestroyOptions"
+    },
+    {
+      "offset": "0xc0e0348",
+      "encoding": "ascii",
+      "value": "EWwiseEventDestroyOptions::WaitForEventEnd"
+    },
+    {
+      "offset": "0xc0e0378",
+      "encoding": "ascii",
+      "value": "EWwiseEventDestroyOptions::StopEventOnDestroy"
+    },
+    {
+      "offset": "0xc0e0488",
+      "encoding": "ascii",
+      "value": "WwiseEventCookedData"
+    },
+    {
+      "offset": "0xc0e0510",
+      "encoding": "ascii",
+      "value": "WwiseAudioDeviceShareSetCookedData"
+    },
+    {
+      "offset": "0xc0e05c0",
+      "encoding": "ascii",
+      "value": "WwiseAcousticTextureCookedData"
+    },
+    {
+      "offset": "0xc0e06e8",
+      "encoding": "ascii",
+      "value": "WwiseLocalizedShareSetCookedData"
+    },
+    {
+      "offset": "0xc0e0740",
+      "encoding": "ascii",
+      "value": "WwiseObjectInfo"
+    },
+    {
+      "offset": "0xc0e0770",
+      "encoding": "ascii",
+      "value": "WwiseLocalizedSoundBankCookedData"
+    },
+    {
+      "offset": "0xc0e0820",
+      "encoding": "ascii",
+      "value": "WwiseSwitchContainerLeafCookedData"
+    },
+    {
+      "offset": "0xc0e0858",
+      "encoding": "ascii",
+      "value": "WwiseTriggerCookedData"
+    },
+    {
+      "offset": "0xc0e0908",
+      "encoding": "ascii",
+      "value": "EWwiseReloadLanguage"
+    },
+    {
+      "offset": "0xc0e0960",
+      "encoding": "ascii",
+      "value": "WwiseSharedLanguageId"
+    },
+    {
+      "offset": "0xc0e09a8",
+      "encoding": "ascii",
+      "value": "WwiseSharedGroupValueKey"
+    },
+    {
+      "offset": "0xc0e0a18",
+      "encoding": "ascii",
+      "value": "WwiseShareSetCookedData"
+    },
+    {
+      "offset": "0xc0e0a60",
+      "encoding": "ascii",
+      "value": "WwiseSharedPlatformId"
+    },
+    {
+      "offset": "0xc0e0b10",
+      "encoding": "ascii",
+      "value": "C:\\fbroot\\Engine\\Plugins\\Wwise\\Source\\WwiseResourceLoader\\Public\\Wwise\\WwiseResourceLoaderModule.h"
+    },
+    {
+      "offset": "0xc0e0c70",
+      "encoding": "ascii",
+      "value": "/Script/WwiseResourceLoader"
+    },
+    {
+      "offset": "0xc0e0c90",
+      "encoding": "ascii",
+      "value": "WwisePlatformId"
+    },
+    {
+      "offset": "0xc0e2b80",
+      "encoding": "ascii",
+      "value": "C:\\fbroot\\Engine\\Plugins\\Wwise\\Source\\WwiseResourceLoader\\Private\\Wwise\\WwiseResourceLoaderImpl.cpp"
+    },
+    {
+      "offset": "0xc0e3200",
+      "encoding": "ascii",
+      "value": "C:\\fbroot\\Engine\\Plugins\\Wwise\\Source\\WwiseResourceLoader\\Private\\Wwise\\WwiseResourceLoader.cpp"
+    },
+    {
+      "offset": "0xc0e3580",
+      "encoding": "ascii",
+      "value": "C:\\fbroot\\Engine\\Plugins\\Wwise\\Source\\WwiseResourceLoader\\Public\\Wwise\\WwiseResourceLoaderImpl.h"
+    },
+    {
+      "offset": "0xc0e7580",
+      "encoding": "ascii",
+      "value": "GetWwiseShortID"
+    },
+    {
+      "offset": "0xc0e76e0",
+      "encoding": "ascii",
+      "value": "OnWwiseItemDropDetected__DelegateSignature"
+    },
+    {
+      "offset": "0xc0e7a20",
+      "encoding": "ascii",
+      "value": "C:\\fbroot\\Engine\\Plugins\\Wwise\\Source\\AkAudio\\Classes\\AkAudioInputComponent.h"
+    },
+    {
+      "offset": "0xc0f3d10",
+      "encoding": "ascii",
+      "value": "EAkUnrealAudioRouting::EnableWwiseOnly"
+    },
+    {
+      "offset": "0xc0f3dc8",
+      "encoding": "ascii",
+      "value": "WwiseSoundDataFolder"
+    },
+    {
+      "offset": "0xc0f3e30",
+      "encoding": "ascii",
+      "value": "WwiseProjectPath"
+    },
+    {
+      "offset": "0xc0f4668",
+      "encoding": "ascii",
+      "value": "AkWwiseObjectDetails"
+    },
+    {
+      "offset": "0xc0f46c0",
+      "encoding": "ascii",
+      "value": "AkWwiseItemToControl"
+    },
+    {
+      "offset": "0xc0f4890",
+      "encoding": "ascii",
+      "value": "AskForWwiseAssetReload"
+    },
+    {
+      "offset": "0xc0f4978",
+      "encoding": "ascii",
+      "value": "bWwiseSoundEngineEnabled"
+    },
+    {
+      "offset": "0xc0f4998",
+      "encoding": "ascii",
+      "value": "bWwiseAudioLinkEnabled"
+    },
+    {
+      "offset": "0xc0f4a20",
+      "encoding": "ascii",
+      "value": "/Game/WwiseAudio"
+    },
+    {
+      "offset": "0xc0f4a98",
+      "encoding": "ascii",
+      "value": "WwiseWindowsInstallationPath"
+    },
+    {
+      "offset": "0xc0f4ab8",
+      "encoding": "ascii",
+      "value": "WwiseMacInstallationPath"
+    },
+    {
+      "offset": "0xc0f4bc0",
+      "encoding": "ascii",
+      "value": "UnrealCultureToWwiseCulture"
+    },
+    {
+      "offset": "0xc0f4be0",
+      "encoding": "ascii",
+      "value": "UnrealCultureToWwiseCulture_Key"
+    },
+    {
+      "offset": "0xc0f4d30",
+      "encoding": "ascii",
+      "value": "WwiseStagingDirectory"
+    },
+    {
+      "offset": "0xc0f87a0",
+      "encoding": "ascii",
+      "value": "C:\\fbroot\\Engine\\Plugins\\Wwise\\Source\\AkAudio\\Private\\AkAcousticPortal.cpp"
+    },
+    {
+      "offset": "0xc0fa190",
+      "encoding": "ascii",
+      "value": "C:\\fbroot\\Engine\\Plugins\\Wwise\\Source\\AkAudio\\Private\\AkAmbientSound.cpp"
+    },
+    {
+      "offset": "0xc0faab0",
+      "encoding": "ascii",
+      "value": "C:\\fbroot\\Engine\\Plugins\\Wwise\\Source\\AkAudio\\Private\\AkAudioDevice.cpp"
+    },
+    {
+      "offset": "0xc0faaf8",
+      "encoding": "ascii",
+      "value": "/Wwise/"
+    },
+    {
+      "offset": "0xc0fab00",
+      "encoding": "ascii",
+      "value": "WwiseTree/Icons"
+    },
+    {
+      "offset": "0xc0fab10",
+      "encoding": "ascii",
+      "value": "WwiseTypes"
+    },
+    {
+      "offset": "0xc0fab20",
+      "encoding": "ascii",
+      "value": "Titlebar_WwiseAppIcon"
+    },
+    {
+      "offset": "0xc0facf0",
+      "encoding": "ascii",
+      "value": "AudiokineticTools.WwiseIcon"
+    },
+    {
+      "offset": "0xc0faf90",
+      "encoding": "ascii",
+      "value": "C:\\fbroot\\Engine\\Plugins\\Wwise\\Source\\AkAudio\\Private\\AkAudioModule.cpp"
+    },
+    {
+      "offset": "0xc0fb1b0",
+      "encoding": "ascii",
+      "value": "C:\\fbroot\\Engine\\Plugins\\Wwise\\Source\\AkAudio\\Private\\AkAudioInputManager.cpp"
+    },
+    {
+      "offset": "0xc0fc220",
+      "encoding": "ascii",
+      "value": "C:\\fbroot\\Engine\\Plugins\\Wwise\\Source\\AkAudio\\Private\\AkAudioEvent.cpp"
+    },
+    {
+      "offset": "0xc0fc780",
+      "encoding": "ascii",
+      "value": "C:\\fbroot\\Engine\\Plugins\\Wwise\\Source\\AkAudio\\Private\\AkComponentCallbackManager.cpp"
+    },
+    {
+      "offset": "0xc0fccc0",
+      "encoding": "ascii",
+      "value": "C:\\fbroot\\Engine\\Plugins\\Wwise\\Source\\AkAudio\\Private\\AkComponent.cpp"
+    },
+    {
+      "offset": "0xc0fd290",
+      "encoding": "ascii",
+      "value": "C:\\fbroot\\Engine\\Plugins\\Wwise\\Source\\AkAudio\\Private\\AkAudioType.cpp"
+    },
+    {
+      "offset": "0xc0fed30",
+      "encoding": "ascii",
+      "value": "C:\\fbroot\\Engine\\Plugins\\Wwise\\Source\\AkAudio\\Private\\AkGameObject.cpp"
+    },
+    {
+      "offset": "0xc0fef30",
+      "encoding": "ascii",
+      "value": "C:\\fbroot\\Engine\\Plugins\\Wwise\\Source\\AkAudio\\Private\\AkGameplayStatics.cpp"
+    },
+    {
+      "offset": "0xc0ff170",
+      "encoding": "ascii",
+      "value": "C:\\fbroot\\Engine\\Plugins\\Wwise\\Source\\AkAudio\\Private\\AkComponentHelpers.cpp"
+    },
+    {
+      "offset": "0xc0ffb90",
+      "encoding": "ascii",
+      "value": "C:\\fbroot\\Engine\\Plugins\\Wwise\\Source\\AkAudio\\Private\\AkSurfaceReflectorSetComponent.cpp"
+    },
+    {
+      "offset": "0xc0ffe00",
+      "encoding": "ascii",
+      "value": "C:\\fbroot\\Engine\\Plugins\\Wwise\\Source\\AkAudio\\Private\\AkSubmixInputComponent.cpp"
+    },
+    {
+      "offset": "0xc100100",
+      "encoding": "ascii",
+      "value": "C:\\fbroot\\Engine\\Plugins\\Wwise\\Source\\AkAudio\\Private\\AkLateReverbComponent.cpp"
+    },
+    {
+      "offset": "0xc100230",
+      "encoding": "ascii",
+      "value": "C:\\fbroot\\Engine\\Plugins\\Wwise\\Source\\AkAudio\\Private\\AkReverbDescriptor.cpp"
+    },
+    {
+      "offset": "0xc100420",
+      "encoding": "ascii",
+      "value": "C:\\fbroot\\Engine\\Plugins\\Wwise\\Source\\AkAudio\\Private\\AkJobWorkerScheduler.cpp"
+    },
+    {
+      "offset": "0xc1007b0",
+      "encoding": "ascii",
+      "value": "C:\\fbroot\\Engine\\Plugins\\Wwise\\Source\\AkAudio\\Private\\AkRoomComponent.cpp"
+    },
+    {
+      "offset": "0xc1009e0",
+      "encoding": "ascii",
+      "value": "C:\\fbroot\\Engine\\Plugins\\Wwise\\Source\\AkAudio\\Private\\AkGeometryComponent.cpp"
+    },
+    {
+      "offset": "0xc105a08",
+      "encoding": "ascii",
+      "value": "STreeView< TSharedPtr<FWwiseTreeItem> >"
+    },
+    {
+      "offset": "0xc105d68",
+      "encoding": "ascii",
+      "value": ".RequestImportWwiseItem"
+    },
+    {
+      "offset": "0xc105e00",
+      "encoding": "ascii",
+      "value": ".RequestDeleteWwiseItem"
+    },
+    {
+      "offset": "0xc105ec0",
+      "encoding": "ascii",
+      "value": ".RequestStopAllWwiseItem"
+    },
+    {
+      "offset": "0xc106080",
+      "encoding": "ascii",
+      "value": ".RequestFindInProjectExplorerWwiseItem"
+    },
+    {
+      "offset": "0xc1060a8",
+      "encoding": "ascii",
+      "value": ".RequestExploreWwiseItem"
+    },
+    {
+      "offset": "0xc106160",
+      "encoding": "ascii",
+      "value": ".RequestRenameWwiseItem"
+    },
+    {
+      "offset": "0xc1063e8",
+      "encoding": "ascii",
+      "value": ".RequestPlayWwiseItem"
+    },
+    {
+      "offset": "0xc1065b0",
+      "encoding": "ascii",
+      "value": "C:\\fbroot\\Engine\\Plugins\\Wwise\\Source\\AkAudio\\Private\\InitializationSettings\\AkInitializationSettings.cpp"
+    },
+    {
+      "offset": "0xc106850",
+      "encoding": "ascii",
+      "value": "C:\\fbroot\\Engine\\Plugins\\Wwise\\Source\\AkAudio\\Private\\BlueprintNodes\\PostEventAtLocationAsync.cpp"
+    },
+    {
+      "offset": "0xc1068c0",
+      "encoding": "ascii",
+      "value": "C:\\fbroot\\Engine\\Plugins\\Wwise\\Source\\AkAudio\\Private\\BlueprintNodes\\PostEventAsync.cpp"
+    },
+    {
+      "offset": "0xc106b40",
+      "encoding": "ascii",
+      "value": "C:\\fbroot\\Engine\\Plugins\\Wwise\\Source\\AkAudio\\Private\\WwiseEventTracking.cpp"
+    },
+    {
+      "offset": "0xc106b90",
+      "encoding": "ascii",
+      "value": "C:\\fbroot\\Engine\\Plugins\\Wwise\\Source\\AkAudio\\Private\\WwiseInitBankLoader\\WwiseInitBankLoader.cpp"
+    },
+    {
+      "offset": "0xc107110",
+      "encoding": "ascii",
+      "value": "STableRow< TSharedPtr<FWwiseTreeItem> >"
+    },
+    {
+      "offset": "0xc24b988",
+      "encoding": "ascii",
+      "value": "ReloadWwiseResources"
+    },
+    {
+      "offset": "0xc25a800",
+      "encoding": "ascii",
+      "value": "WwiseStateName"
+    },
+    {
+      "offset": "0xc291b90",
+      "encoding": "ascii",
+      "value": "SetPositionSource"
+    },
+    {
+      "offset": "0xc291ba8",
+      "encoding": "ascii",
+      "value": "SetPositionSpace"
+    },
+    {
+      "offset": "0xc2bad10",
+      "encoding": "ascii",
+      "value": "EAresBoolSettingName::EnableHRTF"
+    },
+    {
+      "offset": "0xc3d41a8",
+      "encoding": "ascii",
+      "value": "EGameFeatureToggleName::EnableHRTFSetting"
+    },
+    {
+      "offset": "0xc3e9a60",
+      "encoding": "ascii",
+      "value": "IsWwiseDefaultSpeakerConfigInitialized"
+    },
+    {
+      "offset": "0xc3eac00",
+      "encoding": "ascii",
+      "value": "GetIsWwiseDefaultSpeakerConfigInitialized"
+    },
+    {
+      "offset": "0xc3eac80",
+      "encoding": "ascii",
+      "value": "SetIsWwiseDefaultSpeakerConfigInitialized"
+    },
+    {
+      "offset": "0xc523370",
+      "encoding": "ascii",
+      "value": "GetWwisePerspective"
+    },
+    {
+      "offset": "0xc557700",
+      "encoding": "ascii",
+      "value": "ServerCheatSetPositionAndRotation"
+    },
+    {
+      "offset": "0xc579f38",
+      "encoding": "ascii",
+      "value": "SetPositionOnSpline"
+    },
+    {
+      "offset": "0xc579f88",
+      "encoding": "ascii",
+      "value": "AuthSetPositionOnSpline"
+    },
+    {
+      "offset": "0xc7542c0",
+      "encoding": "ascii",
+      "value": "C:\\fbroot\\Engine\\Plugins\\Wwise\\Source\\AkAudioMixer\\Private\\AkMixerPlatform.cpp"
+    },
+    {
+      "offset": "0xc754a60",
+      "encoding": "ascii",
+      "value": "C:\\fbroot\\Engine\\Plugins\\Wwise\\Source\\WwiseSimpleExternalSource\\Private\\Wwise\\SimpleExtSrc\\WwiseSimpleExtScrManager.cpp"
+    },
+    {
+      "offset": "0xc7551a8",
+      "encoding": "ascii",
+      "value": "WwiseExternalSourceCookieDefaultMedia"
+    },
+    {
+      "offset": "0xc755218",
+      "encoding": "ascii",
+      "value": "WwiseExternalSourceMediaInfo"
+    },
+    {
+      "offset": "0xc7552c0",
+      "encoding": "ascii",
+      "value": "C:\\fbroot\\Engine\\Plugins\\Wwise\\Source\\WwiseSimpleExternalSource\\Public\\Wwise\\SimpleExtSrc\\WwiseExternalSourceSettings.h"
+    },
+    {
+      "offset": "0xc7554d0",
+      "encoding": "ascii",
+      "value": "/Script/WwiseSimpleExternalSource"
+    },
+    {
+      "offset": "0xc7561b0",
+      "encoding": "ascii",
+      "value": "C:\\fbroot\\Engine\\Plugins\\Wwise\\Source\\WwiseAudioLinkRuntime\\Private\\Wwise\\AudioLink\\WwiseAudioLinkSynchronizer.cpp"
+    },
+    {
+      "offset": "0xc756cc0",
+      "encoding": "ascii",
+      "value": "C:\\fbroot\\Engine\\Plugins\\Wwise\\Source\\WwiseAudioLinkRuntime\\Private\\Wwise\\AudioLink\\WwiseAudioLinkFactory.cpp"
+    },
+    {
+      "offset": "0xc756f70",
+      "encoding": "ascii",
+      "value": "C:\\fbroot\\Engine\\Plugins\\Wwise\\Source\\WwiseAudioLinkRuntime\\Private\\Wwise\\AudioLink\\WwiseAudioLinkInputClient.cpp"
+    },
+    {
+      "offset": "0xc757860",
+      "encoding": "ascii",
+      "value": "C:\\fbroot\\Engine\\Plugins\\Wwise\\Source\\WwiseAudioLinkRuntime\\Private\\Wwise\\AudioLink\\WwiseAudioLinkSettings.cpp"
+    },
+    {
+      "offset": "0xc757bc8",
+      "encoding": "ascii",
+      "value": "/Script/Wwise"
+    },
+    {
+      "offset": "0xc8cbd40",
+      "encoding": "ascii",
+      "value": "SetPositionEnvelopeDepth"
+    },
+    {
+      "offset": "0xc8cbd60",
+      "encoding": "ascii",
+      "value": "SetPositionEnvelopeInvert"
+    },
+    {
+      "offset": "0xc8cbd80",
+      "encoding": "ascii",
+      "value": "SetPositionEnvelopeBiasInvert"
+    },
+    {
+      "offset": "0xc8cbda0",
+      "encoding": "ascii",
+      "value": "SetPositionEnvelopeDecayTime"
+    },
+    {
+      "offset": "0xc8cbde8",
+      "encoding": "ascii",
+      "value": "SetPositionEnvelopeReleaseTime"
+    },
+    {
+      "offset": "0xc8cbe08",
+      "encoding": "ascii",
+      "value": "SetPositionEnvelopeSustainGain"
+    },
+    {
+      "offset": "0xc8cbea0",
+      "encoding": "ascii",
+      "value": "SetPositionEnvelopeAttackTime"
+    },
+    {
+      "offset": "0xc8cbec0",
+      "encoding": "ascii",
+      "value": "SetPositionEnvelopeBiasDepth"
+    },
+    {
+      "offset": "0xd324bd4",
+      "encoding": "ascii",
+      "value": "?SetDefaultListeners@SoundEngine@AK@@YA?AW4AKRESULT@@PEB_KI@Z"
+    },
+    {
+      "offset": "0xd325317",
+      "encoding": "ascii",
+      "value": "dEngine@AK@@YA?AW4AKRESULT@@_KPEBUAkChannelEmitter@@GW4MultiPositionType@12@W4AkSetPositionFlags@@@Z"
+    },
+    {
+      "offset": "0xd325396",
+      "encoding": "ascii",
+      "value": "dEngine@AK@@YA?AW4AKRESULT@@_KPEBVAkWorldTransform@@GW4MultiPositionType@12@W4AkSetPositionFlags@@@Z"
+    },
+    {
+      "offset": "0xd3256c5",
+      "encoding": "ascii",
+      "value": "?SetPosition@SoundEngine@AK@@YA?AW4AKRESULT@@_KAEBVAkWorldTransform@@W4AkSetPositionFlags@@@Z"
+    },
+    {
+      "offset": "0xd325723",
+      "encoding": "ascii",
+      "value": "?SetPositionInternal@SoundEngine@AK@@YA?AW4AKRESULT@@_KAEBVAkWorldTransform@@W4AkSetPositionFlags@@@Z"
+    },
+    {
+      "offset": "0xbf03880",
+      "encoding": "utf-16-le",
+      "value": "WwiseUnrealHelper::GetSoundBankDirectory implementation not set."
+    },
+    {
+      "offset": "0xbf03960",
+      "encoding": "utf-16-le",
+      "value": "WwiseUnrealHelper::GetWwisePluginDirectory implementation not set."
+    },
+    {
+      "offset": "0xbf03a08",
+      "encoding": "utf-16-le",
+      "value": "LogWwiseUtils"
+    },
+    {
+      "offset": "0xbf03a28",
+      "encoding": "utf-16-le",
+      "value": "LogWwiseHints"
+    },
+    {
+      "offset": "0xbf03a88",
+      "encoding": "utf-16-le",
+      "value": "LogWwiseSoundEngine"
+    },
+    {
+      "offset": "0xbf03c7e",
+      "encoding": "utf-16-le",
+      "value": "pWwiseSoundEngineModuleName"
+    },
+    {
+      "offset": "0xbf03cb8",
+      "encoding": "utf-16-le",
+      "value": "WwiseSoundEngine"
+    },
+    {
+      "offset": "0xbf03ce0",
+      "encoding": "utf-16-le",
+      "value": "Could not load WwiseSoundEngine module: %s not found"
+    },
+    {
+      "offset": "0xbf03d50",
+      "encoding": "utf-16-le",
+      "value": "Skipping loading missing WwiseSoundEngine module: Not in game thread"
+    },
+    {
+      "offset": "0xbf03e40",
+      "encoding": "utf-16-le",
+      "value": "FWwiseDefaultIOHook::FailedToOpen file %s: (%d) %s"
+    },
+    {
+      "offset": "0xbf03eb0",
+      "encoding": "utf-16-le",
+      "value": "FWwiseDefaultIOHook::Open Empty Bridge for file %s"
+    },
+    {
+      "offset": "0xbf03f20",
+      "encoding": "utf-16-le",
+      "value": "FWwiseDefaultIOHook::Open Removed %d OpenFileNameMap Bridges for file %s"
+    },
+    {
+      "offset": "0xbf03fc0",
+      "encoding": "utf-16-le",
+      "value": "FWwiseDefaultIOHook::Open Empty Bridge for file ID %d"
+    },
+    {
+      "offset": "0xbf040b0",
+      "encoding": "utf-16-le",
+      "value": "FWwiseDefaultIOHook::Open Removed %d OpenFileNameMap Bridges for file ID %d"
+    },
+    {
+      "offset": "0xbf05430",
+      "encoding": "utf-16-le",
+      "value": "Two Wwise objects share the same ID."
+    },
+    {
+      "offset": "0xbf06150",
+      "encoding": "utf-16-le",
+      "value": "FShooterWwiseAudio::EnsureAudioDeviceStatusCallbackRegistered: RegisterAudioDeviceStatusCallback failed (%d)"
+    },
+    {
+      "offset": "0xbf06280",
+      "encoding": "utf-16-le",
+      "value": "FShooterWwiseAudio::EnsureAudioDeviceStatusCallbackRegistered: Wwise sound engine API is unavailable"
+    },
+    {
+      "offset": "0xbf06350",
+      "encoding": "utf-16-le",
+      "value": "ShooterWwiseAudio"
+    },
+    {
+      "offset": "0xbf06378",
+      "encoding": "utf-16-le",
+      "value": "LogShooterWwiseAudio"
+    },
+    {
+      "offset": "0xc0d5a10",
+      "encoding": "utf-16-le",
+      "value": "WwiseConcurrency FWwiseExecutionQueue::StartWorkerIfNeeded"
+    },
+    {
+      "offset": "0xc0d5aa0",
+      "encoding": "utf-16-le",
+      "value": "WwiseConcurrency FWwiseExecutionQueue::KeepWorking delete"
+    },
+    {
+      "offset": "0xc0d5b20",
+      "encoding": "utf-16-le",
+      "value": "FWwiseExecutionQueue::KeepWorking(%p \"%s\") [%i]: Worker is stopped, but we haven't stopped it ourselves."
+    },
+    {
+      "offset": "0xc0d5c00",
+      "encoding": "utf-16-le",
+      "value": "FWwiseExecutionQueue::KeepWorking(%p \"%s\") [%i]: Worker is closed, but we are still looping."
+    },
+    {
+      "offset": "0xc0d5cd0",
+      "encoding": "utf-16-le",
+      "value": "Deleting FWwiseExectionQueue twice!"
+    },
+    {
+      "offset": "0xc0d5d20",
+      "encoding": "utf-16-le",
+      "value": "WwiseConcurrency FWwiseExecutionQueue::AsyncAlways"
+    },
+    {
+      "offset": "0xc0d5f10",
+      "encoding": "utf-16-le",
+      "value": "FWwiseDeferredQueue: No Result dequeuing Async Deferred Queue"
+    },
+    {
+      "offset": "0xc0d5f90",
+      "encoding": "utf-16-le",
+      "value": "Skipping loading missing WwiseConcurrency module: Not in game thread"
+    },
+    {
+      "offset": "0xc0d6080",
+      "encoding": "utf-16-le",
+      "value": "WwiseConcurrencyModuleName"
+    },
+    {
+      "offset": "0xc0d60b8",
+      "encoding": "utf-16-le",
+      "value": "WwiseConcurrency"
+    },
+    {
+      "offset": "0xc0d60e0",
+      "encoding": "utf-16-le",
+      "value": "Could not load WwiseConcurrency module: %s not found"
+    },
+    {
+      "offset": "0xc0d6150",
+      "encoding": "utf-16-le",
+      "value": "LogWwiseConcurrency"
+    },
+    {
+      "offset": "0xc0d6380",
+      "encoding": "utf-16-le",
+      "value": "/Script/WwiseObjectUtils"
+    },
+    {
+      "offset": "0xc0d7120",
+      "encoding": "utf-16-le",
+      "value": "Skipping loading missing WwiseProcessing module: Not in game thread"
+    },
+    {
+      "offset": "0xc0d7210",
+      "encoding": "utf-16-le",
+      "value": "WwiseProcessingModuleName"
+    },
+    {
+      "offset": "0xc0d7248",
+      "encoding": "utf-16-le",
+      "value": "WwiseProcessing"
+    },
+    {
+      "offset": "0xc0d7270",
+      "encoding": "utf-16-le",
+      "value": "Could not load WwiseProcessing module: %s not found"
+    },
+    {
+      "offset": "0xc0d72d8",
+      "encoding": "utf-16-le",
+      "value": "LogWwiseProcessing"
+    },
+    {
+      "offset": "0xc0d7540",
+      "encoding": "utf-16-le",
+      "value": "LogWwiseFileHandler"
+    },
+    {
+      "offset": "0xc0d75f0",
+      "encoding": "utf-16-le",
+      "value": "WwiseFileHandler"
+    },
+    {
+      "offset": "0xc0d7620",
+      "encoding": "utf-16-le",
+      "value": "Could not load WwiseFileHandler module: %s not found"
+    },
+    {
+      "offset": "0xc0d7690",
+      "encoding": "utf-16-le",
+      "value": "Skipping loading missing WwiseFileHandler module: Not in game thread"
+    },
+    {
+      "offset": "0xc0d7750",
+      "encoding": "utf-16-le",
+      "value": "WwiseMediaCookedData"
+    },
+    {
+      "offset": "0xc0d77a0",
+      "encoding": "utf-16-le",
+      "value": "EWwiseSoundBankType"
+    },
+    {
+      "offset": "0xc0d77f0",
+      "encoding": "utf-16-le",
+      "value": "WwiseSoundBankCookedData"
+    },
+    {
+      "offset": "0xc0d7938",
+      "encoding": "utf-16-le",
+      "value": "EWwiseLanguageRequirement"
+    },
+    {
+      "offset": "0xc0d7990",
+      "encoding": "utf-16-le",
+      "value": "UWwiseExternalSourceStatics"
+    },
+    {
+      "offset": "0xc0d79c8",
+      "encoding": "utf-16-le",
+      "value": "WwiseLanguageCookedData"
+    },
+    {
+      "offset": "0xc0d7ad0",
+      "encoding": "utf-16-le",
+      "value": "WwiseExternalSourceCookedData"
+    },
+    {
+      "offset": "0xc0d7b10",
+      "encoding": "utf-16-le",
+      "value": "/Script/WwiseFileHandler"
+    },
+    {
+      "offset": "0xc0d7bb0",
+      "encoding": "utf-16-le",
+      "value": "FWwiseFileCacheHandle::ReadData (%p): Trying to read in file %s while it was not properly initialized."
+    },
+    {
+      "offset": "0xc0d7ce0",
+      "encoding": "utf-16-le",
+      "value": "FWwiseFileHandler Execution Queue worker"
+    },
+    {
+      "offset": "0xc0d7d40",
+      "encoding": "utf-16-le",
+      "value": "WwiseFileHandler FWwiseFileHandlerBase::OpenStreaming Failure Async"
+    },
+    {
+      "offset": "0xc0d7e30",
+      "encoding": "utf-16-le",
+      "value": "FWwiseFileHandlerBase::IncrementFileStateUseAsync: Failed to get FileHandler"
+    },
+    {
+      "offset": "0xc0d8000",
+      "encoding": "utf-16-le",
+      "value": "WwiseFileHandler FWwiseFileCacheHandle::DeleteRequest"
+    },
+    {
+      "offset": "0xc0d8070",
+      "encoding": "utf-16-le",
+      "value": "WwiseFileHandler FWwiseFileCacheHandle::RemoveRequestInFlight"
+    },
+    {
+      "offset": "0xc0d80f0",
+      "encoding": "utf-16-le",
+      "value": "FWwiseExternalSourceManagerImpl::BindPlayingIdToExternalSources decrement: Failed to get ExternalSourceMan"
+    },
+    {
+      "offset": "0xc0d8390",
+      "encoding": "utf-16-le",
+      "value": "FWwiseExternalSourceManagerImpl::OnEndOfEvent: Failed to get ExternalSourceManager"
+    },
+    {
+      "offset": "0xc0d84a0",
+      "encoding": "utf-16-le",
+      "value": "FWwiseFileCache DeleteRequestQueue"
+    },
+    {
+      "offset": "0xc0d84e8",
+      "encoding": "utf-16-le",
+      "value": "FWwiseFileCache OpenQueue"
+    },
+    {
+      "offset": "0xc0d8520",
+      "encoding": "utf-16-le",
+      "value": "FWwiseExternalSourceManagerImpl::UnloadExternalSource: Failed to get ExternalSourceManager"
+    },
+    {
+      "offset": "0xc0d85e0",
+      "encoding": "utf-16-le",
+      "value": "FWwiseExternalSourceManagerImpl::LoadExternalSource: Failed to get ExternalSourceManager"
+    },
+    {
+      "offset": "0xc0d8800",
+      "encoding": "utf-16-le",
+      "value": "FWwiseStreamedExternalSourceFileState::LoadInSoundEngine %u (%s): WwiseFileCache not available."
+    },
+    {
+      "offset": "0xc0d88c0",
+      "encoding": "utf-16-le",
+      "value": "FWwiseStreamedExternalSourceFileState::LoadInSoundEngine %u (%s): Stream seems to be already loaded."
+    },
+    {
+      "offset": "0xc0d8990",
+      "encoding": "utf-16-le",
+      "value": "FWwiseStreamedExternalSourceFileState::LoadInSoundEngine %u: Failed to load Streaming ExternalSource (%s)."
+    },
+    {
+      "offset": "0xc0d8a70",
+      "encoding": "utf-16-le",
+      "value": "FWwiseStreamedExternalSourceFileState::CanProcessFileOp %u (%s): IO Hook asked for a file operation, but s"
+    },
+    {
+      "offset": "0xc0d8c40",
+      "encoding": "utf-16-le",
+      "value": "FWwiseInMemoryExternalSourceFileState::OpenFile %u (%s): Seems to be already opened."
+    },
+    {
+      "offset": "0xc0d8d60",
+      "encoding": "utf-16-le",
+      "value": "FWwiseExternalSourceFileState: Play count went below zero for media %u (%s)"
+    },
+    {
+      "offset": "0xc0d8e20",
+      "encoding": "utf-16-le",
+      "value": "FWwiseInMemoryExternalSourceFileState::OpenFile %u: Failed to open In-Memory External Source (%s)."
+    },
+    {
+      "offset": "0xc0d8ef0",
+      "encoding": "utf-16-le",
+      "value": "FWwiseStreamedExternalSourceFileState::OpenFile %u (%s): Stream seems to be already opened."
+    },
+    {
+      "offset": "0xc0d8fb0",
+      "encoding": "utf-16-le",
+      "value": "FWwiseStreamedExternalSourceFileState::OpenFile %u (%s): Failed to Read prefetch ExternalSource (%s)."
+    },
+    {
+      "offset": "0xc0d91b8",
+      "encoding": "utf-16-le",
+      "value": "WwiseFileHandlerModuleName"
+    },
+    {
+      "offset": "0xc0d91f0",
+      "encoding": "utf-16-le",
+      "value": "FWwiseFileState::LoadInSoundEngineFailed: Failed loading %s %u while not in Loading state: %s"
+    },
+    {
+      "offset": "0xc0d92b0",
+      "encoding": "utf-16-le",
+      "value": "FWwiseFileState::LoadInSoundEngineSucceeded: Succeeded loading %s %u while not in Loading state: %s"
+    },
+    {
+      "offset": "0xc0d9380",
+      "encoding": "utf-16-le",
+      "value": "FWwiseFileState::UnloadFromSoundEngineDone: Done unloading %s %u while not in Unloading state: %s"
+    },
+    {
+      "offset": "0xc0d9450",
+      "encoding": "utf-16-le",
+      "value": "FWwiseFileState::UnloadFromSoundEngineToClosedFile: Done unloading %s %u while not in Unloading state: %s"
+    },
+    {
+      "offset": "0xc0d9530",
+      "encoding": "utf-16-le",
+      "value": "FWwiseFileState::UnloadFromSoundEngineDefer %s %u: Deferring unloading while not in Unloading state: %s"
+    },
+    {
+      "offset": "0xc0d9600",
+      "encoding": "utf-16-le",
+      "value": "FWwiseFileState::DecrementCountDone %s %u: CurrentOpOrder %d < DoneOpOrder %d"
+    },
+    {
+      "offset": "0xc0d96a0",
+      "encoding": "utf-16-le",
+      "value": "FWwiseFileState::OpenFileSucceeded: Succeeded opening %s %u while not in Opening state: %s"
+    },
+    {
+      "offset": "0xc0d9760",
+      "encoding": "utf-16-le",
+      "value": "FWwiseFileState::OpenFileFailed: Failed opening %s %u while not in Opening state: %s"
+    },
+    {
+      "offset": "0xc0d9810",
+      "encoding": "utf-16-le",
+      "value": "FWwiseFileState::IncrementCountLoad"
+    },
+    {
+      "offset": "0xc0d9860",
+      "encoding": "utf-16-le",
+      "value": "FWwiseFileState::IncrementCountDone %s %u: CurrentOpOrder %d < DoneOpOrder %d"
+    },
+    {
+      "offset": "0xc0d9900",
+      "encoding": "utf-16-le",
+      "value": "FWwiseFileState::IncrementCountDone %s %u: Could not open file for asset loading. [State:%s CanLoad:%s Can"
+    },
+    {
+      "offset": "0xc0d9a00",
+      "encoding": "utf-16-le",
+      "value": "FWwiseFileState::IncrementCountDone %s %u: Could not load file for streaming."
+    },
+    {
+      "offset": "0xc0d9aa0",
+      "encoding": "utf-16-le",
+      "value": "FWwiseFileState::DecrementCount %s %u: File State is already closed."
+    },
+    {
+      "offset": "0xc0d9b30",
+      "encoding": "utf-16-le",
+      "value": "FWwiseFileState::Term %s State: Term unclosed file state %s %u. Leaking."
+    },
+    {
+      "offset": "0xc0d9bd0",
+      "encoding": "utf-16-le",
+      "value": "FWwiseFileState::Term %p %s %u: Terminating with active states. This might cause a crash."
+    },
+    {
+      "offset": "0xc0d9c90",
+      "encoding": "utf-16-le",
+      "value": "FWwiseFileState::IncrementCountOpen"
+    },
+    {
+      "offset": "0xc0d9dc0",
+      "encoding": "utf-16-le",
+      "value": "FWwiseFileState::DecrementCountAsync on a termed asset! Failing immediately!"
+    },
+    {
+      "offset": "0xc0d9e60",
+      "encoding": "utf-16-le",
+      "value": "FWwiseFileState::IncrementCountAsync on a termed asset! Failing immediately!"
+    },
+    {
+      "offset": "0xc0d9f00",
+      "encoding": "utf-16-le",
+      "value": "FWwiseFileState::Term %p %s %u already Term!"
+    },
+    {
+      "offset": "0xc0d9f60",
+      "encoding": "utf-16-le",
+      "value": "FWwiseFileState Execution Queue worker"
+    },
+    {
+      "offset": "0xc0d9fe0",
+      "encoding": "utf-16-le",
+      "value": "Dtor FWwiseFileState %p without closing the execution queue!"
+    },
+    {
+      "offset": "0xc0da0d0",
+      "encoding": "utf-16-le",
+      "value": "Dtor FWwiseFileState %p with State %s not closed!"
+    },
+    {
+      "offset": "0xc0da140",
+      "encoding": "utf-16-le",
+      "value": "Dtor FWwiseFileState %p with LoadCount still active!"
+    },
+    {
+      "offset": "0xc0da1b0",
+      "encoding": "utf-16-le",
+      "value": "FWwiseFileHandlerBase::IncrementFileStateUseAsync DecrementCount callback: Failed to get FileHandler"
+    },
+    {
+      "offset": "0xc0da280",
+      "encoding": "utf-16-le",
+      "value": "FWwiseFileHandlerBase::IncrementFileStateUseAsync DeleteState callback: Failed to get FileHandler"
+    },
+    {
+      "offset": "0xc0da350",
+      "encoding": "utf-16-le",
+      "value": "FWwiseFileHandlerBase::IncrementFileStateUseAsync IncrementCount callback: Failed to get FileHandler"
+    },
+    {
+      "offset": "0xc0da4b0",
+      "encoding": "utf-16-le",
+      "value": "FWwiseMediaManagerImpl::DoSetMedia: Failed to load %u media: %d (%s)."
+    },
+    {
+      "offset": "0xc0da5b0",
+      "encoding": "utf-16-le",
+      "value": "FWwiseInMemorySoundBankFileState::OpenFile %u (%s): Seems to be already opened."
+    },
+    {
+      "offset": "0xc0da650",
+      "encoding": "utf-16-le",
+      "value": "FWwiseInMemorySoundBankFileState::LoadInSoundEngine %u (%s): No data, but supposed to be loaded."
+    },
+    {
+      "offset": "0xc0da720",
+      "encoding": "utf-16-le",
+      "value": "FWwiseInMemorySoundBankFileState::OpenFile %u (%s): Failed to load SoundBank (%s)."
+    },
+    {
+      "offset": "0xc0da7d0",
+      "encoding": "utf-16-le",
+      "value": "FWwiseInMemorySoundBankFileState::LoadInSoundEngine %u (%s): Incorrect SoundBank type: %hhu expected %hhu"
+    },
+    {
+      "offset": "0xc0da8b0",
+      "encoding": "utf-16-le",
+      "value": "FWwiseInMemorySoundBankFileState::LoadInSoundEngine %u (%s): Failed to load SoundBank: Could not allocate "
+    },
+    {
+      "offset": "0xc0da9a0",
+      "encoding": "utf-16-le",
+      "value": "FWwiseStreamedMediaFileState::CloseFile %u (%s): TryUnsetMedia of prefetch failed: %d (%s). Leaking."
+    },
+    {
+      "offset": "0xc0daa70",
+      "encoding": "utf-16-le",
+      "value": "FWwiseMediaManagerImpl::LoadMedia CreateOp callback: Failed to get MediaManager"
+    },
+    {
+      "offset": "0xc0dab10",
+      "encoding": "utf-16-le",
+      "value": "FWwiseStreamedMediaFileState::CanProcessFileOp %u (%s): IO Hook asked for a file operation, but state is n"
+    },
+    {
+      "offset": "0xc0dac00",
+      "encoding": "utf-16-le",
+      "value": "FWwiseMediaManagerImpl::SetMedia: Emplacing supplemental operations without slack!"
+    },
+    {
+      "offset": "0xc0dad10",
+      "encoding": "utf-16-le",
+      "value": "FWwiseMediaManagerImpl::UnsetMedia: Emplacing supplemental operations without slack!"
+    },
+    {
+      "offset": "0xc0dadc0",
+      "encoding": "utf-16-le",
+      "value": "FWwiseStreamedMediaFileState::OpenFile %u (%s): Failed to Read prefetch media (%s)."
+    },
+    {
+      "offset": "0xc0dae70",
+      "encoding": "utf-16-le",
+      "value": "FWwiseStreamedMediaFileState::OpenFile %u (%s): Stream seems to be already opened."
+    },
+    {
+      "offset": "0xc0daf20",
+      "encoding": "utf-16-le",
+      "value": "FWwiseStreamedMediaFileState::OpenFile %u (%s): Failed to prefetch media: %d (%s)."
+    },
+    {
+      "offset": "0xc0dafd0",
+      "encoding": "utf-16-le",
+      "value": "FWwiseStreamedMediaFileState::LoadInSoundEngine %u: Failed to load Streaming Media (%s)."
+    },
+    {
+      "offset": "0xc0db090",
+      "encoding": "utf-16-le",
+      "value": "FWwiseStreamedMediaFileState::LoadInSoundEngine %u (%s): WwiseFileCache not available."
+    },
+    {
+      "offset": "0xc0db140",
+      "encoding": "utf-16-le",
+      "value": "FWwiseStreamedMediaFileState::LoadInSoundEngine %u (%s): Stream seems to be already loaded."
+    },
+    {
+      "offset": "0xc0db200",
+      "encoding": "utf-16-le",
+      "value": "FWwiseInMemoryMediaFileState::OpenFile %u (%s): Seems to be already opened."
+    },
+    {
+      "offset": "0xc0db298",
+      "encoding": "utf-16-le",
+      "value": "Wwise"
+    },
+    {
+      "offset": "0xc0db2b0",
+      "encoding": "utf-16-le",
+      "value": "FWwiseIOHookImpl::OpenFileForWrite: Cannot open file %s for write."
+    },
+    {
+      "offset": "0xc0db340",
+      "encoding": "utf-16-le",
+      "value": "FWwiseInMemoryMediaFileState::LoadInSoundEngine %u (%s): No data, but supposed to be loaded."
+    },
+    {
+      "offset": "0xc0db400",
+      "encoding": "utf-16-le",
+      "value": "FWwiseInMemoryMediaFileState::OpenFile %u (%s): Failed to open In-Memory Media (%s)."
+    },
+    {
+      "offset": "0xc0db510",
+      "encoding": "utf-16-le",
+      "value": "FWwiseInMemoryMediaFileState::LoadInSoundEngine %u (%s): Failed to load Media."
+    },
+    {
+      "offset": "0xc0db5b0",
+      "encoding": "utf-16-le",
+      "value": "FWwiseIOHookImpl::Read [%llu]: Could not find File Descriptor"
+    },
+    {
+      "offset": "0xc0db630",
+      "encoding": "utf-16-le",
+      "value": "FWwiseIOHookImpl::Write [%llu]: Could not find File Descriptor"
+    },
+    {
+      "offset": "0xc0db6b0",
+      "encoding": "utf-16-le",
+      "value": "FWwiseIOHookImpl::Close: Closing null file."
+    },
+    {
+      "offset": "0xc0db710",
+      "encoding": "utf-16-le",
+      "value": "FWwiseIOHookImpl::OpenFileForWrite: Cannot create writable directory at %s"
+    },
+    {
+      "offset": "0xc0db7b0",
+      "encoding": "utf-16-le",
+      "value": "FWwiseIOHookImpl::Close [%llu]: Could not find File Descriptor"
+    },
+    {
+      "offset": "0xc0db930",
+      "encoding": "utf-16-le",
+      "value": "Wwise IO Hook Batch"
+    },
+    {
+      "offset": "0xc0db960",
+      "encoding": "utf-16-le",
+      "value": "FWwiseIOHookImpl::Open: Unsupported Streaming for File ID %u"
+    },
+    {
+      "offset": "0xc0db9e0",
+      "encoding": "utf-16-le",
+      "value": "FWwiseIOHookImpl::Open: Unsupported Open Mode for File ID %u"
+    },
+    {
+      "offset": "0xc0dbac0",
+      "encoding": "utf-16-le",
+      "value": "FWwiseFileStateTools::GetFileToPtr Invalid non-2^n Memory Alignment (%i) while getting file %s. Resetting "
+    },
+    {
+      "offset": "0xc0dbba0",
+      "encoding": "utf-16-le",
+      "value": "FWwiseFileStateTools::GetFileToPtr File not found %s"
+    },
+    {
+      "offset": "0xc0dbc10",
+      "encoding": "utf-16-le",
+      "value": "FWwiseFileStateTools::GetFileToPtr Failed to allocate FileCacheHandle pointer while reading %s"
+    },
+    {
+      "offset": "0xc0dbcd0",
+      "encoding": "utf-16-le",
+      "value": "FWwiseFileStateTools::GetFileToPtr Failed to get FileCache instance while reading %s"
+    },
+    {
+      "offset": "0xc0dbd80",
+      "encoding": "utf-16-le",
+      "value": "FWwiseFileStateTools::GetFileToPtr Could not Allocate %lli for %s"
+    },
+    {
+      "offset": "0xc0dbe10",
+      "encoding": "utf-16-le",
+      "value": "WwiseFileHandler FWwiseFileStateTools::GetFileToPtr Callback"
+    },
+    {
+      "offset": "0xc0dbe90",
+      "encoding": "utf-16-le",
+      "value": "FWwiseFileStateTools::GetFileToPtr Failed getting the entire file %s (%lli bytes)"
+    },
+    {
+      "offset": "0xc0dbf40",
+      "encoding": "utf-16-le",
+      "value": "FWwiseFileStateTools::GetFileToPtr Failed getting the first bytes of file %s (%lli bytes)"
+    },
+    {
+      "offset": "0xc0dc000",
+      "encoding": "utf-16-le",
+      "value": "FWwiseFileState::CloseFileDone %s %u: Done closing while not in Closing state: %s"
+    },
+    {
+      "offset": "0xc0dc0b0",
+      "encoding": "utf-16-le",
+      "value": "FWwiseFileState::CloseFileDefer %s %u: Deferring closing while not in Closing state: %s"
+    },
+    {
+      "offset": "0xc0dc1e0",
+      "encoding": "utf-16-le",
+      "value": "FWwiseFileState::AsyncOp %s %u: Doing async op on terminated state"
+    },
+    {
+      "offset": "0xc0dc3c0",
+      "encoding": "utf-16-le",
+      "value": "FWwiseWriteFileState::ProcessWrite: %s file state %u already Term!"
+    },
+    {
+      "offset": "0xc0dc450",
+      "encoding": "utf-16-le",
+      "value": "FWwiseInMemorySoundBankFileState::BankUnloadCallback %u: Cookie given by SoundEngine is invalid."
+    },
+    {
+      "offset": "0xc0dc520",
+      "encoding": "utf-16-le",
+      "value": "WwiseFileHandler FWwiseInMemorySoundBankFileState::BankLoadCallback Async"
+    },
+    {
+      "offset": "0xc0dc5c0",
+      "encoding": "utf-16-le",
+      "value": "FWwiseSoundBankManagerImpl::LoadSoundBank : Failed to get Mock SoundBankManager"
+    },
+    {
+      "offset": "0xc0dc660",
+      "encoding": "utf-16-le",
+      "value": "FWwiseInMemorySoundBankFileState::BankUnloadCallback %u (%s): UnloadBank failed: %d (%s)"
+    },
+    {
+      "offset": "0xc0dc720",
+      "encoding": "utf-16-le",
+      "value": "FWwiseWriteFileState::~FWwiseWriteFileState: Closing stream with a FileHandle still existing."
+    },
+    {
+      "offset": "0xc0dc950",
+      "encoding": "utf-16-le",
+      "value": "FWwiseWriteFileState::CloseStreaming: %s file state %u already Term!"
+    },
+    {
+      "offset": "0xc0dc9e0",
+      "encoding": "utf-16-le",
+      "value": "FWwiseInMemorySoundBankFileState::LoadInSoundEngine %u (%s): Failed to load SoundBank: %d (%s)."
+    },
+    {
+      "offset": "0xc0dcaa0",
+      "encoding": "utf-16-le",
+      "value": "FWwiseInMemorySoundBankFileState::BankLoadCallback %u (%s): Failed to load SoundBank: %d. Cookie given by "
+    },
+    {
+      "offset": "0xc0dcbb0",
+      "encoding": "utf-16-le",
+      "value": "FWwiseInMemorySoundBankFileState::BankLoadCallback %u (%s): Failed to load SoundBank: %d (%s)."
+    },
+    {
+      "offset": "0xc0dcc70",
+      "encoding": "utf-16-le",
+      "value": "FWwiseInMemorySoundBankFileState::BankLoadCallback: Incorrect SoundBank loaded: %u expected %u (%s)"
+    },
+    {
+      "offset": "0xc0dfbe8",
+      "encoding": "utf-16-le",
+      "value": "UWwiseGroupValueInfoLibrary"
+    },
+    {
+      "offset": "0xc0dfc5e",
+      "encoding": "utf-16-le",
+      "value": "dWwiseLanguageId"
+    },
+    {
+      "offset": "0xc0dfc96",
+      "encoding": "utf-16-le",
+      "value": "aWwiseInitBankCookedData"
+    },
+    {
+      "offset": "0xc0dfd18",
+      "encoding": "utf-16-le",
+      "value": "WwiseLocalizedAuxBusCookedData"
+    },
+    {
+      "offset": "0xc0dfda8",
+      "encoding": "utf-16-le",
+      "value": "WwiseLocalizedEventCookedData"
+    },
+    {
+      "offset": "0xc0dfdfe",
+      "encoding": "utf-16-le",
+      "value": "hEWwiseGroupType"
+    },
+    {
+      "offset": "0xc0dfe40",
+      "encoding": "utf-16-le",
+      "value": "WwiseGameParameterCookedData"
+    },
+    {
+      "offset": "0xc0dfe80",
+      "encoding": "utf-16-le",
+      "value": "WwiseGroupValueCookedData"
+    },
+    {
+      "offset": "0xc0dff10",
+      "encoding": "utf-16-le",
+      "value": "WwiseGroupValueInfo"
+    },
+    {
+      "offset": "0xc0e0098",
+      "encoding": "utf-16-le",
+      "value": "UWwiseEventInfoLibrary"
+    },
+    {
+      "offset": "0xc0e0108",
+      "encoding": "utf-16-le",
+      "value": "WwiseEventInfo"
+    },
+    {
+      "offset": "0xc0e02f8",
+      "encoding": "utf-16-le",
+      "value": "WwiseAuxBusCookedData"
+    },
+    {
+      "offset": "0xc0e03a8",
+      "encoding": "utf-16-le",
+      "value": "EWwiseEventDestroyOptions"
+    },
+    {
+      "offset": "0xc0e040e",
+      "encoding": "utf-16-le",
+      "value": "dWwiseEventCookedData"
+    },
+    {
+      "offset": "0xc0e0440",
+      "encoding": "utf-16-le",
+      "value": "EWwiseEventSwitchContainerLoading"
+    },
+    {
+      "offset": "0xc0e04ce",
+      "encoding": "utf-16-le",
+      "value": "dWwiseAcousticTextureCookedData"
+    },
+    {
+      "offset": "0xc0e0540",
+      "encoding": "utf-16-le",
+      "value": "WwiseAudioDeviceShareSetCookedData"
+    },
+    {
+      "offset": "0xc0e0588",
+      "encoding": "utf-16-le",
+      "value": "/Script/WwiseResourceLoader"
+    },
+    {
+      "offset": "0xc0e0620",
+      "encoding": "utf-16-le",
+      "value": "WwiseLocalizedShareSetCookedData"
+    },
+    {
+      "offset": "0xc0e06a0",
+      "encoding": "utf-16-le",
+      "value": "WwiseLocalizedSoundBankCookedData"
+    },
+    {
+      "offset": "0xc0e0710",
+      "encoding": "utf-16-le",
+      "value": "UWwiseObjectInfoLibrary"
+    },
+    {
+      "offset": "0xc0e074e",
+      "encoding": "utf-16-le",
+      "value": "oWwiseObjectInfo"
+    },
+    {
+      "offset": "0xc0e07f0",
+      "encoding": "utf-16-le",
+      "value": "WwiseTriggerCookedData"
+    },
+    {
+      "offset": "0xc0e0870",
+      "encoding": "utf-16-le",
+      "value": "EWwiseReloadLanguage"
+    },
+    {
+      "offset": "0xc0e08a0",
+      "encoding": "utf-16-le",
+      "value": "LogWwiseResourceLoader"
+    },
+    {
+      "offset": "0xc0e08d0",
+      "encoding": "utf-16-le",
+      "value": "WwiseSharedGroupValueKey"
+    },
+    {
+      "offset": "0xc0e0930",
+      "encoding": "utf-16-le",
+      "value": "WwiseSharedPlatformId"
+    },
+    {
+      "offset": "0xc0e0978",
+      "encoding": "utf-16-le",
+      "value": "WwiseSharedLanguageId"
+    },
+    {
+      "offset": "0xc0e09d0",
+      "encoding": "utf-16-le",
+      "value": "WwiseSwitchContainerLeafCookedData"
+    },
+    {
+      "offset": "0xc0e0a2e",
+      "encoding": "utf-16-le",
+      "value": "aWwiseShareSetCookedData"
+    },
+    {
+      "offset": "0xc0e0a80",
+      "encoding": "utf-16-le",
+      "value": "Skipping loading missing WwiseResourceLoader module: Not in game thread"
+    },
+    {
+      "offset": "0xc0e0b78",
+      "encoding": "utf-16-le",
+      "value": "WwiseResourceLoaderModuleName"
+    },
+    {
+      "offset": "0xc0e0bb8",
+      "encoding": "utf-16-le",
+      "value": "WwiseResourceLoader"
+    },
+    {
+      "offset": "0xc0e0be0",
+      "encoding": "utf-16-le",
+      "value": "Could not load WwiseResourceLoader module: %s not found"
+    },
+    {
+      "offset": "0xc0e0c50",
+      "encoding": "utf-16-le",
+      "value": "WwisePlatformId"
+    },
+    {
+      "offset": "0xc0e0e80",
+      "encoding": "utf-16-le",
+      "value": "FWwiseResourceLoaderImpl::LoadExternalSourceResources: Failed. ResourceLoader is not valid"
+    },
+    {
+      "offset": "0xc0e0fc0",
+      "encoding": "utf-16-le",
+      "value": "FWwiseResourceLoaderImpl::LoadGroupValueResources: Failed. ResourceLoader is not valid"
+    },
+    {
+      "offset": "0xc0e1070",
+      "encoding": "utf-16-le",
+      "value": "FWwiseResourceLoaderImpl::LoadInitBankResources: Failed. ResourceLoader is not valid"
+    },
+    {
+      "offset": "0xc0e12c0",
+      "encoding": "utf-16-le",
+      "value": "FWwiseResourceLoaderImpl::LoadEventSwitchCOntainerResources: Failed. ResourceLoader is not valid"
+    },
+    {
+      "offset": "0xc0e1390",
+      "encoding": "utf-16-le",
+      "value": "FWwiseResourceLoaderImpl::LoadEventSwitchContainerResources: Failed. ResourceLoader is not valid"
+    },
+    {
+      "offset": "0xc0e1960",
+      "encoding": "utf-16-le",
+      "value": "FWwiseResourceLoaderImpl::LoadAuxBusResources: Could not load %d prerequisites for AuxBus %s (%u). Unloadi"
+    },
+    {
+      "offset": "0xc0e1ad0",
+      "encoding": "utf-16-le",
+      "value": "FWwiseResourceLoaderImpl::LoadAuxBusResources: Failed. ResourceLoader is not valid"
+    },
+    {
+      "offset": "0xc0e1c30",
+      "encoding": "utf-16-le",
+      "value": "FWwiseResourceLoaderImpl::LoadEventResources: Failed. ResourceLoader is not valid"
+    },
+    {
+      "offset": "0xc0e2410",
+      "encoding": "utf-16-le",
+      "value": "FWwiseResourceLoaderImpl::SetLanguage: Failed. ResourceLoader is not valid"
+    },
+    {
+      "offset": "0xc0e26a0",
+      "encoding": "utf-16-le",
+      "value": "WwiseResourceLoader FWwiseResourceLoader::UnloadMediaAsync"
+    },
+    {
+      "offset": "0xc0e2720",
+      "encoding": "utf-16-le",
+      "value": "FWwiseResourceLoader::UnloadMediaAsync: Failed. ResourceLoader is not valid"
+    },
+    {
+      "offset": "0xc0e2840",
+      "encoding": "utf-16-le",
+      "value": "WwiseResourceLoader FWwiseResourceLoader::UnloadShareSetAsync"
+    },
+    {
+      "offset": "0xc0e28c0",
+      "encoding": "utf-16-le",
+      "value": "FWwiseResourceLoader::UnloadShareSetAsync: Failed. ResourceLoader is not valid"
+    },
+    {
+      "offset": "0xc0e29f0",
+      "encoding": "utf-16-le",
+      "value": "WwiseResourceLoader FWwiseResourceLoader::UnloadSoundBankAsync"
+    },
+    {
+      "offset": "0xc0e2b00",
+      "encoding": "utf-16-le",
+      "value": "FWwiseResourceLoaderImpl::ExecutionQueue Execution Queue worker"
+    },
+    {
+      "offset": "0xc0e2c80",
+      "encoding": "utf-16-le",
+      "value": "WwiseResourceLoader FWwiseResourceLoader::UnloadExternalSourceAsync"
+    },
+    {
+      "offset": "0xc0e2d40",
+      "encoding": "utf-16-le",
+      "value": "FWwiseResourceLoader::UnloadExternalSourceAsync: Failed. ResourceLoader is not valid"
+    },
+    {
+      "offset": "0xc0e2e90",
+      "encoding": "utf-16-le",
+      "value": "FWwiseResourceLoader::UnloadGroupValueAsync: Failed. ResourceLoader is not valid"
+    },
+    {
+      "offset": "0xc0e3060",
+      "encoding": "utf-16-le",
+      "value": "WwiseResourceLoader FWwiseResourceLoader::UnloadGroupValueAsync"
+    },
+    {
+      "offset": "0xc0e30e0",
+      "encoding": "utf-16-le",
+      "value": "WwiseResourceLoader FWwiseResourceLoader::UnloadInitBankAsync"
+    },
+    {
+      "offset": "0xc0e3160",
+      "encoding": "utf-16-le",
+      "value": "FWwiseResourceLoader::UnloadInitBankAsync: Failed. ResourceLoader is not valid"
+    },
+    {
+      "offset": "0xc0e33e0",
+      "encoding": "utf-16-le",
+      "value": "WwiseResourceLoader FWwiseResourceLoader::UnloadAuxBusAsync"
+    },
+    {
+      "offset": "0xc0e3460",
+      "encoding": "utf-16-le",
+      "value": "WwiseResourceLoader FWwiseResourceLoader::UnloadEventAsync"
+    },
+    {
+      "offset": "0xc0e34e0",
+      "encoding": "utf-16-le",
+      "value": "FWwiseResourceLoader::UnloadEventAsync: Failed. ResourceLoader is not valid"
+    },
+    {
+      "offset": "0xc0e3690",
+      "encoding": "utf-16-le",
+      "value": "FWwiseResourceLoaderImpl::AddLoadSoundBankFutures: Failed. ResourceLoader is not valid"
+    },
+    {
+      "offset": "0xc0e3870",
+      "encoding": "utf-16-le",
+      "value": "FWwiseResourceLoaderImpl::AddLoadExternalSourceFutures: Failed. ResourceLoader is not valid"
+    },
+    {
+      "offset": "0xc0e39c0",
+      "encoding": "utf-16-le",
+      "value": "FWwiseResourceLoaderImpl::DeleteSwitchContainerLeafGroupValueUsageCount: Failed. ResourceLoader is not val"
+    },
+    {
+      "offset": "0xc0e3b20",
+      "encoding": "utf-16-le",
+      "value": "FWwiseResourceLoaderImpl::AddLoadMediaFutures EmplaceValue: Failed. ResourceLoader is not valid"
+    },
+    {
+      "offset": "0xc0e3be0",
+      "encoding": "utf-16-le",
+      "value": "FWwiseResourceLoaderImpl::UnloadGroupValueResources Info[%p] UsageCount[%p]: Trying to remove a LoadedGrou"
+    },
+    {
+      "offset": "0xc0e3d10",
+      "encoding": "utf-16-le",
+      "value": "FWwiseResourceLoaderImpl::UnloadInitBankResources: Failed. ResourceLoader is not valid"
+    },
+    {
+      "offset": "0xc0e3dc0",
+      "encoding": "utf-16-le",
+      "value": "FWwiseResourceLoaderImpl::UnloadShareSetResources: Failed. ResourceLoader is not valid"
+    },
+    {
+      "offset": "0xc0e3e70",
+      "encoding": "utf-16-le",
+      "value": "FWwiseResourceLoaderImpl::UnloadMediaResources: Failed. ResourceLoader is not valid"
+    },
+    {
+      "offset": "0xc0e3f20",
+      "encoding": "utf-16-le",
+      "value": "FWwiseResourceLoaderImpl::UnloadSwitchContainerLeafResources: Failed. ResourceLoader is not valid"
+    },
+    {
+      "offset": "0xc0e3ff0",
+      "encoding": "utf-16-le",
+      "value": "FWwiseResourceLoaderImpl::UnloadSoundBankResources: Failed. ResourceLoader is not valid"
+    },
+    {
+      "offset": "0xc0e40a0",
+      "encoding": "utf-16-le",
+      "value": "FWwiseResourceLoaderImpl::UnloadEventSwitchContainerResources Info[%p]: Could not find requested Leaf in G"
+    },
+    {
+      "offset": "0xc0e41b0",
+      "encoding": "utf-16-le",
+      "value": "FWwiseResourceLoaderImpl::UnloadEventSwitchContainerResources Info[%p]: Have two different leaves (%p and "
+    },
+    {
+      "offset": "0xc0e42f0",
+      "encoding": "utf-16-le",
+      "value": "FWwiseResourceLoaderImpl::UnloadEventSwitchContainerResources Info[%p]: Could not find requested GroupValu"
+    },
+    {
+      "offset": "0xc0e4410",
+      "encoding": "utf-16-le",
+      "value": "FWwiseResourceLoaderImpl::UnloadEventSwitchContainerResources Info[%p] UsageCount[%p]: bUnloaded(%s) != bS"
+    },
+    {
+      "offset": "0xc0e4530",
+      "encoding": "utf-16-le",
+      "value": "FWwiseResourceLoaderImpl::UnloadExternalSourceResources: Failed. ResourceLoader is not valid"
+    },
+    {
+      "offset": "0xc0e45f0",
+      "encoding": "utf-16-le",
+      "value": "FWwiseResourceLoaderImpl::UnloadEventSwitchContainerResources UsageCount[%p]: There are still %d loaded el"
+    },
+    {
+      "offset": "0xc0e4710",
+      "encoding": "utf-16-le",
+      "value": "FWwiseResourceLoaderImpl::UnloadGroupValueResources: Could not find requested GroupValue %s (%s %u:%u)"
+    },
+    {
+      "offset": "0xc0e47e0",
+      "encoding": "utf-16-le",
+      "value": "FWwiseResourceLoaderImpl::UnloadGroupValueResources: Failed. ResourceLoader is not valid"
+    },
+    {
+      "offset": "0xc0e48a0",
+      "encoding": "utf-16-le",
+      "value": "FWwiseResourceLoaderImpl::LoadSwitchContainerLeafResources: Failed. ResourceLoader is not valid"
+    },
+    {
+      "offset": "0xc0e49e0",
+      "encoding": "utf-16-le",
+      "value": "FWwiseResourceLoaderImpl::UnloadAuxBusResources: Failed. ResourceLoader is not valid"
+    },
+    {
+      "offset": "0xc0e4ac0",
+      "encoding": "utf-16-le",
+      "value": "FWwiseResourceLoaderImpl::UnloadEventResources: Failed. ResourceLoader is not valid"
+    },
+    {
+      "offset": "0xc0e4b70",
+      "encoding": "utf-16-le",
+      "value": "FWwiseResourceLoaderImpl::UnloadEventSwitchContainerResources: Failed. ResourceLoader is not valid"
+    },
+    {
+      "offset": "0xc0e4c40",
+      "encoding": "utf-16-le",
+      "value": "FWwiseResourceLoaderImpl::UnloadEventSwitchContainerResources GroupValue: Failed. ResourceLoader is not va"
+    },
+    {
+      "offset": "0xc0e4f10",
+      "encoding": "utf-16-le",
+      "value": "FWwiseResourceLoaderImpl::LoadMediaResources: Failed. ResourceLoader is not valid"
+    },
+    {
+      "offset": "0xc0e4fc0",
+      "encoding": "utf-16-le",
+      "value": "FWwiseResourceLoaderImpl::LoadShareSetResources: Could not load %d prerequisites for ShareSet %s (%u). Unl"
+    },
+    {
+      "offset": "0xc0e5140",
+      "encoding": "utf-16-le",
+      "value": "FWwiseResourceLoaderImpl::LoadShareSetResources: Failed. ResourceLoader is not valid"
+    },
+    {
+      "offset": "0xc0e5270",
+      "encoding": "utf-16-le",
+      "value": "FWwiseResourceLoaderImpl::LoadSoundBankResources: Failed. ResourceLoader is not valid"
+    },
+    {
+      "offset": "0xc0f4680",
+      "encoding": "utf-16-le",
+      "value": "AkWwiseItemToControl"
+    },
+    {
+      "offset": "0xc0f4828",
+      "encoding": "utf-16-le",
+      "value": "AkWwiseObjectDetails"
+    },
+    {
+      "offset": "0xc0f49d0",
+      "encoding": "utf-16-le",
+      "value": "Unreal Wwise Sound Data auto-generation"
+    },
+    {
+      "offset": "0xc0f4ad8",
+      "encoding": "utf-16-le",
+      "value": "WwiseAudio"
+    },
+    {
+      "offset": "0xc0f82fe",
+      "encoding": "utf-16-le",
+      "value": "mUAkWwiseTree"
+    },
+    {
+      "offset": "0xc0f8330",
+      "encoding": "utf-16-le",
+      "value": "UAkWwiseTreeSelector"
+    },
+    {
+      "offset": "0xc0fa550",
+      "encoding": "utf-16-le",
+      "value": "FAkAudioDevice::GetShortID : Returning invalid ShortId for Wwise Object named %s."
+    },
+    {
+      "offset": "0xc0fa6c0",
+      "encoding": "utf-16-le",
+      "value": "FAkAudioDevice::GetDefaultLanguage: Could not get WwiseInitBankLoader, returning empty language."
+    },
+    {
+      "offset": "0xc0fa860",
+      "encoding": "utf-16-le",
+      "value": "FAkAudioDevice::GetAvailableAudioCultures: Could not get WwiseInitBankLoader, returning empty list."
+    },
+    {
+      "offset": "0xc0fab40",
+      "encoding": "utf-16-le",
+      "value": "FAkAudioModule::UpdateWwiseResourceLoaderSettings : No Resource Loader!"
+    },
+    {
+      "offset": "0xc0fabd0",
+      "encoding": "utf-16-le",
+      "value": "FAkAudioModule::UpdateWwiseResourceLoaderSettings : No Resource Loader Impl!"
+    },
+    {
+      "offset": "0xc0fae70",
+      "encoding": "utf-16-le",
+      "value": "WwiseUnrealHelper::GetSoundBankDirectory : Please set the Generated Soundbanks Folder in Wwise settings. "
+    },
+    {
+      "offset": "0xc0fb0c0",
+      "encoding": "utf-16-le",
+      "value": "LoadInitBank: WwiseInitBankLoader is not initialized."
+    },
+    {
+      "offset": "0xc0fb130",
+      "encoding": "utf-16-le",
+      "value": "InitWwisePlugin"
+    },
+    {
+      "offset": "0xc0fb150",
+      "encoding": "utf-16-le",
+      "value": "Initializing Wwise Plug-in AkAudioModule..."
+    },
+    {
+      "offset": "0xc0fc560",
+      "encoding": "utf-16-le",
+      "value": "Wwise Initialization Error: No default settings."
+    },
+    {
+      "offset": "0xc0fc5d0",
+      "encoding": "utf-16-le",
+      "value": "Wwise Initialization Error: No ResourceLoader module"
+    },
+    {
+      "offset": "0xc0fc640",
+      "encoding": "utf-16-le",
+      "value": "Wwise Initialization Error: No file handling module"
+    },
+    {
+      "offset": "0xc0fc6b0",
+      "encoding": "utf-16-le",
+      "value": "Wwise Initialization Error: No Sound Engine"
+    },
+    {
+      "offset": "0xc0fc710",
+      "encoding": "utf-16-le",
+      "value": "Wwise Initialization Error: No IO Hook"
+    },
+    {
+      "offset": "0xc100d50",
+      "encoding": "utf-16-le",
+      "value": "Wwise Generic Job"
+    },
+    {
+      "offset": "0xc100d78",
+      "encoding": "utf-16-le",
+      "value": "Wwise Spatial Audio Job"
+    },
+    {
+      "offset": "0xc100da8",
+      "encoding": "utf-16-le",
+      "value": "Wwise Audio Processing Job"
+    },
+    {
+      "offset": "0xc104590",
+      "encoding": "utf-16-le",
+      "value": "FWwiseUmgDragDropOp"
+    },
+    {
+      "offset": "0xc104600",
+      "encoding": "utf-16-le",
+      "value": "LogWwiseMonitor"
+    },
+    {
+      "offset": "0xc105260",
+      "encoding": "utf-16-le",
+      "value": "Choose a Wwise Item"
+    },
+    {
+      "offset": "0xc1052a8",
+      "encoding": "utf-16-le",
+      "value": "Choose A Wwise Item"
+    },
+    {
+      "offset": "0xc105550",
+      "encoding": "utf-16-le",
+      "value": "Choose an item from the Wwise tree"
+    },
+    {
+      "offset": "0xc105598",
+      "encoding": "utf-16-le",
+      "value": "WwiseItemToolTipText"
+    },
+    {
+      "offset": "0xc105618",
+      "encoding": "utf-16-le",
+      "value": "FWwiseBoolPropertyDragDropOp"
+    },
+    {
+      "offset": "0xc1056a8",
+      "encoding": "utf-16-le",
+      "value": "FWwisePropertyDragDropOp"
+    },
+    {
+      "offset": "0xc105720",
+      "encoding": "utf-16-le",
+      "value": "Type here to search for a Wwise asset"
+    },
+    {
+      "offset": "0xc105828",
+      "encoding": "utf-16-le",
+      "value": "Search Wwise Item"
+    },
+    {
+      "offset": "0xc105bc0",
+      "encoding": "utf-16-le",
+      "value": "RequestFindInProjectExplorerWwiseItem"
+    },
+    {
+      "offset": "0xc105c50",
+      "encoding": "utf-16-le",
+      "value": "Wwise currently has a modal window opened. Please close it to use WAAPI functionality."
+    },
+    {
+      "offset": "0xc105d28",
+      "encoding": "utf-16-le",
+      "value": "RequestImportWwiseItem_ToolTip"
+    },
+    {
+      "offset": "0xc105d90",
+      "encoding": "utf-16-le",
+      "value": "RequestImportWwiseItem"
+    },
+    {
+      "offset": "0xc105dc0",
+      "encoding": "utf-16-le",
+      "value": "RequestDeleteWwiseItem_ToolTip"
+    },
+    {
+      "offset": "0xc105e50",
+      "encoding": "utf-16-le",
+      "value": "RequestDeleteWwiseItem"
+    },
+    {
+      "offset": "0xc105e80",
+      "encoding": "utf-16-le",
+      "value": "RequestStopAllWwiseItem_ToolTip"
+    },
+    {
+      "offset": "0xc105f20",
+      "encoding": "utf-16-le",
+      "value": "RequestStopAllWwiseItem"
+    },
+    {
+      "offset": "0xc106020",
+      "encoding": "utf-16-le",
+      "value": "RequestFindInProjectExplorerWwiseItem_ToolTip"
+    },
+    {
+      "offset": "0xc1060e8",
+      "encoding": "utf-16-le",
+      "value": "RequestExploreWwiseItem"
+    },
+    {
+      "offset": "0xc106120",
+      "encoding": "utf-16-le",
+      "value": "RequestExploreWwiseItem_ToolTip"
+    },
+    {
+      "offset": "0xc1061b0",
+      "encoding": "utf-16-le",
+      "value": "RequestRenameWwiseItem"
+    },
+    {
+      "offset": "0xc1061e0",
+      "encoding": "utf-16-le",
+      "value": "RequestRenameWwiseItem_ToolTip"
+    },
+    {
+      "offset": "0xc1062b0",
+      "encoding": "utf-16-le",
+      "value": "RequestPlayWwiseItem"
+    },
+    {
+      "offset": "0xc1062e0",
+      "encoding": "utf-16-le",
+      "value": "RequestPlayWwiseItem_ToolTip"
+    },
+    {
+      "offset": "0xc1071b0",
+      "encoding": "utf-16-le",
+      "value": "API connection; WAAPI picker is disabled. Please enable WAAPI in your Wwise settings, or use the Wwise Picker."
+    },
+    {
+      "offset": "0xc3eedb0",
+      "encoding": "utf-16-le",
+      "value": "UHRTFSettingsBoolViewModel"
+    },
+    {
+      "offset": "0xc5d4da0",
+      "encoding": "utf-16-le",
+      "value": "Enables Wwise profiler captures during automated testing."
+    },
+    {
+      "offset": "0xc5d92c8",
+      "encoding": "utf-16-le",
+      "value": "Ares.Test.WwiseCaptureEnabled"
+    },
+    {
+      "offset": "0xc5d93ba",
+      "encoding": "utf-16-le",
+      "value": "tionBlueprintLibrary::AresLoadAkAudioEventByPath(%s) - failed to load Wwise event"
+    },
+    {
+      "offset": "0xc5d96f0",
+      "encoding": "utf-16-le",
+      "value": "WwiseCapture-%s.prof"
+    },
+    {
+      "offset": "0xc604350",
+      "encoding": "utf-16-le",
+      "value": "EnableHRTFSetting"
+    },
+    {
+      "offset": "0xc753ff0",
+      "encoding": "utf-16-le",
+      "value": "WwiseDevice"
+    },
+    {
+      "offset": "0xc754430",
+      "encoding": "utf-16-le",
+      "value": "Wwise Audio Mixer Device."
+    },
+    {
+      "offset": "0xc754570",
+      "encoding": "utf-16-le",
+      "value": "FWwiseSimpleExtSrcManager::LoadExternalSourceMedia: Failed to get ExternalSourceManager"
+    },
+    {
+      "offset": "0xc754990",
+      "encoding": "utf-16-le",
+      "value": "Wwise Simple External Source: Media Info Table is not set. Please set table in the Project Settings."
+    },
+    {
+      "offset": "0xc754b50",
+      "encoding": "utf-16-le",
+      "value": "Wwise Simple External Source: External Source Default Media is not set. Please set table in the Project S"
+    },
+    {
+      "offset": "0xc754ed8",
+      "encoding": "utf-16-le",
+      "value": "WwiseSimpleExternalSource"
+    },
+    {
+      "offset": "0xc754fa0",
+      "encoding": "utf-16-le",
+      "value": "FWwiseSimpleExtSrcManager::SetExternalSourceMedia: Failed to get ExternalSourceManager"
+    },
+    {
+      "offset": "0xc755148",
+      "encoding": "utf-16-le",
+      "value": "WwiseExternalSourceMediaInfo"
+    },
+    {
+      "offset": "0xc7551d0",
+      "encoding": "utf-16-le",
+      "value": "/Script/WwiseSimpleExternalSource"
+    },
+    {
+      "offset": "0xc755260",
+      "encoding": "utf-16-le",
+      "value": "WwiseExternalSourceCookieDefaultMedia"
+    },
+    {
+      "offset": "0xc755336",
+      "encoding": "utf-16-le",
+      "value": "hUWwiseExternalSourceSettings"
+    },
+    {
+      "offset": "0xc755378",
+      "encoding": "utf-16-le",
+      "value": "LogWwiseSimpleExtSrc"
+    },
+    {
+      "offset": "0xc7553b0",
+      "encoding": "utf-16-le",
+      "value": "UWwiseExternalSourceSettings::GetExternalSourceStagingDirectory : Could not get staging directory from ext"
+    },
+    {
+      "offset": "0xc756100",
+      "encoding": "utf-16-le",
+      "value": "FWwiseAudioLinkSynchronizer::ExecuteOpenStream: No Sound Engine."
+    },
+    {
+      "offset": "0xc756188",
+      "encoding": "utf-16-le",
+      "value": "AudioLink for Wwise"
+    },
+    {
+      "offset": "0xc756230",
+      "encoding": "utf-16-le",
+      "value": "UWwiseAudioLinkSettings::OnLoadCompleteCallback: Could not load asset for Settings '%s' StartEvent '%s'"
+    },
+    {
+      "offset": "0xc756300",
+      "encoding": "utf-16-le",
+      "value": "UWwiseAudioLinkSettings::OnLoadCompleteCallback: Loaded more than one (%d) asset for Settings '%s' StartEv"
+    },
+    {
+      "offset": "0xc756410",
+      "encoding": "utf-16-le",
+      "value": "UWwiseAudioLinkSettings::RequestLoad: Invalid weak pointer."
+    },
+    {
+      "offset": "0xc756490",
+      "encoding": "utf-16-le",
+      "value": "UWwiseAudioLinkSettings::GetReceivingBufferSizeInFrames: Failed to get Wwise settings for buffer sizes, so"
+    },
+    {
+      "offset": "0xc756600",
+      "encoding": "utf-16-le",
+      "value": "bWwiseAudioLinkEnabled"
+    },
+    {
+      "offset": "0xc756630",
+      "encoding": "utf-16-le",
+      "value": "FWwiseAudioLinkSynchronizer::Bind: No Callbacks."
+    },
+    {
+      "offset": "0xc7566a0",
+      "encoding": "utf-16-le",
+      "value": "FWwiseAudioLinkSynchronizer::Bind: Binding an already bound SoundEngine."
+    },
+    {
+      "offset": "0xc756738",
+      "encoding": "utf-16-le",
+      "value": "LogWwise"
+    },
+    {
+      "offset": "0xc756750",
+      "encoding": "utf-16-le",
+      "value": "FWwiseAudioLinkFactory::CreateSourceAudioLink: Invalid WwiseAudioLinkSettings."
+    },
+    {
+      "offset": "0xc7567f0",
+      "encoding": "utf-16-le",
+      "value": "FWwiseAudioLinkFactory::CreateSourceAudioLink: Invalid Owning Component."
+    },
+    {
+      "offset": "0xc756890",
+      "encoding": "utf-16-le",
+      "value": "FWwiseAudioLinkFactory::CreateSourceAudioLink: AkAudio not initialized."
+    },
+    {
+      "offset": "0xc756920",
+      "encoding": "utf-16-le",
+      "value": "FWwiseAudioLinkFactory::CreateSourceAudioLink: No AkAudioDevice available."
+    },
+    {
+      "offset": "0xc7569c0",
+      "encoding": "utf-16-le",
+      "value": "FWwiseAudioLinkFactory::CreateSourceAudioLink: Invalid AudioDevice in World."
+    },
+    {
+      "offset": "0xc756a60",
+      "encoding": "utf-16-le",
+      "value": "FWwiseAudioLinkFactory::CreateSourceAudioLink: Invalid Audio Component."
+    },
+    {
+      "offset": "0xc756af0",
+      "encoding": "utf-16-le",
+      "value": "FWwiseAudioLinkFactory::CreateSourceAudioLink: Invalid World in Owning Component."
+    },
+    {
+      "offset": "0xc756ba0",
+      "encoding": "utf-16-le",
+      "value": "FWwiseAudioLinkFactory::CreateSubmixAudioLink: Invalid WwiseAudioLinkSettings."
+    },
+    {
+      "offset": "0xc756c40",
+      "encoding": "utf-16-le",
+      "value": "FWwiseAudioLinkFactory::CreateSubmixAudioLink: Invalid Submix."
+    },
+    {
+      "offset": "0xc756d30",
+      "encoding": "utf-16-le",
+      "value": "FWwiseAudioLinkFactory::CreateSubmixAudioLink: AkAudio not initialized."
+    },
+    {
+      "offset": "0xc756dc0",
+      "encoding": "utf-16-le",
+      "value": "FWwiseAudioLinkFactory::CreateSourceAudioLink: No AkAudio module."
+    },
+    {
+      "offset": "0xc756e50",
+      "encoding": "utf-16-le",
+      "value": "FWwiseAudioLinkInputClient::Start: Invalid component (this=%p %s)"
+    },
+    {
+      "offset": "0xc756ee0",
+      "encoding": "utf-16-le",
+      "value": "FWwiseAudioLinkInputClient::Start: Unregistered Object (this=%p %s)"
+    },
+    {
+      "offset": "0xc756ff0",
+      "encoding": "utf-16-le",
+      "value": "FWwiseAudioLinkFactory::CreateSourcePushedAudioLink: AkAudio not initialized."
+    },
+    {
+      "offset": "0xc757090",
+      "encoding": "utf-16-le",
+      "value": "FWwiseAudioLinkFactory::CreateSourcePushedAudioLink: No AkAudio module."
+    },
+    {
+      "offset": "0xc757120",
+      "encoding": "utf-16-le",
+      "value": "FWwiseAudioLinkInputClient::Register: ObjectId %llu already registered for %p %s."
+    },
+    {
+      "offset": "0xc7571d0",
+      "encoding": "utf-16-le",
+      "value": "FWwiseAudioLinkInputClient::Register: Invalid settings registering %llu %s."
+    },
+    {
+      "offset": "0xc757270",
+      "encoding": "utf-16-le",
+      "value": "FWwiseAudioLinkInputClient::Register: No Wwise SoundEngine registering %p %s."
+    },
+    {
+      "offset": "0xc757310",
+      "encoding": "utf-16-le",
+      "value": "FWwiseAudioLinkInputClient::Start: Error playing Component %llu (%s) in client %llu (%s)"
+    },
+    {
+      "offset": "0xc7573d0",
+      "encoding": "utf-16-le",
+      "value": "FWwiseAudioLinkInputClient::Start: Invalid Settings (this=%p %s)"
+    },
+    {
+      "offset": "0xc757460",
+      "encoding": "utf-16-le",
+      "value": "WwiseAudioLinkInputClient::OnEventLoaded: Invalid Object Id On event loaded. Sound was deleted before the"
+    },
+    {
+      "offset": "0xc7575a0",
+      "encoding": "utf-16-le",
+      "value": "FWwiseAudioLinkInputClient::Start: Error playing Event '%s' in client %llu (%s)"
+    },
+    {
+      "offset": "0xc757640",
+      "encoding": "utf-16-le",
+      "value": "FWwiseAudioLinkInputClient::Start: Invalid StartEvent (this=%p %s)"
+    },
+    {
+      "offset": "0xc7576d0",
+      "encoding": "utf-16-le",
+      "value": "FWwiseAudioLinkInputClient: Forcibly closing defunct AudioLink for object, PlayID=%u, StarvedCount=%d, Thi"
+    },
+    {
+      "offset": "0xc7577c0",
+      "encoding": "utf-16-le",
+      "value": "FWwiseAudioLinkInputClient::GetSamples: UnrealFormat's NumSamplesPerSec == 0"
+    },
+    {
+      "offset": "0xc7578d0",
+      "encoding": "utf-16-le",
+      "value": "FWwiseAudioLinkInputClient::GetFormat: UnrealFormat is invalid"
+    },
+    {
+      "offset": "0xc757950",
+      "encoding": "utf-16-le",
+      "value": "FWwiseAudioLinkInputClient::Register: Error registering Object ID %llu (%s): (%u) %s"
+    },
+    {
+      "offset": "0xc757a00",
+      "encoding": "utf-16-le",
+      "value": "FWwiseAudioLinkInputClient::GetSamples: UnrealFormat's NumSamples == 0"
+    },
+    {
+      "offset": "0xc757a90",
+      "encoding": "utf-16-le",
+      "value": "FWwiseAudioLinkInputClient::Unregister: Error Unregistering Object ID %llu (%s): (%u) %s"
+    },
+    {
+      "offset": "0xc757b50",
+      "encoding": "utf-16-le",
+      "value": "FWwiseAudioLinkInputClient::Register: No Wwise SoundEngine."
+    },
+    {
+      "offset": "0xc757bd8",
+      "encoding": "utf-16-le",
+      "value": "/Script/Wwise"
+    },
+    {
+      "offset": "0xc757bf8",
+      "encoding": "utf-16-le",
+      "value": "UWwiseAudioLinkComponent"
+    },
+    {
+      "offset": "0xc757c30",
+      "encoding": "utf-16-le",
+      "value": "UWwiseAudioLinkSettings"
+    },
+    {
+      "offset": "0xc757cc8",
+      "encoding": "utf-16-le",
+      "value": "LogWwiseAudioLink"
+    },
+    {
+      "offset": "0xc757cf0",
+      "encoding": "utf-16-le",
+      "value": "LogWwiseAudioLinkLowLevel"
+    },
+    {
+      "offset": "0xc757d30",
+      "encoding": "utf-16-le",
+      "value": "FWwiseAudioLinkFactory::CreateSubmixAudioLink: No AkAudio module."
+    }
+  ],
+  "limits": "Strings prove byte presence, not reachability, active settings, HRTF coefficients or acoustic behavior."
+}

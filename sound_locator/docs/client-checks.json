@@ -1,0 +1,37 @@
+{
+  "checked_date": "2026-11-08",
+  "target": "F:\\Riot Games\\VALORANT\\live\\ShooterGame\\Binaries\\Win64\\VALORANT-Win64-Shipping.exe",
+  "bytes": 239005680,
+  "sha256": "147763350504d241ee20b77607d04bc85cebfedb1d8bc2f32473ca93bf8fe92f",
+  "project_copy_hash_matches": true,
+  "rea": {
+    "open_succeeded": true,
+    "format": "pe",
+    "architecture": "x86_64",
+    "provider": "Ghidra 12.1.4",
+    "search_pattern": "HRTF|Wwise|SpatialAudio|DefaultListener|PostAtLocation",
+    "search_result": "tool call timeout after 300 seconds",
+    "search_evidence_id": null,
+    "close_succeeded": true
+  },
+  "retained_evidence_check": {
+    "command": "python tools/verify_npc_audio_evidence.py",
+    "exit_code": 0,
+    "passed": true,
+    "original_packages": 10,
+    "complete_functions": 130,
+    "pure_audio_profiles": 5,
+    "runtime_game_executed": false,
+    "acoustic_acceptance": false,
+    "spectated_audio_profiles": 3,
+    "native_frame_byte_profiles": 8,
+    "symbolic_stack_contract_cases": 18,
+    "runtime_stack_acceptance": false
+  },
+  "unresolved": [
+    "Exact game HRTF coefficients",
+    "Current per-event HRTF coverage",
+    "Real audio direction estimation accuracy",
+    "Unique recovery of every overlapping source is not guaranteed by two-channel audio"
+  ]
+}

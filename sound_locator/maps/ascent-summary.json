@@ -1,0 +1,19 @@
+{
+  "nodes": 13911,
+  "edges": 18772,
+  "components": 11,
+  "largest_components": [
+    13825,
+    36,
+    19,
+    8,
+    5,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3
+  ],
+  "path_chains": 6816
+}

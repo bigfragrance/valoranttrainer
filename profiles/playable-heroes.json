@@ -1,0 +1,4478 @@
+{
+  "schema_version": 1,
+  "generated_utc": "2026-11-02T05:33:11.674564+00:00",
+  "count": 30,
+  "max_total_players": 30,
+  "local_hero": "Jett",
+  "local_hero_index": 0,
+  "local_hero_id": "add6443a41bde414f6ade58d267f4e95",
+  "npc_pool_count": 29,
+  "heroes": [
+    {
+      "index": 0,
+      "name": "Jett",
+      "code": "Wushu",
+      "class": "/Game/Characters/Wushu/Wushu_PC.Wushu_PC_C",
+      "id": "add6443a41bde414f6ade58d267f4e95",
+      "guid_words": [
+        2916500538,
+        1102963732,
+        4138591629,
+        645877397
+      ],
+      "data_asset_class": "/Game/Characters/Wushu/Wushu_PrimaryAsset.Wushu_PrimaryAsset_C",
+      "playable": true,
+      "excluded_from_content_catalog": false,
+      "playable_verification_source": {
+        "package": "/Game/Characters/Wushu/Wushu_PrimaryAsset",
+        "source_sha256": "1a7791e8daf4fa48e8874ffcccc1b17ad8138fb816c93b14e32901a240725c57",
+        "native_class": "/Script/ShooterGame.CharacterDataAsset",
+        "playable_offset": "0x1d0",
+        "exclude_catalog_offset": "0x1d1",
+        "serialized_cdo_fields": [
+          {
+            "slot": 1,
+            "native_property_index": 0,
+            "zero": false,
+            "byte_offset": 1514,
+            "bytes": 20
+          },
+          {
+            "slot": 2,
+            "native_property_index": 1,
+            "zero": false,
+            "byte_offset": 1534,
+            "bytes": 20
+          },
+          {
+            "slot": 3,
+            "native_property_index": 2,
+            "zero": false,
+            "byte_offset": 1554,
+            "bytes": 20
+          },
+          {
+            "slot": 4,
+            "native_property_index": 3,
+            "zero": false,
+            "byte_offset": 1574,
+            "bytes": 20
+          },
+          {
+            "slot": 5,
+            "native_property_index": 4,
+            "zero": false,
+            "byte_offset": 1594,
+            "bytes": 20
+          },
+          {
+            "slot": 8,
+            "native_property_index": 7,
+            "zero": false,
+            "byte_offset": 1614,
+            "bytes": 20
+          },
+          {
+            "slot": 9,
+            "native_property_index": 8,
+            "zero": false,
+            "byte_offset": 1634,
+            "bytes": 20
+          },
+          {
+            "slot": 10,
+            "native_property_index": 9,
+            "zero": false,
+            "byte_offset": 1654,
+            "bytes": 8
+          },
+          {
+            "slot": 11,
+            "native_property_index": 10,
+            "zero": false,
+            "byte_offset": 1662,
+            "bytes": 8
+          },
+          {
+            "slot": 13,
+            "native_property_index": 12,
+            "zero": false,
+            "byte_offset": 1670,
+            "bytes": 1
+          },
+          {
+            "slot": 14,
+            "native_property_index": 13,
+            "zero": true,
+            "byte_offset": 1671,
+            "bytes": 0
+          },
+          {
+            "slot": 15,
+            "native_property_index": 14,
+            "zero": false,
+            "byte_offset": 1671,
+            "bytes": 1
+          },
+          {
+            "slot": 17,
+            "native_property_index": 16,
+            "zero": false,
+            "byte_offset": 1672,
+            "bytes": 16
+          },
+          {
+            "slot": 19,
+            "native_property_index": 18,
+            "zero": false,
+            "byte_offset": 1688,
+            "bytes": 1
+          }
+        ],
+        "complete_cdo_suffix_verified": true
+      },
+      "original_character_class_evidence": {
+        "derived_from_original_shooter_character": true,
+        "chain": [
+          {
+            "package": "/Game/Characters/Wushu/Wushu_PC",
+            "class": "Wushu_PC_C",
+            "class_public_hash": "0x1d6ba3b51518703b",
+            "source_sha256": "38d6bc8ed0e903dd4d570078298a3a428fd357871e2e4f34fd057ce56a3cad48",
+            "parent": {
+              "package": "/Game/Characters/_Core/BasePlayerCharacter",
+              "public_hash": "0x4d91085fe1a8e09c"
+            }
+          },
+          {
+            "package": "/Game/Characters/_Core/BasePlayerCharacter",
+            "class": "BasePlayerCharacter_C",
+            "class_public_hash": "0x4d91085fe1a8e09c",
+            "source_sha256": "0519d4b6ca03f75cac69a08d07c450b12c0f533e8634130f6d1bf37379dbdc13",
+            "parent": {
+              "package": "/Game/Characters/_Core/BasePawn",
+              "public_hash": "0x27ffe8d4d80af0d9"
+            }
+          },
+          {
+            "package": "/Game/Characters/_Core/BasePawn",
+            "class": "BasePawn_C",
+            "class_public_hash": "0x27ffe8d4d80af0d9",
+            "source_sha256": "39cdd3e571363a848b0827d045be31df0528b77012a7d3dbc572e50c980f282b",
+            "parent": "/Script/ShooterGame.ShooterCharacter"
+          }
+        ]
+      }
+    },
+    {
+      "index": 1,
+      "name": "Phoenix",
+      "code": "Phoenix",
+      "class": "/Game/Characters/Phoenix/Phoenix_PC.Phoenix_PC_C",
+      "id": "eb93336a449b9c1b0a54a891f7921d69",
+      "guid_words": [
+        3952292714,
+        1151048731,
+        173320337,
+        4153548137
+      ],
+      "data_asset_class": "/Game/Characters/Phoenix/Phoenix_PrimaryAsset.Phoenix_PrimaryAsset_C",
+      "playable": true,
+      "excluded_from_content_catalog": false,
+      "playable_verification_source": {
+        "package": "/Game/Characters/Phoenix/Phoenix_PrimaryAsset",
+        "source_sha256": "9ee8578081d4d80ded70e15f3e391d72842261a63f4373e951da960122d97388",
+        "native_class": "/Script/ShooterGame.CharacterDataAsset",
+        "playable_offset": "0x1d0",
+        "exclude_catalog_offset": "0x1d1",
+        "serialized_cdo_fields": [
+          {
+            "slot": 1,
+            "native_property_index": 0,
+            "zero": false,
+            "byte_offset": 1542,
+            "bytes": 20
+          },
+          {
+            "slot": 2,
+            "native_property_index": 1,
+            "zero": false,
+            "byte_offset": 1562,
+            "bytes": 20
+          },
+          {
+            "slot": 3,
+            "native_property_index": 2,
+            "zero": false,
+            "byte_offset": 1582,
+            "bytes": 20
+          },
+          {
+            "slot": 4,
+            "native_property_index": 3,
+            "zero": false,
+            "byte_offset": 1602,
+            "bytes": 20
+          },
+          {
+            "slot": 5,
+            "native_property_index": 4,
+            "zero": false,
+            "byte_offset": 1622,
+            "bytes": 20
+          },
+          {
+            "slot": 8,
+            "native_property_index": 7,
+            "zero": false,
+            "byte_offset": 1642,
+            "bytes": 20
+          },
+          {
+            "slot": 9,
+            "native_property_index": 8,
+            "zero": false,
+            "byte_offset": 1662,
+            "bytes": 20
+          },
+          {
+            "slot": 10,
+            "native_property_index": 9,
+            "zero": false,
+            "byte_offset": 1682,
+            "bytes": 8
+          },
+          {
+            "slot": 13,
+            "native_property_index": 12,
+            "zero": false,
+            "byte_offset": 1690,
+            "bytes": 1
+          },
+          {
+            "slot": 14,
+            "native_property_index": 13,
+            "zero": true,
+            "byte_offset": 1691,
+            "bytes": 0
+          },
+          {
+            "slot": 15,
+            "native_property_index": 14,
+            "zero": false,
+            "byte_offset": 1691,
+            "bytes": 1
+          },
+          {
+            "slot": 17,
+            "native_property_index": 16,
+            "zero": false,
+            "byte_offset": 1692,
+            "bytes": 16
+          },
+          {
+            "slot": 19,
+            "native_property_index": 18,
+            "zero": false,
+            "byte_offset": 1708,
+            "bytes": 1
+          }
+        ],
+        "complete_cdo_suffix_verified": true
+      },
+      "original_character_class_evidence": {
+        "derived_from_original_shooter_character": true,
+        "chain": [
+          {
+            "package": "/Game/Characters/Phoenix/Phoenix_PC",
+            "class": "Phoenix_PC_C",
+            "class_public_hash": "0xc724e4fe83c80359",
+            "source_sha256": "e81cd87020d9650161254fe1e91b30fdbfbef0e6d09c6c4c460b6419d1367d53",
+            "parent": {
+              "package": "/Game/Characters/_Core/BasePlayerCharacter",
+              "public_hash": "0x4d91085fe1a8e09c"
+            }
+          },
+          {
+            "package": "/Game/Characters/_Core/BasePlayerCharacter",
+            "class": "BasePlayerCharacter_C",
+            "class_public_hash": "0x4d91085fe1a8e09c",
+            "source_sha256": "0519d4b6ca03f75cac69a08d07c450b12c0f533e8634130f6d1bf37379dbdc13",
+            "parent": {
+              "package": "/Game/Characters/_Core/BasePawn",
+              "public_hash": "0x27ffe8d4d80af0d9"
+            }
+          },
+          {
+            "package": "/Game/Characters/_Core/BasePawn",
+            "class": "BasePawn_C",
+            "class_public_hash": "0x27ffe8d4d80af0d9",
+            "source_sha256": "39cdd3e571363a848b0827d045be31df0528b77012a7d3dbc572e50c980f282b",
+            "parent": "/Script/ShooterGame.ShooterCharacter"
+          }
+        ]
+      }
+    },
+    {
+      "index": 2,
+      "name": "Sage",
+      "code": "Thorne",
+      "class": "/Game/Characters/Thorne/Thorne_PC.Thorne_PC_C",
+      "id": "569fdd954d1043abca7079becc718b46",
+      "guid_words": [
+        1453317525,
+        1292911531,
+        3396368830,
+        3429993286
+      ],
+      "data_asset_class": "/Game/Characters/Thorne/Thorne_PrimaryAsset.Thorne_PrimaryAsset_C",
+      "playable": true,
+      "excluded_from_content_catalog": false,
+      "playable_verification_source": {
+        "package": "/Game/Characters/Thorne/Thorne_PrimaryAsset",
+        "source_sha256": "403de5e9f911f887288a2910f0bd79d0dc14ab6797aa0f40e116b01297f1d6a0",
+        "native_class": "/Script/ShooterGame.CharacterDataAsset",
+        "playable_offset": "0x1d0",
+        "exclude_catalog_offset": "0x1d1",
+        "serialized_cdo_fields": [
+          {
+            "slot": 1,
+            "native_property_index": 0,
+            "zero": false,
+            "byte_offset": 1445,
+            "bytes": 20
+          },
+          {
+            "slot": 2,
+            "native_property_index": 1,
+            "zero": false,
+            "byte_offset": 1465,
+            "bytes": 20
+          },
+          {
+            "slot": 3,
+            "native_property_index": 2,
+            "zero": false,
+            "byte_offset": 1485,
+            "bytes": 20
+          },
+          {
+            "slot": 4,
+            "native_property_index": 3,
+            "zero": false,
+            "byte_offset": 1505,
+            "bytes": 20
+          },
+          {
+            "slot": 5,
+            "native_property_index": 4,
+            "zero": false,
+            "byte_offset": 1525,
+            "bytes": 20
+          },
+          {
+            "slot": 8,
+            "native_property_index": 7,
+            "zero": false,
+            "byte_offset": 1545,
+            "bytes": 20
+          },
+          {
+            "slot": 10,
+            "native_property_index": 9,
+            "zero": false,
+            "byte_offset": 1565,
+            "bytes": 8
+          },
+          {
+            "slot": 11,
+            "native_property_index": 10,
+            "zero": false,
+            "byte_offset": 1573,
+            "bytes": 8
+          },
+          {
+            "slot": 13,
+            "native_property_index": 12,
+            "zero": false,
+            "byte_offset": 1581,
+            "bytes": 1
+          },
+          {
+            "slot": 14,
+            "native_property_index": 13,
+            "zero": true,
+            "byte_offset": 1582,
+            "bytes": 0
+          },
+          {
+            "slot": 15,
+            "native_property_index": 14,
+            "zero": false,
+            "byte_offset": 1582,
+            "bytes": 1
+          },
+          {
+            "slot": 17,
+            "native_property_index": 16,
+            "zero": false,
+            "byte_offset": 1583,
+            "bytes": 16
+          },
+          {
+            "slot": 19,
+            "native_property_index": 18,
+            "zero": false,
+            "byte_offset": 1599,
+            "bytes": 1
+          }
+        ],
+        "complete_cdo_suffix_verified": true
+      },
+      "original_character_class_evidence": {
+        "derived_from_original_shooter_character": true,
+        "chain": [
+          {
+            "package": "/Game/Characters/Thorne/Thorne_PC",
+            "class": "Thorne_PC_C",
+            "class_public_hash": "0xfb70778731728a3d",
+            "source_sha256": "fbeac541afb540262677562970bdbba6f86eaf133fe6a965eefba2caedd37625",
+            "parent": {
+              "package": "/Game/Characters/_Core/BasePlayerCharacter",
+              "public_hash": "0x4d91085fe1a8e09c"
+            }
+          },
+          {
+            "package": "/Game/Characters/_Core/BasePlayerCharacter",
+            "class": "BasePlayerCharacter_C",
+            "class_public_hash": "0x4d91085fe1a8e09c",
+            "source_sha256": "0519d4b6ca03f75cac69a08d07c450b12c0f533e8634130f6d1bf37379dbdc13",
+            "parent": {
+              "package": "/Game/Characters/_Core/BasePawn",
+              "public_hash": "0x27ffe8d4d80af0d9"
+            }
+          },
+          {
+            "package": "/Game/Characters/_Core/BasePawn",
+            "class": "BasePawn_C",
+            "class_public_hash": "0x27ffe8d4d80af0d9",
+            "source_sha256": "39cdd3e571363a848b0827d045be31df0528b77012a7d3dbc572e50c980f282b",
+            "parent": "/Script/ShooterGame.ShooterCharacter"
+          }
+        ]
+      }
+    },
+    {
+      "index": 3,
+      "name": "Astra",
+      "code": "Rift",
+      "class": "/Game/Characters/Rift/Rift_PC.Rift_PC_C",
+      "id": "41fb69c141897b37f117bcaf1e96f1bf",
+      "guid_words": [
+        1106995649,
+        1099529015,
+        4044864687,
+        513208767
+      ],
+      "data_asset_class": "/Game/Characters/Rift/Rift_PrimaryAsset.Rift_PrimaryAsset_C",
+      "playable": true,
+      "excluded_from_content_catalog": false,
+      "playable_verification_source": {
+        "package": "/Game/Characters/Rift/Rift_PrimaryAsset",
+        "source_sha256": "65ff5eb4e0dab849e045d1d265cd40b4425f5cc9e2f6a6419896405ced1d787c",
+        "native_class": "/Script/ShooterGame.CharacterDataAsset",
+        "playable_offset": "0x1d0",
+        "exclude_catalog_offset": "0x1d1",
+        "serialized_cdo_fields": [
+          {
+            "slot": 1,
+            "native_property_index": 0,
+            "zero": false,
+            "byte_offset": 1418,
+            "bytes": 20
+          },
+          {
+            "slot": 2,
+            "native_property_index": 1,
+            "zero": false,
+            "byte_offset": 1438,
+            "bytes": 20
+          },
+          {
+            "slot": 3,
+            "native_property_index": 2,
+            "zero": false,
+            "byte_offset": 1458,
+            "bytes": 20
+          },
+          {
+            "slot": 4,
+            "native_property_index": 3,
+            "zero": false,
+            "byte_offset": 1478,
+            "bytes": 20
+          },
+          {
+            "slot": 5,
+            "native_property_index": 4,
+            "zero": false,
+            "byte_offset": 1498,
+            "bytes": 20
+          },
+          {
+            "slot": 8,
+            "native_property_index": 7,
+            "zero": false,
+            "byte_offset": 1518,
+            "bytes": 20
+          },
+          {
+            "slot": 10,
+            "native_property_index": 9,
+            "zero": false,
+            "byte_offset": 1538,
+            "bytes": 8
+          },
+          {
+            "slot": 11,
+            "native_property_index": 10,
+            "zero": false,
+            "byte_offset": 1546,
+            "bytes": 8
+          },
+          {
+            "slot": 13,
+            "native_property_index": 12,
+            "zero": false,
+            "byte_offset": 1554,
+            "bytes": 1
+          },
+          {
+            "slot": 14,
+            "native_property_index": 13,
+            "zero": true,
+            "byte_offset": 1555,
+            "bytes": 0
+          },
+          {
+            "slot": 15,
+            "native_property_index": 14,
+            "zero": false,
+            "byte_offset": 1555,
+            "bytes": 1
+          },
+          {
+            "slot": 17,
+            "native_property_index": 16,
+            "zero": false,
+            "byte_offset": 1556,
+            "bytes": 16
+          }
+        ],
+        "complete_cdo_suffix_verified": true
+      },
+      "original_character_class_evidence": {
+        "derived_from_original_shooter_character": true,
+        "chain": [
+          {
+            "package": "/Game/Characters/Rift/Rift_PC",
+            "class": "Rift_PC_C",
+            "class_public_hash": "0x76d18d4ccf4c83b5",
+            "source_sha256": "3947c3cac6e8f1cf5a93a411943d4cf063767c2a66600fdd1ea89fb22e7a0b73",
+            "parent": {
+              "package": "/Game/Characters/_Core/BasePlayerCharacter",
+              "public_hash": "0x4d91085fe1a8e09c"
+            }
+          },
+          {
+            "package": "/Game/Characters/_Core/BasePlayerCharacter",
+            "class": "BasePlayerCharacter_C",
+            "class_public_hash": "0x4d91085fe1a8e09c",
+            "source_sha256": "0519d4b6ca03f75cac69a08d07c450b12c0f533e8634130f6d1bf37379dbdc13",
+            "parent": {
+              "package": "/Game/Characters/_Core/BasePawn",
+              "public_hash": "0x27ffe8d4d80af0d9"
+            }
+          },
+          {
+            "package": "/Game/Characters/_Core/BasePawn",
+            "class": "BasePawn_C",
+            "class_public_hash": "0x27ffe8d4d80af0d9",
+            "source_sha256": "39cdd3e571363a848b0827d045be31df0528b77012a7d3dbc572e50c980f282b",
+            "parent": "/Script/ShooterGame.ShooterCharacter"
+          }
+        ]
+      }
+    },
+    {
+      "index": 4,
+      "name": "Breach",
+      "code": "Breach",
+      "class": "/Game/Characters/Breach/Breach_PC.Breach_PC_C",
+      "id": "5f8d3a7f467b97f3062c13acf203c006",
+      "guid_words": [
+        1603091071,
+        1182504947,
+        103551916,
+        4060332038
+      ],
+      "data_asset_class": "/Game/Characters/Breach/Breach_PrimaryAsset.Breach_PrimaryAsset_C",
+      "playable": true,
+      "excluded_from_content_catalog": false,
+      "playable_verification_source": {
+        "package": "/Game/Characters/Breach/Breach_PrimaryAsset",
+        "source_sha256": "901993a98ab895012f76a7726fc77f69b0647b2fc91a5388fc42452361db7694",
+        "native_class": "/Script/ShooterGame.CharacterDataAsset",
+        "playable_offset": "0x1d0",
+        "exclude_catalog_offset": "0x1d1",
+        "serialized_cdo_fields": [
+          {
+            "slot": 1,
+            "native_property_index": 0,
+            "zero": false,
+            "byte_offset": 1403,
+            "bytes": 20
+          },
+          {
+            "slot": 2,
+            "native_property_index": 1,
+            "zero": false,
+            "byte_offset": 1423,
+            "bytes": 20
+          },
+          {
+            "slot": 3,
+            "native_property_index": 2,
+            "zero": false,
+            "byte_offset": 1443,
+            "bytes": 20
+          },
+          {
+            "slot": 4,
+            "native_property_index": 3,
+            "zero": false,
+            "byte_offset": 1463,
+            "bytes": 20
+          },
+          {
+            "slot": 5,
+            "native_property_index": 4,
+            "zero": false,
+            "byte_offset": 1483,
+            "bytes": 20
+          },
+          {
+            "slot": 8,
+            "native_property_index": 7,
+            "zero": false,
+            "byte_offset": 1503,
+            "bytes": 20
+          },
+          {
+            "slot": 10,
+            "native_property_index": 9,
+            "zero": false,
+            "byte_offset": 1523,
+            "bytes": 8
+          },
+          {
+            "slot": 13,
+            "native_property_index": 12,
+            "zero": false,
+            "byte_offset": 1531,
+            "bytes": 1
+          },
+          {
+            "slot": 14,
+            "native_property_index": 13,
+            "zero": true,
+            "byte_offset": 1532,
+            "bytes": 0
+          },
+          {
+            "slot": 15,
+            "native_property_index": 14,
+            "zero": false,
+            "byte_offset": 1532,
+            "bytes": 1
+          },
+          {
+            "slot": 17,
+            "native_property_index": 16,
+            "zero": false,
+            "byte_offset": 1533,
+            "bytes": 16
+          }
+        ],
+        "complete_cdo_suffix_verified": true
+      },
+      "original_character_class_evidence": {
+        "derived_from_original_shooter_character": true,
+        "chain": [
+          {
+            "package": "/Game/Characters/Breach/Breach_PC",
+            "class": "Breach_PC_C",
+            "class_public_hash": "0xcbdd988591c77e0c",
+            "source_sha256": "02417e94acb20373a09ef91bca496aa29adcb692d303bf5be6d589c86ceea03d",
+            "parent": {
+              "package": "/Game/Characters/_Core/BasePlayerCharacter",
+              "public_hash": "0x4d91085fe1a8e09c"
+            }
+          },
+          {
+            "package": "/Game/Characters/_Core/BasePlayerCharacter",
+            "class": "BasePlayerCharacter_C",
+            "class_public_hash": "0x4d91085fe1a8e09c",
+            "source_sha256": "0519d4b6ca03f75cac69a08d07c450b12c0f533e8634130f6d1bf37379dbdc13",
+            "parent": {
+              "package": "/Game/Characters/_Core/BasePawn",
+              "public_hash": "0x27ffe8d4d80af0d9"
+            }
+          },
+          {
+            "package": "/Game/Characters/_Core/BasePawn",
+            "class": "BasePawn_C",
+            "class_public_hash": "0x27ffe8d4d80af0d9",
+            "source_sha256": "39cdd3e571363a848b0827d045be31df0528b77012a7d3dbc572e50c980f282b",
+            "parent": "/Script/ShooterGame.ShooterCharacter"
+          }
+        ]
+      }
+    },
+    {
+      "index": 5,
+      "name": "Brimstone",
+      "code": "Sarge",
+      "class": "/Game/Characters/Sarge/Sarge_PC.Sarge_PC_C",
+      "id": "9f0d8ba94140b94157d3a7ad57c6b417",
+      "guid_words": [
+        2668465065,
+        1094760769,
+        1473488813,
+        1472640023
+      ],
+      "data_asset_class": "/Game/Characters/Sarge/Sarge_PrimaryAsset.Sarge_PrimaryAsset_C",
+      "playable": true,
+      "excluded_from_content_catalog": false,
+      "playable_verification_source": {
+        "package": "/Game/Characters/Sarge/Sarge_PrimaryAsset",
+        "source_sha256": "741c202e67c982c2951be019068a6ec52225cc1a2840ab1ed70b3628dbbc6dca",
+        "native_class": "/Script/ShooterGame.CharacterDataAsset",
+        "playable_offset": "0x1d0",
+        "exclude_catalog_offset": "0x1d1",
+        "serialized_cdo_fields": [
+          {
+            "slot": 1,
+            "native_property_index": 0,
+            "zero": false,
+            "byte_offset": 1525,
+            "bytes": 20
+          },
+          {
+            "slot": 2,
+            "native_property_index": 1,
+            "zero": false,
+            "byte_offset": 1545,
+            "bytes": 20
+          },
+          {
+            "slot": 3,
+            "native_property_index": 2,
+            "zero": false,
+            "byte_offset": 1565,
+            "bytes": 20
+          },
+          {
+            "slot": 4,
+            "native_property_index": 3,
+            "zero": false,
+            "byte_offset": 1585,
+            "bytes": 20
+          },
+          {
+            "slot": 5,
+            "native_property_index": 4,
+            "zero": false,
+            "byte_offset": 1605,
+            "bytes": 20
+          },
+          {
+            "slot": 8,
+            "native_property_index": 7,
+            "zero": false,
+            "byte_offset": 1625,
+            "bytes": 20
+          },
+          {
+            "slot": 9,
+            "native_property_index": 8,
+            "zero": false,
+            "byte_offset": 1645,
+            "bytes": 20
+          },
+          {
+            "slot": 10,
+            "native_property_index": 9,
+            "zero": false,
+            "byte_offset": 1665,
+            "bytes": 8
+          },
+          {
+            "slot": 11,
+            "native_property_index": 10,
+            "zero": false,
+            "byte_offset": 1673,
+            "bytes": 8
+          },
+          {
+            "slot": 13,
+            "native_property_index": 12,
+            "zero": false,
+            "byte_offset": 1681,
+            "bytes": 1
+          },
+          {
+            "slot": 14,
+            "native_property_index": 13,
+            "zero": true,
+            "byte_offset": 1682,
+            "bytes": 0
+          },
+          {
+            "slot": 15,
+            "native_property_index": 14,
+            "zero": false,
+            "byte_offset": 1682,
+            "bytes": 1
+          },
+          {
+            "slot": 17,
+            "native_property_index": 16,
+            "zero": false,
+            "byte_offset": 1683,
+            "bytes": 16
+          },
+          {
+            "slot": 19,
+            "native_property_index": 18,
+            "zero": false,
+            "byte_offset": 1699,
+            "bytes": 1
+          }
+        ],
+        "complete_cdo_suffix_verified": true
+      },
+      "original_character_class_evidence": {
+        "derived_from_original_shooter_character": true,
+        "chain": [
+          {
+            "package": "/Game/Characters/Sarge/Sarge_PC",
+            "class": "Sarge_PC_C",
+            "class_public_hash": "0xfeb69a4cbd572e68",
+            "source_sha256": "6c219fcc43005a2aaebf298d94d4821ba8fe92d1751b986e23b37c3d22553270",
+            "parent": {
+              "package": "/Game/Characters/_Core/BasePlayerCharacter",
+              "public_hash": "0x4d91085fe1a8e09c"
+            }
+          },
+          {
+            "package": "/Game/Characters/_Core/BasePlayerCharacter",
+            "class": "BasePlayerCharacter_C",
+            "class_public_hash": "0x4d91085fe1a8e09c",
+            "source_sha256": "0519d4b6ca03f75cac69a08d07c450b12c0f533e8634130f6d1bf37379dbdc13",
+            "parent": {
+              "package": "/Game/Characters/_Core/BasePawn",
+              "public_hash": "0x27ffe8d4d80af0d9"
+            }
+          },
+          {
+            "package": "/Game/Characters/_Core/BasePawn",
+            "class": "BasePawn_C",
+            "class_public_hash": "0x27ffe8d4d80af0d9",
+            "source_sha256": "39cdd3e571363a848b0827d045be31df0528b77012a7d3dbc572e50c980f282b",
+            "parent": "/Script/ShooterGame.ShooterCharacter"
+          }
+        ]
+      }
+    },
+    {
+      "index": 6,
+      "name": "Chamber",
+      "code": "Deadeye",
+      "class": "/Game/Characters/Deadeye/Deadeye_PC.Deadeye_PC_C",
+      "id": "22697a3d45bf8dd74fec84a9e28c69d7",
+      "guid_words": [
+        577337917,
+        1170181591,
+        1340900521,
+        3800852951
+      ],
+      "data_asset_class": "/Game/Characters/Deadeye/Deadeye_PrimaryAsset.Deadeye_PrimaryAsset_C",
+      "playable": true,
+      "excluded_from_content_catalog": false,
+      "playable_verification_source": {
+        "package": "/Game/Characters/Deadeye/Deadeye_PrimaryAsset",
+        "source_sha256": "78ae8439d9d89d8b817699b83a8787e66a82c0779db2eb1a51e09d8fe33596af",
+        "native_class": "/Script/ShooterGame.CharacterDataAsset",
+        "playable_offset": "0x1d0",
+        "exclude_catalog_offset": "0x1d1",
+        "serialized_cdo_fields": [
+          {
+            "slot": 1,
+            "native_property_index": 0,
+            "zero": false,
+            "byte_offset": 1468,
+            "bytes": 20
+          },
+          {
+            "slot": 2,
+            "native_property_index": 1,
+            "zero": false,
+            "byte_offset": 1488,
+            "bytes": 20
+          },
+          {
+            "slot": 3,
+            "native_property_index": 2,
+            "zero": false,
+            "byte_offset": 1508,
+            "bytes": 20
+          },
+          {
+            "slot": 4,
+            "native_property_index": 3,
+            "zero": false,
+            "byte_offset": 1528,
+            "bytes": 20
+          },
+          {
+            "slot": 5,
+            "native_property_index": 4,
+            "zero": false,
+            "byte_offset": 1548,
+            "bytes": 20
+          },
+          {
+            "slot": 8,
+            "native_property_index": 7,
+            "zero": false,
+            "byte_offset": 1568,
+            "bytes": 20
+          },
+          {
+            "slot": 10,
+            "native_property_index": 9,
+            "zero": false,
+            "byte_offset": 1588,
+            "bytes": 8
+          },
+          {
+            "slot": 11,
+            "native_property_index": 10,
+            "zero": false,
+            "byte_offset": 1596,
+            "bytes": 8
+          },
+          {
+            "slot": 13,
+            "native_property_index": 12,
+            "zero": false,
+            "byte_offset": 1604,
+            "bytes": 1
+          },
+          {
+            "slot": 14,
+            "native_property_index": 13,
+            "zero": true,
+            "byte_offset": 1605,
+            "bytes": 0
+          },
+          {
+            "slot": 15,
+            "native_property_index": 14,
+            "zero": false,
+            "byte_offset": 1605,
+            "bytes": 1
+          },
+          {
+            "slot": 17,
+            "native_property_index": 16,
+            "zero": false,
+            "byte_offset": 1606,
+            "bytes": 16
+          }
+        ],
+        "complete_cdo_suffix_verified": true
+      },
+      "original_character_class_evidence": {
+        "derived_from_original_shooter_character": true,
+        "chain": [
+          {
+            "package": "/Game/Characters/Deadeye/Deadeye_PC",
+            "class": "Deadeye_PC_C",
+            "class_public_hash": "0x39ee3a61e28dbf13",
+            "source_sha256": "92752e36af13954ec9334b3aa610003b6922b53c0cee4c174a715dcaf430a216",
+            "parent": {
+              "package": "/Game/Characters/_Core/BasePlayerCharacter",
+              "public_hash": "0x4d91085fe1a8e09c"
+            }
+          },
+          {
+            "package": "/Game/Characters/_Core/BasePlayerCharacter",
+            "class": "BasePlayerCharacter_C",
+            "class_public_hash": "0x4d91085fe1a8e09c",
+            "source_sha256": "0519d4b6ca03f75cac69a08d07c450b12c0f533e8634130f6d1bf37379dbdc13",
+            "parent": {
+              "package": "/Game/Characters/_Core/BasePawn",
+              "public_hash": "0x27ffe8d4d80af0d9"
+            }
+          },
+          {
+            "package": "/Game/Characters/_Core/BasePawn",
+            "class": "BasePawn_C",
+            "class_public_hash": "0x27ffe8d4d80af0d9",
+            "source_sha256": "39cdd3e571363a848b0827d045be31df0528b77012a7d3dbc572e50c980f282b",
+            "parent": "/Script/ShooterGame.ShooterCharacter"
+          }
+        ]
+      }
+    },
+    {
+      "index": 7,
+      "name": "Clove",
+      "code": "Smonk",
+      "class": "/Game/Characters/Smonk/Smonk_PC.Smonk_PC_C",
+      "id": "1dbf2edd472909843115daa5eed44993",
+      "guid_words": [
+        499068637,
+        1193871748,
+        823515813,
+        4006889875
+      ],
+      "data_asset_class": "/Game/Characters/Smonk/Smonk_PrimaryAsset.Smonk_PrimaryAsset_C",
+      "playable": true,
+      "excluded_from_content_catalog": false,
+      "playable_verification_source": {
+        "package": "/Game/Characters/Smonk/Smonk_PrimaryAsset",
+        "source_sha256": "8947630ef0aee88f344a0ddc3116c57d6e31ad16fcacb163427eda345eeadbb6",
+        "native_class": "/Script/ShooterGame.CharacterDataAsset",
+        "playable_offset": "0x1d0",
+        "exclude_catalog_offset": "0x1d1",
+        "serialized_cdo_fields": [
+          {
+            "slot": 1,
+            "native_property_index": 0,
+            "zero": false,
+            "byte_offset": 1501,
+            "bytes": 20
+          },
+          {
+            "slot": 2,
+            "native_property_index": 1,
+            "zero": false,
+            "byte_offset": 1521,
+            "bytes": 20
+          },
+          {
+            "slot": 3,
+            "native_property_index": 2,
+            "zero": false,
+            "byte_offset": 1541,
+            "bytes": 20
+          },
+          {
+            "slot": 4,
+            "native_property_index": 3,
+            "zero": false,
+            "byte_offset": 1561,
+            "bytes": 20
+          },
+          {
+            "slot": 5,
+            "native_property_index": 4,
+            "zero": false,
+            "byte_offset": 1581,
+            "bytes": 20
+          },
+          {
+            "slot": 8,
+            "native_property_index": 7,
+            "zero": false,
+            "byte_offset": 1601,
+            "bytes": 20
+          },
+          {
+            "slot": 10,
+            "native_property_index": 9,
+            "zero": false,
+            "byte_offset": 1621,
+            "bytes": 8
+          },
+          {
+            "slot": 11,
+            "native_property_index": 10,
+            "zero": false,
+            "byte_offset": 1629,
+            "bytes": 8
+          },
+          {
+            "slot": 13,
+            "native_property_index": 12,
+            "zero": false,
+            "byte_offset": 1637,
+            "bytes": 1
+          },
+          {
+            "slot": 14,
+            "native_property_index": 13,
+            "zero": true,
+            "byte_offset": 1638,
+            "bytes": 0
+          },
+          {
+            "slot": 15,
+            "native_property_index": 14,
+            "zero": false,
+            "byte_offset": 1638,
+            "bytes": 1
+          },
+          {
+            "slot": 16,
+            "native_property_index": 15,
+            "zero": false,
+            "byte_offset": 1639,
+            "bytes": 20
+          },
+          {
+            "slot": 17,
+            "native_property_index": 16,
+            "zero": false,
+            "byte_offset": 1659,
+            "bytes": 16
+          }
+        ],
+        "complete_cdo_suffix_verified": true
+      },
+      "original_character_class_evidence": {
+        "derived_from_original_shooter_character": true,
+        "chain": [
+          {
+            "package": "/Game/Characters/Smonk/Smonk_PC",
+            "class": "Smonk_PC_C",
+            "class_public_hash": "0x807a3aad5ce67376",
+            "source_sha256": "708b05469fe474154c5f0fe66c756dcf0a72e351a811b6b7523ea6b9351e34d5",
+            "parent": {
+              "package": "/Game/Characters/_Core/BasePlayerCharacter",
+              "public_hash": "0x4d91085fe1a8e09c"
+            }
+          },
+          {
+            "package": "/Game/Characters/_Core/BasePlayerCharacter",
+            "class": "BasePlayerCharacter_C",
+            "class_public_hash": "0x4d91085fe1a8e09c",
+            "source_sha256": "0519d4b6ca03f75cac69a08d07c450b12c0f533e8634130f6d1bf37379dbdc13",
+            "parent": {
+              "package": "/Game/Characters/_Core/BasePawn",
+              "public_hash": "0x27ffe8d4d80af0d9"
+            }
+          },
+          {
+            "package": "/Game/Characters/_Core/BasePawn",
+            "class": "BasePawn_C",
+            "class_public_hash": "0x27ffe8d4d80af0d9",
+            "source_sha256": "39cdd3e571363a848b0827d045be31df0528b77012a7d3dbc572e50c980f282b",
+            "parent": "/Script/ShooterGame.ShooterCharacter"
+          }
+        ]
+      }
+    },
+    {
+      "index": 8,
+      "name": "Cypher",
+      "code": "Gumshoe",
+      "class": "/Game/Characters/Gumshoe/Gumshoe_PC.Gumshoe_PC_C",
+      "id": "117ed9e349f365123ccf0cada7e3823b",
+      "guid_words": [
+        293525987,
+        1240687890,
+        1020202157,
+        2816705083
+      ],
+      "data_asset_class": "/Game/Characters/Gumshoe/Gumshoe_PrimaryAsset.Gumshoe_PrimaryAsset_C",
+      "playable": true,
+      "excluded_from_content_catalog": false,
+      "playable_verification_source": {
+        "package": "/Game/Characters/Gumshoe/Gumshoe_PrimaryAsset",
+        "source_sha256": "8f0975e0419a6aa2d2070deb1624bd923ee787429bc3dfb67cbf1b685a324d50",
+        "native_class": "/Script/ShooterGame.CharacterDataAsset",
+        "playable_offset": "0x1d0",
+        "exclude_catalog_offset": "0x1d1",
+        "serialized_cdo_fields": [
+          {
+            "slot": 1,
+            "native_property_index": 0,
+            "zero": false,
+            "byte_offset": 1467,
+            "bytes": 20
+          },
+          {
+            "slot": 2,
+            "native_property_index": 1,
+            "zero": false,
+            "byte_offset": 1487,
+            "bytes": 20
+          },
+          {
+            "slot": 3,
+            "native_property_index": 2,
+            "zero": false,
+            "byte_offset": 1507,
+            "bytes": 20
+          },
+          {
+            "slot": 4,
+            "native_property_index": 3,
+            "zero": false,
+            "byte_offset": 1527,
+            "bytes": 20
+          },
+          {
+            "slot": 5,
+            "native_property_index": 4,
+            "zero": false,
+            "byte_offset": 1547,
+            "bytes": 20
+          },
+          {
+            "slot": 8,
+            "native_property_index": 7,
+            "zero": false,
+            "byte_offset": 1567,
+            "bytes": 20
+          },
+          {
+            "slot": 10,
+            "native_property_index": 9,
+            "zero": false,
+            "byte_offset": 1587,
+            "bytes": 8
+          },
+          {
+            "slot": 11,
+            "native_property_index": 10,
+            "zero": false,
+            "byte_offset": 1595,
+            "bytes": 8
+          },
+          {
+            "slot": 13,
+            "native_property_index": 12,
+            "zero": false,
+            "byte_offset": 1603,
+            "bytes": 1
+          },
+          {
+            "slot": 14,
+            "native_property_index": 13,
+            "zero": true,
+            "byte_offset": 1604,
+            "bytes": 0
+          },
+          {
+            "slot": 15,
+            "native_property_index": 14,
+            "zero": false,
+            "byte_offset": 1604,
+            "bytes": 1
+          },
+          {
+            "slot": 17,
+            "native_property_index": 16,
+            "zero": false,
+            "byte_offset": 1605,
+            "bytes": 16
+          }
+        ],
+        "complete_cdo_suffix_verified": true
+      },
+      "original_character_class_evidence": {
+        "derived_from_original_shooter_character": true,
+        "chain": [
+          {
+            "package": "/Game/Characters/Gumshoe/Gumshoe_PC",
+            "class": "Gumshoe_PC_C",
+            "class_public_hash": "0xf05f9eb4063b1c51",
+            "source_sha256": "378f3e0b7324be29b25142dbb98fded7e44bfaa05934f59e8b8fc4d800c6b45e",
+            "parent": {
+              "package": "/Game/Characters/_Core/BasePlayerCharacter",
+              "public_hash": "0x4d91085fe1a8e09c"
+            }
+          },
+          {
+            "package": "/Game/Characters/_Core/BasePlayerCharacter",
+            "class": "BasePlayerCharacter_C",
+            "class_public_hash": "0x4d91085fe1a8e09c",
+            "source_sha256": "0519d4b6ca03f75cac69a08d07c450b12c0f533e8634130f6d1bf37379dbdc13",
+            "parent": {
+              "package": "/Game/Characters/_Core/BasePawn",
+              "public_hash": "0x27ffe8d4d80af0d9"
+            }
+          },
+          {
+            "package": "/Game/Characters/_Core/BasePawn",
+            "class": "BasePawn_C",
+            "class_public_hash": "0x27ffe8d4d80af0d9",
+            "source_sha256": "39cdd3e571363a848b0827d045be31df0528b77012a7d3dbc572e50c980f282b",
+            "parent": "/Script/ShooterGame.ShooterCharacter"
+          }
+        ]
+      }
+    },
+    {
+      "index": 9,
+      "name": "Deadlock",
+      "code": "Cable",
+      "class": "/Game/Characters/Cable/Cable_PC.Cable_PC_C",
+      "id": "cc8b64c84b254ff96e7f37b4da43d235",
+      "guid_words": [
+        3431687368,
+        1260736505,
+        1853831092,
+        3661877813
+      ],
+      "data_asset_class": "/Game/Characters/Cable/Cable_PrimaryAsset.Cable_PrimaryAsset_C",
+      "playable": true,
+      "excluded_from_content_catalog": false,
+      "playable_verification_source": {
+        "package": "/Game/Characters/Cable/Cable_PrimaryAsset",
+        "source_sha256": "41e54f88014e4e97cfd7fcb2f422916c955adc4140360f6f5fa5765d3c15a948",
+        "native_class": "/Script/ShooterGame.CharacterDataAsset",
+        "playable_offset": "0x1d0",
+        "exclude_catalog_offset": "0x1d1",
+        "serialized_cdo_fields": [
+          {
+            "slot": 1,
+            "native_property_index": 0,
+            "zero": false,
+            "byte_offset": 1514,
+            "bytes": 20
+          },
+          {
+            "slot": 2,
+            "native_property_index": 1,
+            "zero": false,
+            "byte_offset": 1534,
+            "bytes": 20
+          },
+          {
+            "slot": 3,
+            "native_property_index": 2,
+            "zero": false,
+            "byte_offset": 1554,
+            "bytes": 20
+          },
+          {
+            "slot": 4,
+            "native_property_index": 3,
+            "zero": false,
+            "byte_offset": 1574,
+            "bytes": 20
+          },
+          {
+            "slot": 5,
+            "native_property_index": 4,
+            "zero": false,
+            "byte_offset": 1594,
+            "bytes": 20
+          },
+          {
+            "slot": 8,
+            "native_property_index": 7,
+            "zero": false,
+            "byte_offset": 1614,
+            "bytes": 20
+          },
+          {
+            "slot": 10,
+            "native_property_index": 9,
+            "zero": false,
+            "byte_offset": 1634,
+            "bytes": 8
+          },
+          {
+            "slot": 11,
+            "native_property_index": 10,
+            "zero": false,
+            "byte_offset": 1642,
+            "bytes": 8
+          },
+          {
+            "slot": 13,
+            "native_property_index": 12,
+            "zero": false,
+            "byte_offset": 1650,
+            "bytes": 1
+          },
+          {
+            "slot": 14,
+            "native_property_index": 13,
+            "zero": true,
+            "byte_offset": 1651,
+            "bytes": 0
+          },
+          {
+            "slot": 16,
+            "native_property_index": 15,
+            "zero": false,
+            "byte_offset": 1651,
+            "bytes": 20
+          },
+          {
+            "slot": 17,
+            "native_property_index": 16,
+            "zero": false,
+            "byte_offset": 1671,
+            "bytes": 16
+          }
+        ],
+        "complete_cdo_suffix_verified": true
+      },
+      "original_character_class_evidence": {
+        "derived_from_original_shooter_character": true,
+        "chain": [
+          {
+            "package": "/Game/Characters/Cable/Cable_PC",
+            "class": "Cable_PC_C",
+            "class_public_hash": "0x82ff7a7d1d2037d",
+            "source_sha256": "e31772ae33435642cec49624441180583788c7ded4cc7a3021c1573b80972b3e",
+            "parent": {
+              "package": "/Game/Characters/_Core/BasePlayerCharacter",
+              "public_hash": "0x4d91085fe1a8e09c"
+            }
+          },
+          {
+            "package": "/Game/Characters/_Core/BasePlayerCharacter",
+            "class": "BasePlayerCharacter_C",
+            "class_public_hash": "0x4d91085fe1a8e09c",
+            "source_sha256": "0519d4b6ca03f75cac69a08d07c450b12c0f533e8634130f6d1bf37379dbdc13",
+            "parent": {
+              "package": "/Game/Characters/_Core/BasePawn",
+              "public_hash": "0x27ffe8d4d80af0d9"
+            }
+          },
+          {
+            "package": "/Game/Characters/_Core/BasePawn",
+            "class": "BasePawn_C",
+            "class_public_hash": "0x27ffe8d4d80af0d9",
+            "source_sha256": "39cdd3e571363a848b0827d045be31df0528b77012a7d3dbc572e50c980f282b",
+            "parent": "/Script/ShooterGame.ShooterCharacter"
+          }
+        ]
+      }
+    },
+    {
+      "index": 10,
+      "name": "Fade",
+      "code": "BountyHunter",
+      "class": "/Game/Characters/BountyHunter/BountyHunter_PC.BountyHunter_PC_C",
+      "id": "dade69b44f5a8528247b219e5a1facd6",
+      "guid_words": [
+        3672009140,
+        1331332392,
+        612049310,
+        1512025302
+      ],
+      "data_asset_class": "/Game/Characters/BountyHunter/BountyHunter_PrimaryAsset.BountyHunter_PrimaryAsset_C",
+      "playable": true,
+      "excluded_from_content_catalog": false,
+      "playable_verification_source": {
+        "package": "/Game/Characters/BountyHunter/BountyHunter_PrimaryAsset",
+        "source_sha256": "b5e4355467f2e83a615a195e22fd5e3894dd7a17e84ee563c2c8be75748528ce",
+        "native_class": "/Script/ShooterGame.CharacterDataAsset",
+        "playable_offset": "0x1d0",
+        "exclude_catalog_offset": "0x1d1",
+        "serialized_cdo_fields": [
+          {
+            "slot": 1,
+            "native_property_index": 0,
+            "zero": false,
+            "byte_offset": 1537,
+            "bytes": 20
+          },
+          {
+            "slot": 2,
+            "native_property_index": 1,
+            "zero": false,
+            "byte_offset": 1557,
+            "bytes": 20
+          },
+          {
+            "slot": 3,
+            "native_property_index": 2,
+            "zero": false,
+            "byte_offset": 1577,
+            "bytes": 20
+          },
+          {
+            "slot": 4,
+            "native_property_index": 3,
+            "zero": false,
+            "byte_offset": 1597,
+            "bytes": 20
+          },
+          {
+            "slot": 5,
+            "native_property_index": 4,
+            "zero": false,
+            "byte_offset": 1617,
+            "bytes": 20
+          },
+          {
+            "slot": 8,
+            "native_property_index": 7,
+            "zero": false,
+            "byte_offset": 1637,
+            "bytes": 20
+          },
+          {
+            "slot": 10,
+            "native_property_index": 9,
+            "zero": false,
+            "byte_offset": 1657,
+            "bytes": 8
+          },
+          {
+            "slot": 11,
+            "native_property_index": 10,
+            "zero": false,
+            "byte_offset": 1665,
+            "bytes": 8
+          },
+          {
+            "slot": 13,
+            "native_property_index": 12,
+            "zero": false,
+            "byte_offset": 1673,
+            "bytes": 1
+          },
+          {
+            "slot": 14,
+            "native_property_index": 13,
+            "zero": true,
+            "byte_offset": 1674,
+            "bytes": 0
+          },
+          {
+            "slot": 15,
+            "native_property_index": 14,
+            "zero": false,
+            "byte_offset": 1674,
+            "bytes": 1
+          },
+          {
+            "slot": 17,
+            "native_property_index": 16,
+            "zero": false,
+            "byte_offset": 1675,
+            "bytes": 16
+          }
+        ],
+        "complete_cdo_suffix_verified": true
+      },
+      "original_character_class_evidence": {
+        "derived_from_original_shooter_character": true,
+        "chain": [
+          {
+            "package": "/Game/Characters/BountyHunter/BountyHunter_PC",
+            "class": "BountyHunter_PC_C",
+            "class_public_hash": "0x7f93dec9a5581f6f",
+            "source_sha256": "0fda933f3b48e0c00f038f8cc743b152ce071f9cc07f2ce2d0d87ed097473a8b",
+            "parent": {
+              "package": "/Game/Characters/_Core/BasePlayerCharacter",
+              "public_hash": "0x4d91085fe1a8e09c"
+            }
+          },
+          {
+            "package": "/Game/Characters/_Core/BasePlayerCharacter",
+            "class": "BasePlayerCharacter_C",
+            "class_public_hash": "0x4d91085fe1a8e09c",
+            "source_sha256": "0519d4b6ca03f75cac69a08d07c450b12c0f533e8634130f6d1bf37379dbdc13",
+            "parent": {
+              "package": "/Game/Characters/_Core/BasePawn",
+              "public_hash": "0x27ffe8d4d80af0d9"
+            }
+          },
+          {
+            "package": "/Game/Characters/_Core/BasePawn",
+            "class": "BasePawn_C",
+            "class_public_hash": "0x27ffe8d4d80af0d9",
+            "source_sha256": "39cdd3e571363a848b0827d045be31df0528b77012a7d3dbc572e50c980f282b",
+            "parent": "/Script/ShooterGame.ShooterCharacter"
+          }
+        ]
+      }
+    },
+    {
+      "index": 11,
+      "name": "Gekko",
+      "code": "Aggrobot",
+      "class": "/Game/Characters/AggroBot/AggroBot_PC.AggroBot_PC_C",
+      "id": "e370fa57475736043648499e1f642d3f",
+      "guid_words": [
+        3815832151,
+        1196897796,
+        910707102,
+        526658879
+      ],
+      "data_asset_class": "/Game/Characters/AggroBot/AggroBot_PrimaryAsset.AggroBot_PrimaryAsset_C",
+      "playable": true,
+      "excluded_from_content_catalog": false,
+      "playable_verification_source": {
+        "package": "/Game/Characters/AggroBot/AggroBot_PrimaryAsset",
+        "source_sha256": "c959214f8a992002f4822bff628c90a82bb5a66fc0c5c01d757d6b4c4e2d7340",
+        "native_class": "/Script/ShooterGame.CharacterDataAsset",
+        "playable_offset": "0x1d0",
+        "exclude_catalog_offset": "0x1d1",
+        "serialized_cdo_fields": [
+          {
+            "slot": 1,
+            "native_property_index": 0,
+            "zero": false,
+            "byte_offset": 1366,
+            "bytes": 20
+          },
+          {
+            "slot": 2,
+            "native_property_index": 1,
+            "zero": false,
+            "byte_offset": 1386,
+            "bytes": 20
+          },
+          {
+            "slot": 3,
+            "native_property_index": 2,
+            "zero": false,
+            "byte_offset": 1406,
+            "bytes": 20
+          },
+          {
+            "slot": 4,
+            "native_property_index": 3,
+            "zero": false,
+            "byte_offset": 1426,
+            "bytes": 20
+          },
+          {
+            "slot": 5,
+            "native_property_index": 4,
+            "zero": false,
+            "byte_offset": 1446,
+            "bytes": 20
+          },
+          {
+            "slot": 8,
+            "native_property_index": 7,
+            "zero": false,
+            "byte_offset": 1466,
+            "bytes": 20
+          },
+          {
+            "slot": 10,
+            "native_property_index": 9,
+            "zero": false,
+            "byte_offset": 1486,
+            "bytes": 8
+          },
+          {
+            "slot": 11,
+            "native_property_index": 10,
+            "zero": false,
+            "byte_offset": 1494,
+            "bytes": 8
+          },
+          {
+            "slot": 13,
+            "native_property_index": 12,
+            "zero": false,
+            "byte_offset": 1502,
+            "bytes": 1
+          },
+          {
+            "slot": 14,
+            "native_property_index": 13,
+            "zero": true,
+            "byte_offset": 1503,
+            "bytes": 0
+          },
+          {
+            "slot": 17,
+            "native_property_index": 16,
+            "zero": false,
+            "byte_offset": 1503,
+            "bytes": 16
+          }
+        ],
+        "complete_cdo_suffix_verified": true
+      },
+      "original_character_class_evidence": {
+        "derived_from_original_shooter_character": true,
+        "chain": [
+          {
+            "package": "/Game/Characters/AggroBot/AggroBot_PC",
+            "class": "AggroBot_PC_C",
+            "class_public_hash": "0x2e5d7cd1eec42a7",
+            "source_sha256": "c01e40b544722df146583e8269422ddd716b80959159fefa2e90c20847f49e28",
+            "parent": {
+              "package": "/Game/Characters/_Core/BasePlayerCharacter",
+              "public_hash": "0x4d91085fe1a8e09c"
+            }
+          },
+          {
+            "package": "/Game/Characters/_Core/BasePlayerCharacter",
+            "class": "BasePlayerCharacter_C",
+            "class_public_hash": "0x4d91085fe1a8e09c",
+            "source_sha256": "0519d4b6ca03f75cac69a08d07c450b12c0f533e8634130f6d1bf37379dbdc13",
+            "parent": {
+              "package": "/Game/Characters/_Core/BasePawn",
+              "public_hash": "0x27ffe8d4d80af0d9"
+            }
+          },
+          {
+            "package": "/Game/Characters/_Core/BasePawn",
+            "class": "BasePawn_C",
+            "class_public_hash": "0x27ffe8d4d80af0d9",
+            "source_sha256": "39cdd3e571363a848b0827d045be31df0528b77012a7d3dbc572e50c980f282b",
+            "parent": "/Script/ShooterGame.ShooterCharacter"
+          }
+        ]
+      }
+    },
+    {
+      "index": 12,
+      "name": "Harbor",
+      "code": "Mage",
+      "class": "/Game/Characters/Mage/Mage_PC.Mage_PC_C",
+      "id": "95b78ed7463786d97e4171ba8c293152",
+      "guid_words": [
+        2511834839,
+        1178044121,
+        2118218170,
+        2351509842
+      ],
+      "data_asset_class": "/Game/Characters/Mage/Mage_PrimaryAsset.Mage_PrimaryAsset_C",
+      "playable": true,
+      "excluded_from_content_catalog": false,
+      "playable_verification_source": {
+        "package": "/Game/Characters/Mage/Mage_PrimaryAsset",
+        "source_sha256": "52da0639a3973a0e4e8c1c9650e218c2cf74e06204392298e1e6745ce9c882aa",
+        "native_class": "/Script/ShooterGame.CharacterDataAsset",
+        "playable_offset": "0x1d0",
+        "exclude_catalog_offset": "0x1d1",
+        "serialized_cdo_fields": [
+          {
+            "slot": 1,
+            "native_property_index": 0,
+            "zero": false,
+            "byte_offset": 1419,
+            "bytes": 20
+          },
+          {
+            "slot": 2,
+            "native_property_index": 1,
+            "zero": false,
+            "byte_offset": 1439,
+            "bytes": 20
+          },
+          {
+            "slot": 3,
+            "native_property_index": 2,
+            "zero": false,
+            "byte_offset": 1459,
+            "bytes": 20
+          },
+          {
+            "slot": 4,
+            "native_property_index": 3,
+            "zero": false,
+            "byte_offset": 1479,
+            "bytes": 20
+          },
+          {
+            "slot": 5,
+            "native_property_index": 4,
+            "zero": false,
+            "byte_offset": 1499,
+            "bytes": 20
+          },
+          {
+            "slot": 8,
+            "native_property_index": 7,
+            "zero": false,
+            "byte_offset": 1519,
+            "bytes": 20
+          },
+          {
+            "slot": 10,
+            "native_property_index": 9,
+            "zero": false,
+            "byte_offset": 1539,
+            "bytes": 8
+          },
+          {
+            "slot": 11,
+            "native_property_index": 10,
+            "zero": false,
+            "byte_offset": 1547,
+            "bytes": 8
+          },
+          {
+            "slot": 13,
+            "native_property_index": 12,
+            "zero": false,
+            "byte_offset": 1555,
+            "bytes": 1
+          },
+          {
+            "slot": 14,
+            "native_property_index": 13,
+            "zero": true,
+            "byte_offset": 1556,
+            "bytes": 0
+          },
+          {
+            "slot": 15,
+            "native_property_index": 14,
+            "zero": false,
+            "byte_offset": 1556,
+            "bytes": 1
+          },
+          {
+            "slot": 17,
+            "native_property_index": 16,
+            "zero": false,
+            "byte_offset": 1557,
+            "bytes": 16
+          }
+        ],
+        "complete_cdo_suffix_verified": true
+      },
+      "original_character_class_evidence": {
+        "derived_from_original_shooter_character": true,
+        "chain": [
+          {
+            "package": "/Game/Characters/Mage/Mage_PC",
+            "class": "Mage_PC_C",
+            "class_public_hash": "0x8608d66e830da9dc",
+            "source_sha256": "f206ee647993bbbf13fe9b2eabcfaab1a7b481f05e039e7ab618fbde9084293e",
+            "parent": {
+              "package": "/Game/Characters/_Core/BasePlayerCharacter",
+              "public_hash": "0x4d91085fe1a8e09c"
+            }
+          },
+          {
+            "package": "/Game/Characters/_Core/BasePlayerCharacter",
+            "class": "BasePlayerCharacter_C",
+            "class_public_hash": "0x4d91085fe1a8e09c",
+            "source_sha256": "0519d4b6ca03f75cac69a08d07c450b12c0f533e8634130f6d1bf37379dbdc13",
+            "parent": {
+              "package": "/Game/Characters/_Core/BasePawn",
+              "public_hash": "0x27ffe8d4d80af0d9"
+            }
+          },
+          {
+            "package": "/Game/Characters/_Core/BasePawn",
+            "class": "BasePawn_C",
+            "class_public_hash": "0x27ffe8d4d80af0d9",
+            "source_sha256": "39cdd3e571363a848b0827d045be31df0528b77012a7d3dbc572e50c980f282b",
+            "parent": "/Script/ShooterGame.ShooterCharacter"
+          }
+        ]
+      }
+    },
+    {
+      "index": 13,
+      "name": "Iso",
+      "code": "Sequoia",
+      "class": "/Game/Characters/Sequoia/Sequoia_PC.Sequoia_PC_C",
+      "id": "0e38b51041a857805e8f568b2a4f2d6c",
+      "guid_words": [
+        238597392,
+        1101551488,
+        1586452107,
+        709832044
+      ],
+      "data_asset_class": "/Game/Characters/Sequoia/Sequoia_BasePrimaryAsset.Sequoia_BasePrimaryAsset_C",
+      "playable": true,
+      "excluded_from_content_catalog": false,
+      "playable_verification_source": {
+        "package": "/Game/Characters/Sequoia/Sequoia_BasePrimaryAsset",
+        "source_sha256": "4cbed5af6f3f0282956c9ed7d1fc83ada74d64646e6dc3d2fa40fe07ce274dff",
+        "native_class": "/Script/ShooterGame.CharacterDataAsset",
+        "playable_offset": "0x1d0",
+        "exclude_catalog_offset": "0x1d1",
+        "serialized_cdo_fields": [
+          {
+            "slot": 1,
+            "native_property_index": 0,
+            "zero": false,
+            "byte_offset": 1531,
+            "bytes": 20
+          },
+          {
+            "slot": 2,
+            "native_property_index": 1,
+            "zero": false,
+            "byte_offset": 1551,
+            "bytes": 20
+          },
+          {
+            "slot": 3,
+            "native_property_index": 2,
+            "zero": false,
+            "byte_offset": 1571,
+            "bytes": 20
+          },
+          {
+            "slot": 4,
+            "native_property_index": 3,
+            "zero": false,
+            "byte_offset": 1591,
+            "bytes": 20
+          },
+          {
+            "slot": 5,
+            "native_property_index": 4,
+            "zero": false,
+            "byte_offset": 1611,
+            "bytes": 20
+          },
+          {
+            "slot": 8,
+            "native_property_index": 7,
+            "zero": false,
+            "byte_offset": 1631,
+            "bytes": 20
+          },
+          {
+            "slot": 10,
+            "native_property_index": 9,
+            "zero": false,
+            "byte_offset": 1651,
+            "bytes": 8
+          },
+          {
+            "slot": 11,
+            "native_property_index": 10,
+            "zero": false,
+            "byte_offset": 1659,
+            "bytes": 8
+          },
+          {
+            "slot": 13,
+            "native_property_index": 12,
+            "zero": false,
+            "byte_offset": 1667,
+            "bytes": 1
+          },
+          {
+            "slot": 14,
+            "native_property_index": 13,
+            "zero": true,
+            "byte_offset": 1668,
+            "bytes": 0
+          },
+          {
+            "slot": 16,
+            "native_property_index": 15,
+            "zero": false,
+            "byte_offset": 1668,
+            "bytes": 20
+          },
+          {
+            "slot": 17,
+            "native_property_index": 16,
+            "zero": false,
+            "byte_offset": 1688,
+            "bytes": 16
+          }
+        ],
+        "complete_cdo_suffix_verified": true
+      },
+      "original_character_class_evidence": {
+        "derived_from_original_shooter_character": true,
+        "chain": [
+          {
+            "package": "/Game/Characters/Sequoia/Sequoia_PC",
+            "class": "Sequoia_PC_C",
+            "class_public_hash": "0xe3f99e34299c686b",
+            "source_sha256": "c3ccf7c595449964478d3e93eb9579bf3786c6187d87b1d76de292022f744e79",
+            "parent": {
+              "package": "/Game/Characters/_Core/BasePlayerCharacter",
+              "public_hash": "0x4d91085fe1a8e09c"
+            }
+          },
+          {
+            "package": "/Game/Characters/_Core/BasePlayerCharacter",
+            "class": "BasePlayerCharacter_C",
+            "class_public_hash": "0x4d91085fe1a8e09c",
+            "source_sha256": "0519d4b6ca03f75cac69a08d07c450b12c0f533e8634130f6d1bf37379dbdc13",
+            "parent": {
+              "package": "/Game/Characters/_Core/BasePawn",
+              "public_hash": "0x27ffe8d4d80af0d9"
+            }
+          },
+          {
+            "package": "/Game/Characters/_Core/BasePawn",
+            "class": "BasePawn_C",
+            "class_public_hash": "0x27ffe8d4d80af0d9",
+            "source_sha256": "39cdd3e571363a848b0827d045be31df0528b77012a7d3dbc572e50c980f282b",
+            "parent": "/Script/ShooterGame.ShooterCharacter"
+          }
+        ]
+      }
+    },
+    {
+      "index": 14,
+      "name": "KAYO",
+      "code": "Grenadier",
+      "class": "/Game/Characters/Grenadier/Grenadier_PC.Grenadier_PC_C",
+      "id": "601dbbe743cebe572a404abd24953621",
+      "guid_words": [
+        1612561383,
+        1137622615,
+        708856509,
+        613758497
+      ],
+      "data_asset_class": "/Game/Characters/Grenadier/Grenadier_PrimaryAsset.Grenadier_PrimaryAsset_C",
+      "playable": true,
+      "excluded_from_content_catalog": false,
+      "playable_verification_source": {
+        "package": "/Game/Characters/Grenadier/Grenadier_PrimaryAsset",
+        "source_sha256": "ab89ef26cef040d6d2a5748ec31f036c3113a7d2cb319c718a410699b47d824d",
+        "native_class": "/Script/ShooterGame.CharacterDataAsset",
+        "playable_offset": "0x1d0",
+        "exclude_catalog_offset": "0x1d1",
+        "serialized_cdo_fields": [
+          {
+            "slot": 1,
+            "native_property_index": 0,
+            "zero": false,
+            "byte_offset": 1451,
+            "bytes": 20
+          },
+          {
+            "slot": 2,
+            "native_property_index": 1,
+            "zero": false,
+            "byte_offset": 1471,
+            "bytes": 20
+          },
+          {
+            "slot": 3,
+            "native_property_index": 2,
+            "zero": false,
+            "byte_offset": 1491,
+            "bytes": 20
+          },
+          {
+            "slot": 4,
+            "native_property_index": 3,
+            "zero": false,
+            "byte_offset": 1511,
+            "bytes": 20
+          },
+          {
+            "slot": 5,
+            "native_property_index": 4,
+            "zero": false,
+            "byte_offset": 1531,
+            "bytes": 20
+          },
+          {
+            "slot": 8,
+            "native_property_index": 7,
+            "zero": false,
+            "byte_offset": 1551,
+            "bytes": 20
+          },
+          {
+            "slot": 10,
+            "native_property_index": 9,
+            "zero": false,
+            "byte_offset": 1571,
+            "bytes": 8
+          },
+          {
+            "slot": 11,
+            "native_property_index": 10,
+            "zero": false,
+            "byte_offset": 1579,
+            "bytes": 8
+          },
+          {
+            "slot": 13,
+            "native_property_index": 12,
+            "zero": false,
+            "byte_offset": 1587,
+            "bytes": 1
+          },
+          {
+            "slot": 14,
+            "native_property_index": 13,
+            "zero": true,
+            "byte_offset": 1588,
+            "bytes": 0
+          },
+          {
+            "slot": 15,
+            "native_property_index": 14,
+            "zero": false,
+            "byte_offset": 1588,
+            "bytes": 1
+          },
+          {
+            "slot": 17,
+            "native_property_index": 16,
+            "zero": false,
+            "byte_offset": 1589,
+            "bytes": 16
+          }
+        ],
+        "complete_cdo_suffix_verified": true
+      },
+      "original_character_class_evidence": {
+        "derived_from_original_shooter_character": true,
+        "chain": [
+          {
+            "package": "/Game/Characters/Grenadier/Grenadier_PC",
+            "class": "Grenadier_PC_C",
+            "class_public_hash": "0x15ee651e371f3575",
+            "source_sha256": "27cda7febcd6e25d0e459310f0684a2170bf366321696eb30fae70e7e5c973c4",
+            "parent": {
+              "package": "/Game/Characters/_Core/BasePlayerCharacter",
+              "public_hash": "0x4d91085fe1a8e09c"
+            }
+          },
+          {
+            "package": "/Game/Characters/_Core/BasePlayerCharacter",
+            "class": "BasePlayerCharacter_C",
+            "class_public_hash": "0x4d91085fe1a8e09c",
+            "source_sha256": "0519d4b6ca03f75cac69a08d07c450b12c0f533e8634130f6d1bf37379dbdc13",
+            "parent": {
+              "package": "/Game/Characters/_Core/BasePawn",
+              "public_hash": "0x27ffe8d4d80af0d9"
+            }
+          },
+          {
+            "package": "/Game/Characters/_Core/BasePawn",
+            "class": "BasePawn_C",
+            "class_public_hash": "0x27ffe8d4d80af0d9",
+            "source_sha256": "39cdd3e571363a848b0827d045be31df0528b77012a7d3dbc572e50c980f282b",
+            "parent": "/Script/ShooterGame.ShooterCharacter"
+          }
+        ]
+      }
+    },
+    {
+      "index": 15,
+      "name": "Killjoy",
+      "code": "Killjoy",
+      "class": "/Game/Characters/Killjoy/Killjoy_PC.Killjoy_PC_C",
+      "id": "1e58de9c4950512593e9a0aee9f98746",
+      "guid_words": [
+        509140636,
+        1230000421,
+        2481561774,
+        3925444422
+      ],
+      "data_asset_class": "/Game/Characters/Killjoy/Killjoy_PrimaryAsset.Killjoy_PrimaryAsset_C",
+      "playable": true,
+      "excluded_from_content_catalog": false,
+      "playable_verification_source": {
+        "package": "/Game/Characters/Killjoy/Killjoy_PrimaryAsset",
+        "source_sha256": "b77ccaf546f69fc795fac563be293f3dc8f131e38a3964ff8db3ac1712612d7b",
+        "native_class": "/Script/ShooterGame.CharacterDataAsset",
+        "playable_offset": "0x1d0",
+        "exclude_catalog_offset": "0x1d1",
+        "serialized_cdo_fields": [
+          {
+            "slot": 1,
+            "native_property_index": 0,
+            "zero": false,
+            "byte_offset": 1451,
+            "bytes": 20
+          },
+          {
+            "slot": 2,
+            "native_property_index": 1,
+            "zero": false,
+            "byte_offset": 1471,
+            "bytes": 20
+          },
+          {
+            "slot": 3,
+            "native_property_index": 2,
+            "zero": false,
+            "byte_offset": 1491,
+            "bytes": 20
+          },
+          {
+            "slot": 4,
+            "native_property_index": 3,
+            "zero": false,
+            "byte_offset": 1511,
+            "bytes": 20
+          },
+          {
+            "slot": 5,
+            "native_property_index": 4,
+            "zero": false,
+            "byte_offset": 1531,
+            "bytes": 20
+          },
+          {
+            "slot": 8,
+            "native_property_index": 7,
+            "zero": false,
+            "byte_offset": 1551,
+            "bytes": 20
+          },
+          {
+            "slot": 10,
+            "native_property_index": 9,
+            "zero": false,
+            "byte_offset": 1571,
+            "bytes": 8
+          },
+          {
+            "slot": 13,
+            "native_property_index": 12,
+            "zero": false,
+            "byte_offset": 1579,
+            "bytes": 1
+          },
+          {
+            "slot": 14,
+            "native_property_index": 13,
+            "zero": true,
+            "byte_offset": 1580,
+            "bytes": 0
+          },
+          {
+            "slot": 15,
+            "native_property_index": 14,
+            "zero": false,
+            "byte_offset": 1580,
+            "bytes": 1
+          },
+          {
+            "slot": 17,
+            "native_property_index": 16,
+            "zero": false,
+            "byte_offset": 1581,
+            "bytes": 16
+          }
+        ],
+        "complete_cdo_suffix_verified": true
+      },
+      "original_character_class_evidence": {
+        "derived_from_original_shooter_character": true,
+        "chain": [
+          {
+            "package": "/Game/Characters/Killjoy/Killjoy_PC",
+            "class": "Killjoy_PC_C",
+            "class_public_hash": "0x95f308918f43893b",
+            "source_sha256": "f859802c98f6b1e95bce5de14b758620c43559634ecff754614a0c8dcba1b72a",
+            "parent": {
+              "package": "/Game/Characters/_Core/BasePlayerCharacter",
+              "public_hash": "0x4d91085fe1a8e09c"
+            }
+          },
+          {
+            "package": "/Game/Characters/_Core/BasePlayerCharacter",
+            "class": "BasePlayerCharacter_C",
+            "class_public_hash": "0x4d91085fe1a8e09c",
+            "source_sha256": "0519d4b6ca03f75cac69a08d07c450b12c0f533e8634130f6d1bf37379dbdc13",
+            "parent": {
+              "package": "/Game/Characters/_Core/BasePawn",
+              "public_hash": "0x27ffe8d4d80af0d9"
+            }
+          },
+          {
+            "package": "/Game/Characters/_Core/BasePawn",
+            "class": "BasePawn_C",
+            "class_public_hash": "0x27ffe8d4d80af0d9",
+            "source_sha256": "39cdd3e571363a848b0827d045be31df0528b77012a7d3dbc572e50c980f282b",
+            "parent": "/Script/ShooterGame.ShooterCharacter"
+          }
+        ]
+      }
+    },
+    {
+      "index": 16,
+      "name": "Miks",
+      "code": "Iris",
+      "class": "/Game/Characters/Iris/Iris_PC.Iris_PC_C",
+      "id": "7c8a47014de69355b254e09bc2a34b72",
+      "guid_words": [
+        2089436929,
+        1306956629,
+        2991906971,
+        3265481586
+      ],
+      "data_asset_class": "/Game/Characters/Iris/Iris_PrimaryAsset.Iris_PrimaryAsset_C",
+      "playable": true,
+      "excluded_from_content_catalog": false,
+      "playable_verification_source": {
+        "package": "/Game/Characters/Iris/Iris_PrimaryAsset",
+        "source_sha256": "56102ffdd54befd8d79ce0d6333e3a6abc9c49a9b7f16e198b541e6c230c535b",
+        "native_class": "/Script/ShooterGame.CharacterDataAsset",
+        "playable_offset": "0x1d0",
+        "exclude_catalog_offset": "0x1d1",
+        "serialized_cdo_fields": [
+          {
+            "slot": 1,
+            "native_property_index": 0,
+            "zero": false,
+            "byte_offset": 1561,
+            "bytes": 20
+          },
+          {
+            "slot": 2,
+            "native_property_index": 1,
+            "zero": false,
+            "byte_offset": 1581,
+            "bytes": 20
+          },
+          {
+            "slot": 3,
+            "native_property_index": 2,
+            "zero": false,
+            "byte_offset": 1601,
+            "bytes": 20
+          },
+          {
+            "slot": 4,
+            "native_property_index": 3,
+            "zero": false,
+            "byte_offset": 1621,
+            "bytes": 20
+          },
+          {
+            "slot": 5,
+            "native_property_index": 4,
+            "zero": false,
+            "byte_offset": 1641,
+            "bytes": 20
+          },
+          {
+            "slot": 8,
+            "native_property_index": 7,
+            "zero": false,
+            "byte_offset": 1661,
+            "bytes": 20
+          },
+          {
+            "slot": 9,
+            "native_property_index": 8,
+            "zero": false,
+            "byte_offset": 1681,
+            "bytes": 20
+          },
+          {
+            "slot": 10,
+            "native_property_index": 9,
+            "zero": false,
+            "byte_offset": 1701,
+            "bytes": 8
+          },
+          {
+            "slot": 11,
+            "native_property_index": 10,
+            "zero": false,
+            "byte_offset": 1709,
+            "bytes": 8
+          },
+          {
+            "slot": 12,
+            "native_property_index": 11,
+            "zero": false,
+            "byte_offset": 1717,
+            "bytes": 8
+          },
+          {
+            "slot": 13,
+            "native_property_index": 12,
+            "zero": false,
+            "byte_offset": 1725,
+            "bytes": 1
+          },
+          {
+            "slot": 14,
+            "native_property_index": 13,
+            "zero": true,
+            "byte_offset": 1726,
+            "bytes": 0
+          },
+          {
+            "slot": 15,
+            "native_property_index": 14,
+            "zero": false,
+            "byte_offset": 1726,
+            "bytes": 1
+          },
+          {
+            "slot": 16,
+            "native_property_index": 15,
+            "zero": false,
+            "byte_offset": 1727,
+            "bytes": 20
+          },
+          {
+            "slot": 17,
+            "native_property_index": 16,
+            "zero": false,
+            "byte_offset": 1747,
+            "bytes": 16
+          }
+        ],
+        "complete_cdo_suffix_verified": true
+      },
+      "original_character_class_evidence": {
+        "derived_from_original_shooter_character": true,
+        "chain": [
+          {
+            "package": "/Game/Characters/Iris/Iris_PC",
+            "class": "Iris_PC_C",
+            "class_public_hash": "0xdb1bb67ee534211c",
+            "source_sha256": "191afaaa1366a2142c0ee3a6e856f2edb3c57418e90c80c7db55f2a1cf0d531b",
+            "parent": {
+              "package": "/Game/Characters/_Core/BasePlayerCharacter",
+              "public_hash": "0x4d91085fe1a8e09c"
+            }
+          },
+          {
+            "package": "/Game/Characters/_Core/BasePlayerCharacter",
+            "class": "BasePlayerCharacter_C",
+            "class_public_hash": "0x4d91085fe1a8e09c",
+            "source_sha256": "0519d4b6ca03f75cac69a08d07c450b12c0f533e8634130f6d1bf37379dbdc13",
+            "parent": {
+              "package": "/Game/Characters/_Core/BasePawn",
+              "public_hash": "0x27ffe8d4d80af0d9"
+            }
+          },
+          {
+            "package": "/Game/Characters/_Core/BasePawn",
+            "class": "BasePawn_C",
+            "class_public_hash": "0x27ffe8d4d80af0d9",
+            "source_sha256": "39cdd3e571363a848b0827d045be31df0528b77012a7d3dbc572e50c980f282b",
+            "parent": "/Script/ShooterGame.ShooterCharacter"
+          }
+        ]
+      }
+    },
+    {
+      "index": 17,
+      "name": "Neon",
+      "code": "Sprinter",
+      "class": "/Game/Characters/Sprinter/Sprinter_PC.Sprinter_PC_C",
+      "id": "bb2a482846eb8cd1e76515848195d751",
+      "guid_words": [
+        3140110376,
+        1189842129,
+        3882161540,
+        2174080849
+      ],
+      "data_asset_class": "/Game/Characters/Sprinter/Sprinter_PrimaryAsset.Sprinter_PrimaryAsset_C",
+      "playable": true,
+      "excluded_from_content_catalog": false,
+      "playable_verification_source": {
+        "package": "/Game/Characters/Sprinter/Sprinter_PrimaryAsset",
+        "source_sha256": "0b8e9cc2964abfcebe67b4f7792cea80f7c2d797efb433967bd30cfd51107347",
+        "native_class": "/Script/ShooterGame.CharacterDataAsset",
+        "playable_offset": "0x1d0",
+        "exclude_catalog_offset": "0x1d1",
+        "serialized_cdo_fields": [
+          {
+            "slot": 1,
+            "native_property_index": 0,
+            "zero": false,
+            "byte_offset": 1473,
+            "bytes": 20
+          },
+          {
+            "slot": 2,
+            "native_property_index": 1,
+            "zero": false,
+            "byte_offset": 1493,
+            "bytes": 20
+          },
+          {
+            "slot": 3,
+            "native_property_index": 2,
+            "zero": false,
+            "byte_offset": 1513,
+            "bytes": 20
+          },
+          {
+            "slot": 4,
+            "native_property_index": 3,
+            "zero": false,
+            "byte_offset": 1533,
+            "bytes": 20
+          },
+          {
+            "slot": 5,
+            "native_property_index": 4,
+            "zero": false,
+            "byte_offset": 1553,
+            "bytes": 20
+          },
+          {
+            "slot": 8,
+            "native_property_index": 7,
+            "zero": false,
+            "byte_offset": 1573,
+            "bytes": 20
+          },
+          {
+            "slot": 10,
+            "native_property_index": 9,
+            "zero": false,
+            "byte_offset": 1593,
+            "bytes": 8
+          },
+          {
+            "slot": 11,
+            "native_property_index": 10,
+            "zero": false,
+            "byte_offset": 1601,
+            "bytes": 8
+          },
+          {
+            "slot": 13,
+            "native_property_index": 12,
+            "zero": false,
+            "byte_offset": 1609,
+            "bytes": 1
+          },
+          {
+            "slot": 14,
+            "native_property_index": 13,
+            "zero": true,
+            "byte_offset": 1610,
+            "bytes": 0
+          },
+          {
+            "slot": 15,
+            "native_property_index": 14,
+            "zero": false,
+            "byte_offset": 1610,
+            "bytes": 1
+          },
+          {
+            "slot": 17,
+            "native_property_index": 16,
+            "zero": false,
+            "byte_offset": 1611,
+            "bytes": 16
+          }
+        ],
+        "complete_cdo_suffix_verified": true
+      },
+      "original_character_class_evidence": {
+        "derived_from_original_shooter_character": true,
+        "chain": [
+          {
+            "package": "/Game/Characters/Sprinter/Sprinter_PC",
+            "class": "Sprinter_PC_C",
+            "class_public_hash": "0xedec2c489b6acffa",
+            "source_sha256": "7336a6a7c587540b3068f190d0db13344249a247c2dfffc0cf46738c8a1c04bb",
+            "parent": {
+              "package": "/Game/Characters/_Core/BasePlayerCharacter",
+              "public_hash": "0x4d91085fe1a8e09c"
+            }
+          },
+          {
+            "package": "/Game/Characters/_Core/BasePlayerCharacter",
+            "class": "BasePlayerCharacter_C",
+            "class_public_hash": "0x4d91085fe1a8e09c",
+            "source_sha256": "0519d4b6ca03f75cac69a08d07c450b12c0f533e8634130f6d1bf37379dbdc13",
+            "parent": {
+              "package": "/Game/Characters/_Core/BasePawn",
+              "public_hash": "0x27ffe8d4d80af0d9"
+            }
+          },
+          {
+            "package": "/Game/Characters/_Core/BasePawn",
+            "class": "BasePawn_C",
+            "class_public_hash": "0x27ffe8d4d80af0d9",
+            "source_sha256": "39cdd3e571363a848b0827d045be31df0528b77012a7d3dbc572e50c980f282b",
+            "parent": "/Script/ShooterGame.ShooterCharacter"
+          }
+        ]
+      }
+    },
+    {
+      "index": 18,
+      "name": "Omen",
+      "code": "Wraith",
+      "class": "/Game/Characters/Wraith/Wraith_PC.Wraith_PC_C",
+      "id": "8e2539304c0531dd1b6c968525494517",
+      "guid_words": [
+        2384804144,
+        1275408861,
+        460101253,
+        625558807
+      ],
+      "data_asset_class": "/Game/Characters/Wraith/Wraith_PrimaryAsset.Wraith_PrimaryAsset_C",
+      "playable": true,
+      "excluded_from_content_catalog": false,
+      "playable_verification_source": {
+        "package": "/Game/Characters/Wraith/Wraith_PrimaryAsset",
+        "source_sha256": "268ce5e5fcc3b375d1742c5564cb0900bc6ac867c6708d6fc626ba3121159990",
+        "native_class": "/Script/ShooterGame.CharacterDataAsset",
+        "playable_offset": "0x1d0",
+        "exclude_catalog_offset": "0x1d1",
+        "serialized_cdo_fields": [
+          {
+            "slot": 1,
+            "native_property_index": 0,
+            "zero": false,
+            "byte_offset": 1447,
+            "bytes": 20
+          },
+          {
+            "slot": 2,
+            "native_property_index": 1,
+            "zero": false,
+            "byte_offset": 1467,
+            "bytes": 20
+          },
+          {
+            "slot": 3,
+            "native_property_index": 2,
+            "zero": false,
+            "byte_offset": 1487,
+            "bytes": 20
+          },
+          {
+            "slot": 4,
+            "native_property_index": 3,
+            "zero": false,
+            "byte_offset": 1507,
+            "bytes": 20
+          },
+          {
+            "slot": 5,
+            "native_property_index": 4,
+            "zero": false,
+            "byte_offset": 1527,
+            "bytes": 20
+          },
+          {
+            "slot": 8,
+            "native_property_index": 7,
+            "zero": false,
+            "byte_offset": 1547,
+            "bytes": 20
+          },
+          {
+            "slot": 10,
+            "native_property_index": 9,
+            "zero": false,
+            "byte_offset": 1567,
+            "bytes": 8
+          },
+          {
+            "slot": 11,
+            "native_property_index": 10,
+            "zero": false,
+            "byte_offset": 1575,
+            "bytes": 8
+          },
+          {
+            "slot": 13,
+            "native_property_index": 12,
+            "zero": false,
+            "byte_offset": 1583,
+            "bytes": 1
+          },
+          {
+            "slot": 14,
+            "native_property_index": 13,
+            "zero": true,
+            "byte_offset": 1584,
+            "bytes": 0
+          },
+          {
+            "slot": 15,
+            "native_property_index": 14,
+            "zero": false,
+            "byte_offset": 1584,
+            "bytes": 1
+          },
+          {
+            "slot": 17,
+            "native_property_index": 16,
+            "zero": false,
+            "byte_offset": 1585,
+            "bytes": 16
+          }
+        ],
+        "complete_cdo_suffix_verified": true
+      },
+      "original_character_class_evidence": {
+        "derived_from_original_shooter_character": true,
+        "chain": [
+          {
+            "package": "/Game/Characters/Wraith/Wraith_PC",
+            "class": "Wraith_PC_C",
+            "class_public_hash": "0x5e29c9ead773186c",
+            "source_sha256": "63f3358a35c4ef543bbb1cdb63152b66e2b65e120ec2d9df397d21cfa093cba4",
+            "parent": {
+              "package": "/Game/Characters/_Core/BasePlayerCharacter",
+              "public_hash": "0x4d91085fe1a8e09c"
+            }
+          },
+          {
+            "package": "/Game/Characters/_Core/BasePlayerCharacter",
+            "class": "BasePlayerCharacter_C",
+            "class_public_hash": "0x4d91085fe1a8e09c",
+            "source_sha256": "0519d4b6ca03f75cac69a08d07c450b12c0f533e8634130f6d1bf37379dbdc13",
+            "parent": {
+              "package": "/Game/Characters/_Core/BasePawn",
+              "public_hash": "0x27ffe8d4d80af0d9"
+            }
+          },
+          {
+            "package": "/Game/Characters/_Core/BasePawn",
+            "class": "BasePawn_C",
+            "class_public_hash": "0x27ffe8d4d80af0d9",
+            "source_sha256": "39cdd3e571363a848b0827d045be31df0528b77012a7d3dbc572e50c980f282b",
+            "parent": "/Script/ShooterGame.ShooterCharacter"
+          }
+        ]
+      }
+    },
+    {
+      "index": 19,
+      "name": "Raze",
+      "code": "Clay",
+      "class": "/Game/Characters/Clay/Clay_PC.Clay_PC_C",
+      "id": "f94c3b3042bee959889c5aa313dba261",
+      "guid_words": [
+        4182522672,
+        1119807833,
+        2291948195,
+        333161057
+      ],
+      "data_asset_class": "/Game/Characters/Clay/Clay_PrimaryAsset.Clay_PrimaryAsset_C",
+      "playable": true,
+      "excluded_from_content_catalog": false,
+      "playable_verification_source": {
+        "package": "/Game/Characters/Clay/Clay_PrimaryAsset",
+        "source_sha256": "25b16176a27f166d9b68ea32f31d30f71e225d1582b3832587a3bb2916b40df9",
+        "native_class": "/Script/ShooterGame.CharacterDataAsset",
+        "playable_offset": "0x1d0",
+        "exclude_catalog_offset": "0x1d1",
+        "serialized_cdo_fields": [
+          {
+            "slot": 1,
+            "native_property_index": 0,
+            "zero": false,
+            "byte_offset": 1409,
+            "bytes": 20
+          },
+          {
+            "slot": 2,
+            "native_property_index": 1,
+            "zero": false,
+            "byte_offset": 1429,
+            "bytes": 20
+          },
+          {
+            "slot": 3,
+            "native_property_index": 2,
+            "zero": false,
+            "byte_offset": 1449,
+            "bytes": 20
+          },
+          {
+            "slot": 4,
+            "native_property_index": 3,
+            "zero": false,
+            "byte_offset": 1469,
+            "bytes": 20
+          },
+          {
+            "slot": 5,
+            "native_property_index": 4,
+            "zero": false,
+            "byte_offset": 1489,
+            "bytes": 20
+          },
+          {
+            "slot": 8,
+            "native_property_index": 7,
+            "zero": false,
+            "byte_offset": 1509,
+            "bytes": 20
+          },
+          {
+            "slot": 10,
+            "native_property_index": 9,
+            "zero": false,
+            "byte_offset": 1529,
+            "bytes": 8
+          },
+          {
+            "slot": 11,
+            "native_property_index": 10,
+            "zero": false,
+            "byte_offset": 1537,
+            "bytes": 8
+          },
+          {
+            "slot": 13,
+            "native_property_index": 12,
+            "zero": false,
+            "byte_offset": 1545,
+            "bytes": 1
+          },
+          {
+            "slot": 14,
+            "native_property_index": 13,
+            "zero": true,
+            "byte_offset": 1546,
+            "bytes": 0
+          },
+          {
+            "slot": 15,
+            "native_property_index": 14,
+            "zero": false,
+            "byte_offset": 1546,
+            "bytes": 1
+          },
+          {
+            "slot": 17,
+            "native_property_index": 16,
+            "zero": false,
+            "byte_offset": 1547,
+            "bytes": 16
+          }
+        ],
+        "complete_cdo_suffix_verified": true
+      },
+      "original_character_class_evidence": {
+        "derived_from_original_shooter_character": true,
+        "chain": [
+          {
+            "package": "/Game/Characters/Clay/Clay_PC",
+            "class": "Clay_PC_C",
+            "class_public_hash": "0x319d463e80d95308",
+            "source_sha256": "a443daad53eb0d81918a924ad526f5469f7734f3c50b10ad64e6b4fc5cc46b7e",
+            "parent": {
+              "package": "/Game/Characters/_Core/BasePlayerCharacter",
+              "public_hash": "0x4d91085fe1a8e09c"
+            }
+          },
+          {
+            "package": "/Game/Characters/_Core/BasePlayerCharacter",
+            "class": "BasePlayerCharacter_C",
+            "class_public_hash": "0x4d91085fe1a8e09c",
+            "source_sha256": "0519d4b6ca03f75cac69a08d07c450b12c0f533e8634130f6d1bf37379dbdc13",
+            "parent": {
+              "package": "/Game/Characters/_Core/BasePawn",
+              "public_hash": "0x27ffe8d4d80af0d9"
+            }
+          },
+          {
+            "package": "/Game/Characters/_Core/BasePawn",
+            "class": "BasePawn_C",
+            "class_public_hash": "0x27ffe8d4d80af0d9",
+            "source_sha256": "39cdd3e571363a848b0827d045be31df0528b77012a7d3dbc572e50c980f282b",
+            "parent": "/Script/ShooterGame.ShooterCharacter"
+          }
+        ]
+      }
+    },
+    {
+      "index": 20,
+      "name": "Reyna",
+      "code": "Vampire",
+      "class": "/Game/Characters/Vampire/Vampire_PC.Vampire_PC_C",
+      "id": "a3bfb85343b27238a4f1ad90e9e46bcc",
+      "guid_words": [
+        2747250771,
+        1135768120,
+        2767302032,
+        3924061132
+      ],
+      "data_asset_class": "/Game/Characters/Vampire/Vampire_PrimaryAsset.Vampire_PrimaryAsset_C",
+      "playable": true,
+      "excluded_from_content_catalog": false,
+      "playable_verification_source": {
+        "package": "/Game/Characters/Vampire/Vampire_PrimaryAsset",
+        "source_sha256": "b6aafc45eb7b7f1866d391e8195edfb2400df4c866383a4f88758ee3595514e1",
+        "native_class": "/Script/ShooterGame.CharacterDataAsset",
+        "playable_offset": "0x1d0",
+        "exclude_catalog_offset": "0x1d1",
+        "serialized_cdo_fields": [
+          {
+            "slot": 1,
+            "native_property_index": 0,
+            "zero": false,
+            "byte_offset": 1456,
+            "bytes": 20
+          },
+          {
+            "slot": 2,
+            "native_property_index": 1,
+            "zero": false,
+            "byte_offset": 1476,
+            "bytes": 20
+          },
+          {
+            "slot": 3,
+            "native_property_index": 2,
+            "zero": false,
+            "byte_offset": 1496,
+            "bytes": 20
+          },
+          {
+            "slot": 4,
+            "native_property_index": 3,
+            "zero": false,
+            "byte_offset": 1516,
+            "bytes": 20
+          },
+          {
+            "slot": 5,
+            "native_property_index": 4,
+            "zero": false,
+            "byte_offset": 1536,
+            "bytes": 20
+          },
+          {
+            "slot": 8,
+            "native_property_index": 7,
+            "zero": false,
+            "byte_offset": 1556,
+            "bytes": 20
+          },
+          {
+            "slot": 10,
+            "native_property_index": 9,
+            "zero": false,
+            "byte_offset": 1576,
+            "bytes": 8
+          },
+          {
+            "slot": 11,
+            "native_property_index": 10,
+            "zero": false,
+            "byte_offset": 1584,
+            "bytes": 8
+          },
+          {
+            "slot": 13,
+            "native_property_index": 12,
+            "zero": false,
+            "byte_offset": 1592,
+            "bytes": 1
+          },
+          {
+            "slot": 14,
+            "native_property_index": 13,
+            "zero": true,
+            "byte_offset": 1593,
+            "bytes": 0
+          },
+          {
+            "slot": 15,
+            "native_property_index": 14,
+            "zero": false,
+            "byte_offset": 1593,
+            "bytes": 1
+          },
+          {
+            "slot": 17,
+            "native_property_index": 16,
+            "zero": false,
+            "byte_offset": 1594,
+            "bytes": 16
+          }
+        ],
+        "complete_cdo_suffix_verified": true
+      },
+      "original_character_class_evidence": {
+        "derived_from_original_shooter_character": true,
+        "chain": [
+          {
+            "package": "/Game/Characters/Vampire/Vampire_PC",
+            "class": "Vampire_PC_C",
+            "class_public_hash": "0x2b0fd629acf294ae",
+            "source_sha256": "595a4bae7e555f28ad616215330d1b14d3d1488aa420d65b907b12950703434a",
+            "parent": {
+              "package": "/Game/Characters/_Core/BasePlayerCharacter",
+              "public_hash": "0x4d91085fe1a8e09c"
+            }
+          },
+          {
+            "package": "/Game/Characters/_Core/BasePlayerCharacter",
+            "class": "BasePlayerCharacter_C",
+            "class_public_hash": "0x4d91085fe1a8e09c",
+            "source_sha256": "0519d4b6ca03f75cac69a08d07c450b12c0f533e8634130f6d1bf37379dbdc13",
+            "parent": {
+              "package": "/Game/Characters/_Core/BasePawn",
+              "public_hash": "0x27ffe8d4d80af0d9"
+            }
+          },
+          {
+            "package": "/Game/Characters/_Core/BasePawn",
+            "class": "BasePawn_C",
+            "class_public_hash": "0x27ffe8d4d80af0d9",
+            "source_sha256": "39cdd3e571363a848b0827d045be31df0528b77012a7d3dbc572e50c980f282b",
+            "parent": "/Script/ShooterGame.ShooterCharacter"
+          }
+        ]
+      }
+    },
+    {
+      "index": 21,
+      "name": "Skye",
+      "code": "Guide",
+      "class": "/Game/Characters/Guide/Guide_PC.Guide_PC_C",
+      "id": "6f2a04ca43e0be177f36b3908627744d",
+      "guid_words": [
+        1865024714,
+        1138802199,
+        2134291344,
+        2250732621
+      ],
+      "data_asset_class": "/Game/Characters/Guide/Guide_PrimaryAsset.Guide_PrimaryAsset_C",
+      "playable": true,
+      "excluded_from_content_catalog": false,
+      "playable_verification_source": {
+        "package": "/Game/Characters/Guide/Guide_PrimaryAsset",
+        "source_sha256": "60ed14127f1b4eea2a81b1c41bb06a6705ad9e9788ddcf44863f2badf2562844",
+        "native_class": "/Script/ShooterGame.CharacterDataAsset",
+        "playable_offset": "0x1d0",
+        "exclude_catalog_offset": "0x1d1",
+        "serialized_cdo_fields": [
+          {
+            "slot": 1,
+            "native_property_index": 0,
+            "zero": false,
+            "byte_offset": 1425,
+            "bytes": 20
+          },
+          {
+            "slot": 2,
+            "native_property_index": 1,
+            "zero": false,
+            "byte_offset": 1445,
+            "bytes": 20
+          },
+          {
+            "slot": 3,
+            "native_property_index": 2,
+            "zero": false,
+            "byte_offset": 1465,
+            "bytes": 20
+          },
+          {
+            "slot": 4,
+            "native_property_index": 3,
+            "zero": false,
+            "byte_offset": 1485,
+            "bytes": 20
+          },
+          {
+            "slot": 5,
+            "native_property_index": 4,
+            "zero": false,
+            "byte_offset": 1505,
+            "bytes": 20
+          },
+          {
+            "slot": 8,
+            "native_property_index": 7,
+            "zero": false,
+            "byte_offset": 1525,
+            "bytes": 20
+          },
+          {
+            "slot": 10,
+            "native_property_index": 9,
+            "zero": false,
+            "byte_offset": 1545,
+            "bytes": 8
+          },
+          {
+            "slot": 11,
+            "native_property_index": 10,
+            "zero": false,
+            "byte_offset": 1553,
+            "bytes": 8
+          },
+          {
+            "slot": 13,
+            "native_property_index": 12,
+            "zero": false,
+            "byte_offset": 1561,
+            "bytes": 1
+          },
+          {
+            "slot": 14,
+            "native_property_index": 13,
+            "zero": true,
+            "byte_offset": 1562,
+            "bytes": 0
+          },
+          {
+            "slot": 15,
+            "native_property_index": 14,
+            "zero": false,
+            "byte_offset": 1562,
+            "bytes": 1
+          },
+          {
+            "slot": 17,
+            "native_property_index": 16,
+            "zero": false,
+            "byte_offset": 1563,
+            "bytes": 16
+          }
+        ],
+        "complete_cdo_suffix_verified": true
+      },
+      "original_character_class_evidence": {
+        "derived_from_original_shooter_character": true,
+        "chain": [
+          {
+            "package": "/Game/Characters/Guide/Guide_PC",
+            "class": "Guide_PC_C",
+            "class_public_hash": "0xdc929e86fb9f5138",
+            "source_sha256": "11e895b6d57827440388d22b5a0c9318ca6091cf074dc1fa808db80e029b196c",
+            "parent": {
+              "package": "/Game/Characters/_Core/BasePlayerCharacter",
+              "public_hash": "0x4d91085fe1a8e09c"
+            }
+          },
+          {
+            "package": "/Game/Characters/_Core/BasePlayerCharacter",
+            "class": "BasePlayerCharacter_C",
+            "class_public_hash": "0x4d91085fe1a8e09c",
+            "source_sha256": "0519d4b6ca03f75cac69a08d07c450b12c0f533e8634130f6d1bf37379dbdc13",
+            "parent": {
+              "package": "/Game/Characters/_Core/BasePawn",
+              "public_hash": "0x27ffe8d4d80af0d9"
+            }
+          },
+          {
+            "package": "/Game/Characters/_Core/BasePawn",
+            "class": "BasePawn_C",
+            "class_public_hash": "0x27ffe8d4d80af0d9",
+            "source_sha256": "39cdd3e571363a848b0827d045be31df0528b77012a7d3dbc572e50c980f282b",
+            "parent": "/Script/ShooterGame.ShooterCharacter"
+          }
+        ]
+      }
+    },
+    {
+      "index": 22,
+      "name": "Sova",
+      "code": "Hunter",
+      "class": "/Game/Characters/Hunter/Hunter_PC.Hunter_PC_C",
+      "id": "320b2a484d9ba07530f11f93a9b638fa",
+      "guid_words": [
+        839592520,
+        1302044789,
+        821108627,
+        2847291642
+      ],
+      "data_asset_class": "/Game/Characters/Hunter/Hunter_PrimaryAsset.Hunter_PrimaryAsset_C",
+      "playable": true,
+      "excluded_from_content_catalog": false,
+      "playable_verification_source": {
+        "package": "/Game/Characters/Hunter/Hunter_PrimaryAsset",
+        "source_sha256": "4f5487f431f59eff186ec7e7d0ee55c0765912ab9cb7837cd10624a0de1f9def",
+        "native_class": "/Script/ShooterGame.CharacterDataAsset",
+        "playable_offset": "0x1d0",
+        "exclude_catalog_offset": "0x1d1",
+        "serialized_cdo_fields": [
+          {
+            "slot": 1,
+            "native_property_index": 0,
+            "zero": false,
+            "byte_offset": 1443,
+            "bytes": 20
+          },
+          {
+            "slot": 2,
+            "native_property_index": 1,
+            "zero": false,
+            "byte_offset": 1463,
+            "bytes": 20
+          },
+          {
+            "slot": 3,
+            "native_property_index": 2,
+            "zero": false,
+            "byte_offset": 1483,
+            "bytes": 20
+          },
+          {
+            "slot": 4,
+            "native_property_index": 3,
+            "zero": false,
+            "byte_offset": 1503,
+            "bytes": 20
+          },
+          {
+            "slot": 5,
+            "native_property_index": 4,
+            "zero": false,
+            "byte_offset": 1523,
+            "bytes": 20
+          },
+          {
+            "slot": 8,
+            "native_property_index": 7,
+            "zero": false,
+            "byte_offset": 1543,
+            "bytes": 20
+          },
+          {
+            "slot": 10,
+            "native_property_index": 9,
+            "zero": false,
+            "byte_offset": 1563,
+            "bytes": 8
+          },
+          {
+            "slot": 11,
+            "native_property_index": 10,
+            "zero": false,
+            "byte_offset": 1571,
+            "bytes": 8
+          },
+          {
+            "slot": 13,
+            "native_property_index": 12,
+            "zero": false,
+            "byte_offset": 1579,
+            "bytes": 1
+          },
+          {
+            "slot": 14,
+            "native_property_index": 13,
+            "zero": true,
+            "byte_offset": 1580,
+            "bytes": 0
+          },
+          {
+            "slot": 15,
+            "native_property_index": 14,
+            "zero": false,
+            "byte_offset": 1580,
+            "bytes": 1
+          },
+          {
+            "slot": 17,
+            "native_property_index": 16,
+            "zero": false,
+            "byte_offset": 1581,
+            "bytes": 16
+          },
+          {
+            "slot": 19,
+            "native_property_index": 18,
+            "zero": false,
+            "byte_offset": 1597,
+            "bytes": 1
+          }
+        ],
+        "complete_cdo_suffix_verified": true
+      },
+      "original_character_class_evidence": {
+        "derived_from_original_shooter_character": true,
+        "chain": [
+          {
+            "package": "/Game/Characters/Hunter/Hunter_PC",
+            "class": "Hunter_PC_C",
+            "class_public_hash": "0xbe5ca630ffb7c19d",
+            "source_sha256": "72de9947db59914c656746b0e623a1e64a50a64d7298d749dfbb02483f342dd5",
+            "parent": {
+              "package": "/Game/Characters/_Core/BasePlayerCharacter",
+              "public_hash": "0x4d91085fe1a8e09c"
+            }
+          },
+          {
+            "package": "/Game/Characters/_Core/BasePlayerCharacter",
+            "class": "BasePlayerCharacter_C",
+            "class_public_hash": "0x4d91085fe1a8e09c",
+            "source_sha256": "0519d4b6ca03f75cac69a08d07c450b12c0f533e8634130f6d1bf37379dbdc13",
+            "parent": {
+              "package": "/Game/Characters/_Core/BasePawn",
+              "public_hash": "0x27ffe8d4d80af0d9"
+            }
+          },
+          {
+            "package": "/Game/Characters/_Core/BasePawn",
+            "class": "BasePawn_C",
+            "class_public_hash": "0x27ffe8d4d80af0d9",
+            "source_sha256": "39cdd3e571363a848b0827d045be31df0528b77012a7d3dbc572e50c980f282b",
+            "parent": "/Script/ShooterGame.ShooterCharacter"
+          }
+        ]
+      }
+    },
+    {
+      "index": 23,
+      "name": "Tejo",
+      "code": "Cashew",
+      "class": "/Game/Characters/Cashew/Cashew_PC.Cashew_PC_C",
+      "id": "b444168c4e358076db47ef9bf368f384",
+      "guid_words": [
+        3024361100,
+        1312129142,
+        3678924699,
+        4083741572
+      ],
+      "data_asset_class": "/Game/Characters/Cashew/Cashew_PrimaryAsset.Cashew_PrimaryAsset_C",
+      "playable": true,
+      "excluded_from_content_catalog": false,
+      "playable_verification_source": {
+        "package": "/Game/Characters/Cashew/Cashew_PrimaryAsset",
+        "source_sha256": "f03b8d6f8f8b808642bfc7644c10f403e33eb8d414d1dfa2e40e73efcf525da2",
+        "native_class": "/Script/ShooterGame.CharacterDataAsset",
+        "playable_offset": "0x1d0",
+        "exclude_catalog_offset": "0x1d1",
+        "serialized_cdo_fields": [
+          {
+            "slot": 1,
+            "native_property_index": 0,
+            "zero": false,
+            "byte_offset": 1506,
+            "bytes": 20
+          },
+          {
+            "slot": 2,
+            "native_property_index": 1,
+            "zero": false,
+            "byte_offset": 1526,
+            "bytes": 20
+          },
+          {
+            "slot": 3,
+            "native_property_index": 2,
+            "zero": false,
+            "byte_offset": 1546,
+            "bytes": 20
+          },
+          {
+            "slot": 4,
+            "native_property_index": 3,
+            "zero": false,
+            "byte_offset": 1566,
+            "bytes": 20
+          },
+          {
+            "slot": 5,
+            "native_property_index": 4,
+            "zero": false,
+            "byte_offset": 1586,
+            "bytes": 20
+          },
+          {
+            "slot": 8,
+            "native_property_index": 7,
+            "zero": false,
+            "byte_offset": 1606,
+            "bytes": 20
+          },
+          {
+            "slot": 10,
+            "native_property_index": 9,
+            "zero": false,
+            "byte_offset": 1626,
+            "bytes": 8
+          },
+          {
+            "slot": 11,
+            "native_property_index": 10,
+            "zero": false,
+            "byte_offset": 1634,
+            "bytes": 8
+          },
+          {
+            "slot": 12,
+            "native_property_index": 11,
+            "zero": false,
+            "byte_offset": 1642,
+            "bytes": 8
+          },
+          {
+            "slot": 13,
+            "native_property_index": 12,
+            "zero": false,
+            "byte_offset": 1650,
+            "bytes": 1
+          },
+          {
+            "slot": 14,
+            "native_property_index": 13,
+            "zero": true,
+            "byte_offset": 1651,
+            "bytes": 0
+          },
+          {
+            "slot": 16,
+            "native_property_index": 15,
+            "zero": false,
+            "byte_offset": 1651,
+            "bytes": 20
+          },
+          {
+            "slot": 17,
+            "native_property_index": 16,
+            "zero": false,
+            "byte_offset": 1671,
+            "bytes": 16
+          }
+        ],
+        "complete_cdo_suffix_verified": true
+      },
+      "original_character_class_evidence": {
+        "derived_from_original_shooter_character": true,
+        "chain": [
+          {
+            "package": "/Game/Characters/Cashew/Cashew_PC",
+            "class": "Cashew_PC_C",
+            "class_public_hash": "0x3fa110e195445600",
+            "source_sha256": "85e5154b1caa0900af38a896d59ae4eee50d8ed65ba908b0d88b455dcf9ada72",
+            "parent": {
+              "package": "/Game/Characters/_Core/BasePlayerCharacter",
+              "public_hash": "0x4d91085fe1a8e09c"
+            }
+          },
+          {
+            "package": "/Game/Characters/_Core/BasePlayerCharacter",
+            "class": "BasePlayerCharacter_C",
+            "class_public_hash": "0x4d91085fe1a8e09c",
+            "source_sha256": "0519d4b6ca03f75cac69a08d07c450b12c0f533e8634130f6d1bf37379dbdc13",
+            "parent": {
+              "package": "/Game/Characters/_Core/BasePawn",
+              "public_hash": "0x27ffe8d4d80af0d9"
+            }
+          },
+          {
+            "package": "/Game/Characters/_Core/BasePawn",
+            "class": "BasePawn_C",
+            "class_public_hash": "0x27ffe8d4d80af0d9",
+            "source_sha256": "39cdd3e571363a848b0827d045be31df0528b77012a7d3dbc572e50c980f282b",
+            "parent": "/Script/ShooterGame.ShooterCharacter"
+          }
+        ]
+      }
+    },
+    {
+      "index": 24,
+      "name": "Veto",
+      "code": "Pine",
+      "class": "/Game/Characters/Pine/Pine_PC.Pine_PC_C",
+      "id": "92eeef5d43b51d4a8d03b3927a09034b",
+      "guid_words": [
+        2465132381,
+        1135942986,
+        2365830034,
+        2047411019
+      ],
+      "data_asset_class": "/Game/Characters/Pine/Pine_PrimaryAsset.Pine_PrimaryAsset_C",
+      "playable": true,
+      "excluded_from_content_catalog": false,
+      "playable_verification_source": {
+        "package": "/Game/Characters/Pine/Pine_PrimaryAsset",
+        "source_sha256": "b9a8089e0ed1d083443aa8ed8391988e94e5f5edffdb6c83852e176fe8f45f8d",
+        "native_class": "/Script/ShooterGame.CharacterDataAsset",
+        "playable_offset": "0x1d0",
+        "exclude_catalog_offset": "0x1d1",
+        "serialized_cdo_fields": [
+          {
+            "slot": 1,
+            "native_property_index": 0,
+            "zero": false,
+            "byte_offset": 1476,
+            "bytes": 20
+          },
+          {
+            "slot": 2,
+            "native_property_index": 1,
+            "zero": false,
+            "byte_offset": 1496,
+            "bytes": 20
+          },
+          {
+            "slot": 3,
+            "native_property_index": 2,
+            "zero": false,
+            "byte_offset": 1516,
+            "bytes": 20
+          },
+          {
+            "slot": 4,
+            "native_property_index": 3,
+            "zero": false,
+            "byte_offset": 1536,
+            "bytes": 20
+          },
+          {
+            "slot": 5,
+            "native_property_index": 4,
+            "zero": false,
+            "byte_offset": 1556,
+            "bytes": 20
+          },
+          {
+            "slot": 8,
+            "native_property_index": 7,
+            "zero": false,
+            "byte_offset": 1576,
+            "bytes": 20
+          },
+          {
+            "slot": 10,
+            "native_property_index": 9,
+            "zero": false,
+            "byte_offset": 1596,
+            "bytes": 8
+          },
+          {
+            "slot": 11,
+            "native_property_index": 10,
+            "zero": false,
+            "byte_offset": 1604,
+            "bytes": 8
+          },
+          {
+            "slot": 12,
+            "native_property_index": 11,
+            "zero": false,
+            "byte_offset": 1612,
+            "bytes": 8
+          },
+          {
+            "slot": 13,
+            "native_property_index": 12,
+            "zero": false,
+            "byte_offset": 1620,
+            "bytes": 1
+          },
+          {
+            "slot": 14,
+            "native_property_index": 13,
+            "zero": true,
+            "byte_offset": 1621,
+            "bytes": 0
+          },
+          {
+            "slot": 16,
+            "native_property_index": 15,
+            "zero": false,
+            "byte_offset": 1621,
+            "bytes": 20
+          },
+          {
+            "slot": 17,
+            "native_property_index": 16,
+            "zero": false,
+            "byte_offset": 1641,
+            "bytes": 16
+          }
+        ],
+        "complete_cdo_suffix_verified": true
+      },
+      "original_character_class_evidence": {
+        "derived_from_original_shooter_character": true,
+        "chain": [
+          {
+            "package": "/Game/Characters/Pine/Pine_PC",
+            "class": "Pine_PC_C",
+            "class_public_hash": "0x60180d6da7a5462f",
+            "source_sha256": "ad7d6d508c2b0ff3230f30dd0785db395b12f2d188d95ed3c013d69e12aadcf9",
+            "parent": {
+              "package": "/Game/Characters/_Core/BasePlayerCharacter",
+              "public_hash": "0x4d91085fe1a8e09c"
+            }
+          },
+          {
+            "package": "/Game/Characters/_Core/BasePlayerCharacter",
+            "class": "BasePlayerCharacter_C",
+            "class_public_hash": "0x4d91085fe1a8e09c",
+            "source_sha256": "0519d4b6ca03f75cac69a08d07c450b12c0f533e8634130f6d1bf37379dbdc13",
+            "parent": {
+              "package": "/Game/Characters/_Core/BasePawn",
+              "public_hash": "0x27ffe8d4d80af0d9"
+            }
+          },
+          {
+            "package": "/Game/Characters/_Core/BasePawn",
+            "class": "BasePawn_C",
+            "class_public_hash": "0x27ffe8d4d80af0d9",
+            "source_sha256": "39cdd3e571363a848b0827d045be31df0528b77012a7d3dbc572e50c980f282b",
+            "parent": "/Script/ShooterGame.ShooterCharacter"
+          }
+        ]
+      }
+    },
+    {
+      "index": 25,
+      "name": "Viper",
+      "code": "Pandemic",
+      "class": "/Game/Characters/Pandemic/Pandemic_PC.Pandemic_PC_C",
+      "id": "707eab514836f488046acda6bf494859",
+      "guid_words": [
+        1887349585,
+        1211561096,
+        74108326,
+        3209250905
+      ],
+      "data_asset_class": "/Game/Characters/Pandemic/Pandemic_PrimaryAsset.Pandemic_PrimaryAsset_C",
+      "playable": true,
+      "excluded_from_content_catalog": false,
+      "playable_verification_source": {
+        "package": "/Game/Characters/Pandemic/Pandemic_PrimaryAsset",
+        "source_sha256": "d715a7e64e835cd0a88aec7d2bfe95f5707a334ed49b6876c222718ab2cdd7e5",
+        "native_class": "/Script/ShooterGame.CharacterDataAsset",
+        "playable_offset": "0x1d0",
+        "exclude_catalog_offset": "0x1d1",
+        "serialized_cdo_fields": [
+          {
+            "slot": 1,
+            "native_property_index": 0,
+            "zero": false,
+            "byte_offset": 1482,
+            "bytes": 20
+          },
+          {
+            "slot": 2,
+            "native_property_index": 1,
+            "zero": false,
+            "byte_offset": 1502,
+            "bytes": 20
+          },
+          {
+            "slot": 3,
+            "native_property_index": 2,
+            "zero": false,
+            "byte_offset": 1522,
+            "bytes": 20
+          },
+          {
+            "slot": 4,
+            "native_property_index": 3,
+            "zero": false,
+            "byte_offset": 1542,
+            "bytes": 20
+          },
+          {
+            "slot": 5,
+            "native_property_index": 4,
+            "zero": false,
+            "byte_offset": 1562,
+            "bytes": 20
+          },
+          {
+            "slot": 8,
+            "native_property_index": 7,
+            "zero": false,
+            "byte_offset": 1582,
+            "bytes": 20
+          },
+          {
+            "slot": 10,
+            "native_property_index": 9,
+            "zero": false,
+            "byte_offset": 1602,
+            "bytes": 8
+          },
+          {
+            "slot": 11,
+            "native_property_index": 10,
+            "zero": false,
+            "byte_offset": 1610,
+            "bytes": 8
+          },
+          {
+            "slot": 13,
+            "native_property_index": 12,
+            "zero": false,
+            "byte_offset": 1618,
+            "bytes": 1
+          },
+          {
+            "slot": 14,
+            "native_property_index": 13,
+            "zero": true,
+            "byte_offset": 1619,
+            "bytes": 0
+          },
+          {
+            "slot": 15,
+            "native_property_index": 14,
+            "zero": false,
+            "byte_offset": 1619,
+            "bytes": 1
+          },
+          {
+            "slot": 17,
+            "native_property_index": 16,
+            "zero": false,
+            "byte_offset": 1620,
+            "bytes": 16
+          }
+        ],
+        "complete_cdo_suffix_verified": true
+      },
+      "original_character_class_evidence": {
+        "derived_from_original_shooter_character": true,
+        "chain": [
+          {
+            "package": "/Game/Characters/Pandemic/Pandemic_PC",
+            "class": "Pandemic_PC_C",
+            "class_public_hash": "0xd7615fb6e5071835",
+            "source_sha256": "1ef4e40954cca6083f04c039ea4d10ccc00b78f237444646ef04582fa6ad2b3d",
+            "parent": {
+              "package": "/Game/Characters/_Core/BasePlayerCharacter",
+              "public_hash": "0x4d91085fe1a8e09c"
+            }
+          },
+          {
+            "package": "/Game/Characters/_Core/BasePlayerCharacter",
+            "class": "BasePlayerCharacter_C",
+            "class_public_hash": "0x4d91085fe1a8e09c",
+            "source_sha256": "0519d4b6ca03f75cac69a08d07c450b12c0f533e8634130f6d1bf37379dbdc13",
+            "parent": {
+              "package": "/Game/Characters/_Core/BasePawn",
+              "public_hash": "0x27ffe8d4d80af0d9"
+            }
+          },
+          {
+            "package": "/Game/Characters/_Core/BasePawn",
+            "class": "BasePawn_C",
+            "class_public_hash": "0x27ffe8d4d80af0d9",
+            "source_sha256": "39cdd3e571363a848b0827d045be31df0528b77012a7d3dbc572e50c980f282b",
+            "parent": "/Script/ShooterGame.ShooterCharacter"
+          }
+        ]
+      }
+    },
+    {
+      "index": 26,
+      "name": "Vyse",
+      "code": "Nox",
+      "class": "/Game/Characters/Nox/Nox_PC.Nox_PC_C",
+      "id": "efba53594016a1e57626b1ae76895940",
+      "guid_words": [
+        4021965657,
+        1075225061,
+        1982247342,
+        1988712768
+      ],
+      "data_asset_class": "/Game/Characters/Nox/Nox_PrimaryAsset.Nox_PrimaryAsset_C",
+      "playable": true,
+      "excluded_from_content_catalog": false,
+      "playable_verification_source": {
+        "package": "/Game/Characters/Nox/Nox_PrimaryAsset",
+        "source_sha256": "42b844c239f633d1e9f48b4b4eb876c1a9d760a20e7805e7a54c0ceafff0215c",
+        "native_class": "/Script/ShooterGame.CharacterDataAsset",
+        "playable_offset": "0x1d0",
+        "exclude_catalog_offset": "0x1d1",
+        "serialized_cdo_fields": [
+          {
+            "slot": 1,
+            "native_property_index": 0,
+            "zero": false,
+            "byte_offset": 1460,
+            "bytes": 20
+          },
+          {
+            "slot": 2,
+            "native_property_index": 1,
+            "zero": false,
+            "byte_offset": 1480,
+            "bytes": 20
+          },
+          {
+            "slot": 3,
+            "native_property_index": 2,
+            "zero": false,
+            "byte_offset": 1500,
+            "bytes": 20
+          },
+          {
+            "slot": 4,
+            "native_property_index": 3,
+            "zero": false,
+            "byte_offset": 1520,
+            "bytes": 20
+          },
+          {
+            "slot": 5,
+            "native_property_index": 4,
+            "zero": false,
+            "byte_offset": 1540,
+            "bytes": 20
+          },
+          {
+            "slot": 8,
+            "native_property_index": 7,
+            "zero": false,
+            "byte_offset": 1560,
+            "bytes": 20
+          },
+          {
+            "slot": 10,
+            "native_property_index": 9,
+            "zero": false,
+            "byte_offset": 1580,
+            "bytes": 8
+          },
+          {
+            "slot": 11,
+            "native_property_index": 10,
+            "zero": false,
+            "byte_offset": 1588,
+            "bytes": 8
+          },
+          {
+            "slot": 13,
+            "native_property_index": 12,
+            "zero": false,
+            "byte_offset": 1596,
+            "bytes": 1
+          },
+          {
+            "slot": 14,
+            "native_property_index": 13,
+            "zero": true,
+            "byte_offset": 1597,
+            "bytes": 0
+          },
+          {
+            "slot": 15,
+            "native_property_index": 14,
+            "zero": false,
+            "byte_offset": 1597,
+            "bytes": 1
+          },
+          {
+            "slot": 16,
+            "native_property_index": 15,
+            "zero": false,
+            "byte_offset": 1598,
+            "bytes": 20
+          },
+          {
+            "slot": 17,
+            "native_property_index": 16,
+            "zero": false,
+            "byte_offset": 1618,
+            "bytes": 16
+          }
+        ],
+        "complete_cdo_suffix_verified": true
+      },
+      "original_character_class_evidence": {
+        "derived_from_original_shooter_character": true,
+        "chain": [
+          {
+            "package": "/Game/Characters/Nox/Nox_PC",
+            "class": "Nox_PC_C",
+            "class_public_hash": "0x7ccb3fae88b157e3",
+            "source_sha256": "3814154dc130861a0cc0d98da16fca56b7fd10f1b83a67ad0897858a67807734",
+            "parent": {
+              "package": "/Game/Characters/_Core/BasePlayerCharacter",
+              "public_hash": "0x4d91085fe1a8e09c"
+            }
+          },
+          {
+            "package": "/Game/Characters/_Core/BasePlayerCharacter",
+            "class": "BasePlayerCharacter_C",
+            "class_public_hash": "0x4d91085fe1a8e09c",
+            "source_sha256": "0519d4b6ca03f75cac69a08d07c450b12c0f533e8634130f6d1bf37379dbdc13",
+            "parent": {
+              "package": "/Game/Characters/_Core/BasePawn",
+              "public_hash": "0x27ffe8d4d80af0d9"
+            }
+          },
+          {
+            "package": "/Game/Characters/_Core/BasePawn",
+            "class": "BasePawn_C",
+            "class_public_hash": "0x27ffe8d4d80af0d9",
+            "source_sha256": "39cdd3e571363a848b0827d045be31df0528b77012a7d3dbc572e50c980f282b",
+            "parent": "/Script/ShooterGame.ShooterCharacter"
+          }
+        ]
+      }
+    },
+    {
+      "index": 27,
+      "name": "Waylay",
+      "code": "Terra",
+      "class": "/Game/Characters/Terra/Terra_PC.Terra_PC_C",
+      "id": "df1cb4874902002e5c17d28e83e78588",
+      "guid_words": [
+        3743200391,
+        1224867886,
+        1545065102,
+        2212988296
+      ],
+      "data_asset_class": "/Game/Characters/Terra/Terra_PrimaryAsset.Terra_PrimaryAsset_C",
+      "playable": true,
+      "excluded_from_content_catalog": false,
+      "playable_verification_source": {
+        "package": "/Game/Characters/Terra/Terra_PrimaryAsset",
+        "source_sha256": "b855375bfa3815edff27f665878acd982149b2ca1dacb979f9e4d139ddad4693",
+        "native_class": "/Script/ShooterGame.CharacterDataAsset",
+        "playable_offset": "0x1d0",
+        "exclude_catalog_offset": "0x1d1",
+        "serialized_cdo_fields": [
+          {
+            "slot": 1,
+            "native_property_index": 0,
+            "zero": false,
+            "byte_offset": 1498,
+            "bytes": 20
+          },
+          {
+            "slot": 2,
+            "native_property_index": 1,
+            "zero": false,
+            "byte_offset": 1518,
+            "bytes": 20
+          },
+          {
+            "slot": 3,
+            "native_property_index": 2,
+            "zero": false,
+            "byte_offset": 1538,
+            "bytes": 20
+          },
+          {
+            "slot": 4,
+            "native_property_index": 3,
+            "zero": false,
+            "byte_offset": 1558,
+            "bytes": 20
+          },
+          {
+            "slot": 5,
+            "native_property_index": 4,
+            "zero": false,
+            "byte_offset": 1578,
+            "bytes": 20
+          },
+          {
+            "slot": 8,
+            "native_property_index": 7,
+            "zero": false,
+            "byte_offset": 1598,
+            "bytes": 20
+          },
+          {
+            "slot": 10,
+            "native_property_index": 9,
+            "zero": false,
+            "byte_offset": 1618,
+            "bytes": 8
+          },
+          {
+            "slot": 11,
+            "native_property_index": 10,
+            "zero": false,
+            "byte_offset": 1626,
+            "bytes": 8
+          },
+          {
+            "slot": 12,
+            "native_property_index": 11,
+            "zero": false,
+            "byte_offset": 1634,
+            "bytes": 8
+          },
+          {
+            "slot": 13,
+            "native_property_index": 12,
+            "zero": false,
+            "byte_offset": 1642,
+            "bytes": 1
+          },
+          {
+            "slot": 14,
+            "native_property_index": 13,
+            "zero": true,
+            "byte_offset": 1643,
+            "bytes": 0
+          },
+          {
+            "slot": 15,
+            "native_property_index": 14,
+            "zero": false,
+            "byte_offset": 1643,
+            "bytes": 1
+          },
+          {
+            "slot": 16,
+            "native_property_index": 15,
+            "zero": false,
+            "byte_offset": 1644,
+            "bytes": 20
+          },
+          {
+            "slot": 17,
+            "native_property_index": 16,
+            "zero": false,
+            "byte_offset": 1664,
+            "bytes": 16
+          }
+        ],
+        "complete_cdo_suffix_verified": true
+      },
+      "original_character_class_evidence": {
+        "derived_from_original_shooter_character": true,
+        "chain": [
+          {
+            "package": "/Game/Characters/Terra/Terra_PC",
+            "class": "Terra_PC_C",
+            "class_public_hash": "0xde4687b0698848f1",
+            "source_sha256": "874197e59dde5b437f1339034d8961ebf9e274845d27f294d5f8ca9f0cd29bb8",
+            "parent": {
+              "package": "/Game/Characters/_Core/BasePlayerCharacter",
+              "public_hash": "0x4d91085fe1a8e09c"
+            }
+          },
+          {
+            "package": "/Game/Characters/_Core/BasePlayerCharacter",
+            "class": "BasePlayerCharacter_C",
+            "class_public_hash": "0x4d91085fe1a8e09c",
+            "source_sha256": "0519d4b6ca03f75cac69a08d07c450b12c0f533e8634130f6d1bf37379dbdc13",
+            "parent": {
+              "package": "/Game/Characters/_Core/BasePawn",
+              "public_hash": "0x27ffe8d4d80af0d9"
+            }
+          },
+          {
+            "package": "/Game/Characters/_Core/BasePawn",
+            "class": "BasePawn_C",
+            "class_public_hash": "0x27ffe8d4d80af0d9",
+            "source_sha256": "39cdd3e571363a848b0827d045be31df0528b77012a7d3dbc572e50c980f282b",
+            "parent": "/Script/ShooterGame.ShooterCharacter"
+          }
+        ]
+      }
+    },
+    {
+      "index": 28,
+      "name": "Yoru",
+      "code": "Stealth",
+      "class": "/Game/Characters/Stealth/Stealth_PC.Stealth_PC_C",
+      "id": "7f94d92c42340a3696463a87eb8b5c89",
+      "guid_words": [
+        2140461356,
+        1110706742,
+        2521184903,
+        3951778953
+      ],
+      "data_asset_class": "/Game/Characters/Stealth/Stealth_PrimaryAsset.Stealth_PrimaryAsset_C",
+      "playable": true,
+      "excluded_from_content_catalog": false,
+      "playable_verification_source": {
+        "package": "/Game/Characters/Stealth/Stealth_PrimaryAsset",
+        "source_sha256": "3d58579482886ff63c8ed1a19d34157dabf9af69c7db307951efdbf4bd5eaaeb",
+        "native_class": "/Script/ShooterGame.CharacterDataAsset",
+        "playable_offset": "0x1d0",
+        "exclude_catalog_offset": "0x1d1",
+        "serialized_cdo_fields": [
+          {
+            "slot": 1,
+            "native_property_index": 0,
+            "zero": false,
+            "byte_offset": 1423,
+            "bytes": 20
+          },
+          {
+            "slot": 2,
+            "native_property_index": 1,
+            "zero": false,
+            "byte_offset": 1443,
+            "bytes": 20
+          },
+          {
+            "slot": 3,
+            "native_property_index": 2,
+            "zero": false,
+            "byte_offset": 1463,
+            "bytes": 20
+          },
+          {
+            "slot": 4,
+            "native_property_index": 3,
+            "zero": false,
+            "byte_offset": 1483,
+            "bytes": 20
+          },
+          {
+            "slot": 5,
+            "native_property_index": 4,
+            "zero": false,
+            "byte_offset": 1503,
+            "bytes": 20
+          },
+          {
+            "slot": 8,
+            "native_property_index": 7,
+            "zero": false,
+            "byte_offset": 1523,
+            "bytes": 20
+          },
+          {
+            "slot": 10,
+            "native_property_index": 9,
+            "zero": false,
+            "byte_offset": 1543,
+            "bytes": 8
+          },
+          {
+            "slot": 11,
+            "native_property_index": 10,
+            "zero": false,
+            "byte_offset": 1551,
+            "bytes": 8
+          },
+          {
+            "slot": 13,
+            "native_property_index": 12,
+            "zero": false,
+            "byte_offset": 1559,
+            "bytes": 1
+          },
+          {
+            "slot": 14,
+            "native_property_index": 13,
+            "zero": true,
+            "byte_offset": 1560,
+            "bytes": 0
+          },
+          {
+            "slot": 15,
+            "native_property_index": 14,
+            "zero": false,
+            "byte_offset": 1560,
+            "bytes": 1
+          },
+          {
+            "slot": 17,
+            "native_property_index": 16,
+            "zero": false,
+            "byte_offset": 1561,
+            "bytes": 16
+          }
+        ],
+        "complete_cdo_suffix_verified": true
+      },
+      "original_character_class_evidence": {
+        "derived_from_original_shooter_character": true,
+        "chain": [
+          {
+            "package": "/Game/Characters/Stealth/Stealth_PC",
+            "class": "Stealth_PC_C",
+            "class_public_hash": "0x6610fe9cdee2c2a0",
+            "source_sha256": "b46c91e28674479ae4656d9676e4fd05cb1789cfbf77f4d307735cc922487eee",
+            "parent": {
+              "package": "/Game/Characters/_Core/BasePlayerCharacter",
+              "public_hash": "0x4d91085fe1a8e09c"
+            }
+          },
+          {
+            "package": "/Game/Characters/_Core/BasePlayerCharacter",
+            "class": "BasePlayerCharacter_C",
+            "class_public_hash": "0x4d91085fe1a8e09c",
+            "source_sha256": "0519d4b6ca03f75cac69a08d07c450b12c0f533e8634130f6d1bf37379dbdc13",
+            "parent": {
+              "package": "/Game/Characters/_Core/BasePawn",
+              "public_hash": "0x27ffe8d4d80af0d9"
+            }
+          },
+          {
+            "package": "/Game/Characters/_Core/BasePawn",
+            "class": "BasePawn_C",
+            "class_public_hash": "0x27ffe8d4d80af0d9",
+            "source_sha256": "39cdd3e571363a848b0827d045be31df0528b77012a7d3dbc572e50c980f282b",
+            "parent": "/Script/ShooterGame.ShooterCharacter"
+          }
+        ]
+      }
+    },
+    {
+      "index": 29,
+      "name": "Hush",
+      "code": "Paprika",
+      "class": "/Game/Characters/Paprika/Paprika_PC.Paprika_PC_C",
+      "id": "ddd5a15c4fbe42fa378911a55ca5ee04",
+      "guid_words": [
+        3721765212,
+        1337869050,
+        931729829,
+        1554378244
+      ],
+      "data_asset_class": "/Game/Characters/Paprika/Paprika_PrimaryAsset.Paprika_PrimaryAsset_C",
+      "playable": true,
+      "excluded_from_content_catalog": false,
+      "playable_verification_source": {
+        "package": "/Game/Characters/Paprika/Paprika_PrimaryAsset",
+        "source_sha256": "fe7d9b60fbfab9fc4d2dacc47aa3c94f98bb5cf75735c9b15e6f1636ad4477ba",
+        "native_class": "/Script/ShooterGame.CharacterDataAsset",
+        "playable_offset": "0x1d0",
+        "exclude_catalog_offset": "0x1d1",
+        "serialized_cdo_fields": [
+          {
+            "slot": 1,
+            "native_property_index": 0,
+            "zero": false,
+            "byte_offset": 1634,
+            "bytes": 20
+          },
+          {
+            "slot": 2,
+            "native_property_index": 1,
+            "zero": false,
+            "byte_offset": 1654,
+            "bytes": 20
+          },
+          {
+            "slot": 3,
+            "native_property_index": 2,
+            "zero": false,
+            "byte_offset": 1674,
+            "bytes": 20
+          },
+          {
+            "slot": 4,
+            "native_property_index": 3,
+            "zero": false,
+            "byte_offset": 1694,
+            "bytes": 20
+          },
+          {
+            "slot": 5,
+            "native_property_index": 4,
+            "zero": false,
+            "byte_offset": 1714,
+            "bytes": 20
+          },
+          {
+            "slot": 7,
+            "native_property_index": 6,
+            "zero": false,
+            "byte_offset": 1734,
+            "bytes": 4
+          },
+          {
+            "slot": 8,
+            "native_property_index": 7,
+            "zero": false,
+            "byte_offset": 1738,
+            "bytes": 20
+          },
+          {
+            "slot": 10,
+            "native_property_index": 9,
+            "zero": false,
+            "byte_offset": 1758,
+            "bytes": 8
+          },
+          {
+            "slot": 11,
+            "native_property_index": 10,
+            "zero": false,
+            "byte_offset": 1766,
+            "bytes": 8
+          },
+          {
+            "slot": 12,
+            "native_property_index": 11,
+            "zero": false,
+            "byte_offset": 1774,
+            "bytes": 8
+          },
+          {
+            "slot": 13,
+            "native_property_index": 12,
+            "zero": false,
+            "byte_offset": 1782,
+            "bytes": 1
+          },
+          {
+            "slot": 14,
+            "native_property_index": 13,
+            "zero": true,
+            "byte_offset": 1783,
+            "bytes": 0
+          },
+          {
+            "slot": 16,
+            "native_property_index": 15,
+            "zero": false,
+            "byte_offset": 1783,
+            "bytes": 20
+          },
+          {
+            "slot": 17,
+            "native_property_index": 16,
+            "zero": false,
+            "byte_offset": 1803,
+            "bytes": 16
+          }
+        ],
+        "complete_cdo_suffix_verified": true
+      },
+      "original_character_class_evidence": {
+        "derived_from_original_shooter_character": true,
+        "chain": [
+          {
+            "package": "/Game/Characters/Paprika/Paprika_PC",
+            "class": "Paprika_PC_C",
+            "class_public_hash": "0xf78ec165d125e410",
+            "source_sha256": "596e843c0dfa3db55a2f72ab1629ddc9ba177054af3d2a3852b849296d6ffff0",
+            "parent": {
+              "package": "/Game/Characters/_Core/BasePlayerCharacter",
+              "public_hash": "0x4d91085fe1a8e09c"
+            }
+          },
+          {
+            "package": "/Game/Characters/_Core/BasePlayerCharacter",
+            "class": "BasePlayerCharacter_C",
+            "class_public_hash": "0x4d91085fe1a8e09c",
+            "source_sha256": "0519d4b6ca03f75cac69a08d07c450b12c0f533e8634130f6d1bf37379dbdc13",
+            "parent": {
+              "package": "/Game/Characters/_Core/BasePawn",
+              "public_hash": "0x27ffe8d4d80af0d9"
+            }
+          },
+          {
+            "package": "/Game/Characters/_Core/BasePawn",
+            "class": "BasePawn_C",
+            "class_public_hash": "0x27ffe8d4d80af0d9",
+            "source_sha256": "39cdd3e571363a848b0827d045be31df0528b77012a7d3dbc572e50c980f282b",
+            "parent": "/Script/ShooterGame.ShooterCharacter"
+          }
+        ]
+      }
+    }
+  ],
+  "verification": {
+    "method": "Pinned original CharacterDataAsset CDO unversioned fields and original Blueprint class ancestry; native ContentIndex GUID/flags rechecked by original_heroes before a unique match.",
+    "source_image_sha256": "147763350504d241ee20b77607d04bc85cebfedb1d8bc2f32473ca93bf8fe92f",
+    "original_content_index_total": 32,
+    "static_candidate_cdos_decoded": 32,
+    "current_install_inventory": "work/training-heroes/current-inventory.json",
+    "current_install_inventory_sha256": "1fdd70f8e7c5bb770efb032ae8f3703102c9bf86bdcca002c19ba25611f913de",
+    "current_install_tocs": [
+      {
+        "container": "en_US_Audio-WindowsClient.utoc",
+        "sha256": "fdcf033ecc67ca20b1b16a814683b7934cb57f2720c79d95fe154c6c5982b118"
+      },
+      {
+        "container": "global.utoc",
+        "sha256": "75cf0fe3b6d1034ca460163d8aae5f54b9a68aabd5526de9f0d9994002428a64"
+      },
+      {
+        "container": "pakchunk0-WindowsClient.utoc",
+        "sha256": "c9927ac16fb7c152d64c3fe4988db272f2b99664ad882715ba9e93d6d52ee951"
+      },
+      {
+        "container": "pakchunk1-WindowsClient.utoc",
+        "sha256": "907b59def9bea30c01956c0d4993c16c814d866438aed5c93f7b93e5483f373a"
+      },
+      {
+        "container": "pakchunk10-WindowsClient.utoc",
+        "sha256": "3a9ed6668f343b7c05adbfa445787ff8dff4a076f05b626c3b31be6896114926"
+      },
+      {
+        "container": "pakchunk100-WindowsClient.utoc",
+        "sha256": "1a1c91bcbd861602cdc249e73be226527187d76bef03fbeacd49e439125b5414"
+      },
+      {
+        "container": "pakchunk101-WindowsClient.utoc",
+        "sha256": "353a8820e595547df059d0cc5a91ed6bbd00b0df3ddb35c4a2845b6f52153f04"
+      },
+      {
+        "container": "pakchunk102-WindowsClient.utoc",
+        "sha256": "bca28a783493ed05009a62c3c6078000c614d917db11809ab8b1f240b0115d7a"
+      },
+      {
+        "container": "pakchunk103-WindowsClient.utoc",
+        "sha256": "d6a94ed839f3b19e2b40d5bdb052befbe4e9a865c6f7958f83b617406790406e"
+      },
+      {
+        "container": "pakchunk104-WindowsClient.utoc",
+        "sha256": "9a6122bb5696a94653d48822b460658a3c6a98addaacd01de7de23c7cc87f29c"
+      },
+      {
+        "container": "pakchunk15-WindowsClient.utoc",
+        "sha256": "d765e36a2ae9a3bc8e4c67243f3fefaf94c9f0fb80d631be63021a31aabcd18d"
+      },
+      {
+        "container": "pakchunk199-WindowsClient.utoc",
+        "sha256": "758fbd5c53f627a4e175ce8115c58d540920910451595345b1cba97d6374d9a3"
+      },
+      {
+        "container": "pakchunk2-WindowsClient.utoc",
+        "sha256": "0881863195a335c1baedf4eba8e95fa38b40cf3d7668b8a1bbf72f6e63045a2a"
+      },
+      {
+        "container": "pakchunk200-WindowsClient.utoc",
+        "sha256": "93ab50252b5925091348780816d31f5d6feb33ea2c994f5365ac3d9488867d86"
+      },
+      {
+        "container": "pakchunk3-WindowsClient.utoc",
+        "sha256": "5eef10990c4e1c767b976815c472d40126fb45d0832d95ccad7a69eb6f03bbb8"
+      },
+      {
+        "container": "pakchunk4-WindowsClient.utoc",
+        "sha256": "bcb61c440b7e4a1d0db6cc84ac35d1f51af3c3f853c14a7dfabd8f4ba948a1d0"
+      },
+      {
+        "container": "zh_TW_Text-WindowsClient.utoc",
+        "sha256": "f7f5693c0c4dfc2162295c2815a4481cdc9ee1e04ca71c5d09927aa74def51b2"
+      }
+    ],
+    "old_inventory_rejected": "work/extract/inventory.json omits Paprika and has stale container SHA256 values; do not use it to bound current playable content.",
+    "explicit_nonplayable": [
+      {
+        "package": "/Game/Characters/AbilityDraftAgent/AbilityDraftAgent_PrimaryAsset",
+        "playable": false,
+        "exclude_catalog": null
+      },
+      {
+        "package": "/Game/Characters/_Core/BaseCharacterPrimaryDataAsset",
+        "playable": false,
+        "exclude_catalog": true
+      }
+    ],
+    "catalog_total_not_player_limit": true,
+    "all_30_classes_spawned_this_worker": false
+  },
+  "selection": {
+    "local_jett_reserved": true,
+    "npc_jett_allowed": false,
+    "unique_per_match": true,
+    "keep_assigned_hero_on_respawn": true,
+    "maximum_participants_includes_local": true,
+    "shuffle_seed": "Root supplies a new per-match nonce-mixed seed; allocator remains deterministic for the received seed."
+  }
+}

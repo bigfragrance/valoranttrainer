@@ -1,0 +1,427 @@
+{
+  "schema_version": 1,
+  "revision": 2,
+  "scope": "Project-author hold classifications, not player heat-map labels. Two bounded Ascent points (1501 conventional, 1502 unconventional) have original-query and same-life physical hold evidence; 1301/1302 stay disabled. No whole-map or human-frequency coverage; normal runtime proofs and risk filters still apply.",
+  "positions": [
+    {
+      "id": 1301,
+      "map_id": "ascent",
+      "name": "作者常规测试位：near-own-shoulder 源站位",
+      "enabled": false,
+      "classification": "conventional",
+      "range": null,
+      "cover": [6020.123, -7653.418, 502.299],
+      "position": [6006.347, -7643.254, 502.299],
+      "retreat": [6020.123, -7653.418, 502.299],
+      "focus": [5828.237, -7884.66, 662.299],
+      "confidence": 0.5,
+      "risk": null,
+      "flank_risk": null,
+      "exposed_angles": null,
+      "source": {
+        "scene_file": "work/humanlike-bots/local-cover-candidate/peek-12-003-analysis/native-fixture-design/cases.json",
+        "scene_id": "near-own-shoulder",
+        "own_plan": {"index": 10, "epoch": 2, "first_intent_serial": 33255},
+        "module_sha256": "a9044810dc9c5f9a6032f531ea8818579578a5ec80a44d7c9885825b068eb9b0",
+        "geometry_scope": "cover/position/retreat are recorded own plan feet; focus is an authored proposal from the first scene target proposal plus 160cm, not a recorded enemy or proven original focus",
+        "classification_scope": "explicit project-author conventional test label only; source has no player-frequency annotation",
+        "range_scope": "source scene name is not a validated near/far label"
+      },
+      "activation": {"status": "pending_root_original_queries_and_risk_assessment", "evidence": null},
+      "route_ref": null
+    },
+    {
+      "id": 1302,
+      "map_id": "ascent",
+      "name": "作者非常规测试位：far-own-poppin 源站位",
+      "enabled": false,
+      "classification": "unconventional",
+      "range": null,
+      "cover": [-25.662, -7648.508, 302.298],
+      "position": [10.273, -7318.229, 302.298],
+      "retreat": [-25.662, -7648.508, 302.298],
+      "focus": [-287.967, -7285.78, 462.298],
+      "confidence": 0.5,
+      "risk": null,
+      "flank_risk": null,
+      "exposed_angles": null,
+      "source": {
+        "scene_file": "work/humanlike-bots/local-cover-candidate/peek-12-003-analysis/native-fixture-design/cases.json",
+        "scene_id": "far-own-poppin",
+        "own_plan": {"index": 6, "epoch": 5, "first_intent_serial": 34213},
+        "module_sha256": "a9044810dc9c5f9a6032f531ea8818579578a5ec80a44d7c9885825b068eb9b0",
+        "geometry_scope": "cover/position/retreat are recorded own plan feet; focus is an authored proposal from the first scene target proposal plus 160cm, not a recorded enemy or proven original focus",
+        "classification_scope": "explicit project-author unconventional test label only; source has no player-frequency annotation",
+        "range_scope": "source scene name is not a validated near/far label"
+      },
+      "activation": {"status": "pending_root_original_queries_and_risk_assessment", "evidence": null},
+      "route_ref": null
+    },
+    {
+      "classification": "conventional",
+      "confidence": 0.8,
+      "cover": [
+        4720.66845703125,
+        -4450.54443359375,
+        402.2984924316406
+      ],
+      "enabled": true,
+      "exposed_angles": 1,
+      "flank_risk": 0,
+      "focus": [
+        4593.63720703125,
+        -4372.6728515625,
+        576.2984619140625
+      ],
+      "id": 1501,
+      "map_id": "ascent",
+      "name": "Ascent 作者常规架点：原生双人场景 1304",
+      "position": [
+        4448.9013671875,
+        -4893.8759765625,
+        402.2984924316406
+      ],
+      "range": null,
+      "retreat": [
+        4720.66845703125,
+        -4450.54443359375,
+        402.2984924316406
+      ],
+      "risk": 0.25,
+      "source": {
+        "kind": "project_author_static_map_hold_with_bounded_original_query_and_physical_validation",
+        "source_test_annotation_id": 1304,
+        "source_pair": ".local/local-server/pair-hold14-1304-001",
+        "module_sha256": "ff36ba0fb68fcc195ffccc190f48b304ae2d6461127238a278045a58bb2a1837",
+        "files": {
+          "case": {
+            "path": ".local/local-server/pair-hold14-1304-001/map-hold-fixture-case.json",
+            "sha256": "ed78515c297dc7a52b7f8a5c62ed241308704da3fcd073d9df72a6c60a0a6126"
+          },
+          "host_bridge": {
+            "path": ".local/local-server/pair-hold14-1304-001/host/bridge-state.json",
+            "sha256": "028f95968fe5872397f8b7e70561722bf8e6dd14a60e1c77201c4e2bd6cd9c53"
+          },
+          "own_native": {
+            "path": ".local/local-server/pair-hold14-1304-001/host/map-hold-fixture-own-native.jsonl",
+            "sha256": "e4827038986c5b25aad3301c04d77a1187b6d98279f67f96b896214acb988359"
+          },
+          "verification": {
+            "path": ".local/local-server/pair-hold14-1304-001/verification.json",
+            "sha256": "3afd04b296c6c9b94ecacfa37fa52fa1ea8af35555d4cee6f2681286235603c9"
+          }
+        },
+        "coordinate_scope": "Exact IEEE-754 float32 values of this case manifest proposal cover/position/retreat/focus; not the tolerance-bounded physical stopping point or grounded query outputs.",
+        "classification_scope": "Explicit project-author conventional/unconventional classification only; no player-frequency or heat-map data.",
+        "confidence_scope": "Manual author trust value 0.8 after repeat static geometry checks; not an 80-percent success rate, player popularity, heat-map frequency or win probability.",
+        "range_scope": "Unknown; scenario names and local distances do not establish near/mid/far labels.",
+        "preflight": {
+          "scenario": 14,
+          "annotation_id": 1304,
+          "annotation_revision": 2,
+          "nonce": "9e7e64e940702e92",
+          "original_path": [
+            [
+              4720.66845703125,
+              -4450.54443359375,
+              410
+            ],
+            [
+              4448.9013671875,
+              -4893.8759765625,
+              410
+            ]
+          ],
+          "ground_mask": 7,
+          "capsule_segments_mask": 7,
+          "ground_query_points": [
+            [
+              4720.66845703125,
+              -4450.54443359375,
+              400
+            ],
+            [
+              4448.9013671875,
+              -4893.8759765625,
+              400
+            ],
+            [
+              4720.66845703125,
+              -4450.54443359375,
+              400
+            ]
+          ],
+          "closed_cover_to_focus": "Blocked",
+          "open_to_focus": "Clear",
+          "capsule_radius_cm": 42,
+          "capsule_half_height_cm": 98,
+          "own_eye_height_cm": 173.99996948242188,
+          "query_scope": "Same-life/source original FindPath plus original ground at cover/open/retreat, three capsule segments cover->open->retreat->cover, closed/open focus rays and four finite static risk rays, under existing shared query budgets."
+        },
+        "risk_sample": {
+          "scope": "Four authored static map directions only, from authored open plus original own eye height; not all firing angles or enemy occupancy.",
+          "direction_order": [
+            "focus",
+            "left",
+            "right",
+            "rear"
+          ],
+          "endpoint_rule": "Focus endpoint; lateral/rear endpoints at focus height, rotated around open by +/-90/180 degrees, using min(horizontal open-to-focus distance, CoverMaximumAnnotationDistanceCm).",
+          "endpoints": [
+            [
+              4593.63720703125,
+              -4372.6728515625,
+              576.2984619140625
+            ],
+            [
+              3927.6982421875,
+              -4749.14013671875,
+              576.2984619140625
+            ],
+            [
+              4970.1044921875,
+              -5038.61181640625,
+              576.2984619140625
+            ],
+            [
+              4304.16552734375,
+              -5415.0791015625,
+              576.2984619140625
+            ]
+          ],
+          "results": [
+            "Clear",
+            "Blocked",
+            "Blocked",
+            "Blocked"
+          ],
+          "risk_rule": "risk = Clear directions / 4; flank_risk = Clear left/right/rear directions / 3; exposed_angles = Clear directions.",
+          "explicit_test_maximum_exposed_angles": 4,
+          "default_cap2_scope": "Gate comparison only: exposed_angles <= default cap 2 admits this exposure gate for 1501 and rejects 1502. This pair used cap 4; no native default-cap-2 run is claimed."
+        },
+        "physical_validation": {
+          "same_life_source": {
+            "epoch": 1,
+            "life_token": 1103359918516252,
+            "source": "df4bd1679026af37"
+          },
+          "request_key": 1,
+          "original_native_route": true,
+          "stationary_sequence_range": [
+            96,
+            136
+          ],
+          "stationary_rows": 41,
+          "dwell_seconds": 2.5,
+          "original_velocity_xyz": [
+            0,
+            0,
+            0
+          ],
+          "grounded_throughout": true,
+          "arrival_tolerance_cm": 18.0,
+          "actual_arrival_feet_for_evidence_only": [
+            4439.5390625,
+            -4909.162109375,
+            402.2984924316406
+          ],
+          "original_release_submissions": 6108,
+          "original_release_physics_completed": 1096,
+          "release_submitted": true,
+          "host_critical_errors": 0,
+          "client_critical_errors": 0,
+          "scope": "Two-person forced-class Scenario14 geometry/physical hold test only; firing disabled, other peek/tactics actions disabled, author confidence was 0.5 and exposure cap was 4. No competing-point preference or per-intent native-consumption proof."
+        },
+        "coverage_limit": "This single authored Ascent hold and its measured local query/physical scope only. No all-map coverage, live enemy coordinates, human heat-map, native default-cap-2 run or retained runtime proof. Normal production path/ground/capsule/cover and lifecycle checks remain required."
+      },
+      "route_ref": null,
+      "activation": {
+        "status": "native_geometry_revalidated",
+        "evidence": ".local/local-server/pair-hold14-1304-001/host/bridge-state.json#map_hold_fixture; .local/local-server/pair-hold14-1304-001/host/map-hold-fixture-own-native.jsonl#sequences=96-136; module_sha256=ff36ba0fb68fcc195ffccc190f48b304ae2d6461127238a278045a58bb2a1837"
+      }
+    },
+    {
+      "classification": "unconventional",
+      "confidence": 0.8,
+      "cover": [
+        -2710.22265625,
+        -3945.1005859375,
+        102.15003967285156
+      ],
+      "enabled": true,
+      "exposed_angles": 3,
+      "flank_risk": 0.6666666666666666,
+      "focus": [
+        -2587.116943359375,
+        -3861.16015625,
+        276.1500244140625
+      ],
+      "id": 1502,
+      "map_id": "ascent",
+      "name": "Ascent 作者非常规架点：原生双人场景 1303",
+      "position": [
+        -2417.2763671875,
+        -4374.73095703125,
+        102.15003967285156
+      ],
+      "range": null,
+      "retreat": [
+        -2710.22265625,
+        -3945.1005859375,
+        102.15003967285156
+      ],
+      "risk": 0.75,
+      "source": {
+        "kind": "project_author_static_map_hold_with_bounded_original_query_and_physical_validation",
+        "source_test_annotation_id": 1303,
+        "source_pair": ".local/local-server/pair-hold14-1303-004",
+        "module_sha256": "ff36ba0fb68fcc195ffccc190f48b304ae2d6461127238a278045a58bb2a1837",
+        "files": {
+          "case": {
+            "path": ".local/local-server/pair-hold14-1303-004/map-hold-fixture-case.json",
+            "sha256": "1182b645944b7c77c40fdc35f4190f3ec21d25f5b25d2a4f2d0b8111c00fb3d6"
+          },
+          "host_bridge": {
+            "path": ".local/local-server/pair-hold14-1303-004/host/bridge-state.json",
+            "sha256": "7959968614004be47b88003627bb710aade5500987b68f06794f4d2095aac001"
+          },
+          "own_native": {
+            "path": ".local/local-server/pair-hold14-1303-004/host/map-hold-fixture-own-native.jsonl",
+            "sha256": "9cd718a5e88481e15d98a606a9be06e467e8689fbeec3e22c9129dab3facee42"
+          },
+          "verification": {
+            "path": ".local/local-server/pair-hold14-1303-004/verification.json",
+            "sha256": "54e03e4d2b57c10693384470117613a33428131225d4c3f4d4a08bf60858c282"
+          }
+        },
+        "coordinate_scope": "Exact IEEE-754 float32 values of this case manifest proposal cover/position/retreat/focus; not the tolerance-bounded physical stopping point or grounded query outputs.",
+        "classification_scope": "Explicit project-author conventional/unconventional classification only; no player-frequency or heat-map data.",
+        "confidence_scope": "Manual author trust value 0.8 after repeat static geometry checks; not an 80-percent success rate, player popularity, heat-map frequency or win probability.",
+        "range_scope": "Unknown; scenario names and local distances do not establish near/mid/far labels.",
+        "preflight": {
+          "scenario": 14,
+          "annotation_id": 1303,
+          "annotation_revision": 2,
+          "nonce": "2e6186a5574a253d",
+          "original_path": [
+            [
+              -2710.22265625,
+              -3950,
+              110
+            ],
+            [
+              -2417.2763671875,
+              -4374.73095703125,
+              110
+            ]
+          ],
+          "ground_mask": 7,
+          "capsule_segments_mask": 7,
+          "ground_query_points": [
+            [
+              -2710.22265625,
+              -3945.1005859375,
+              100
+            ],
+            [
+              -2417.2763671875,
+              -4374.73095703125,
+              100
+            ],
+            [
+              -2710.22265625,
+              -3945.1005859375,
+              100
+            ]
+          ],
+          "closed_cover_to_focus": "Blocked",
+          "open_to_focus": "Clear",
+          "capsule_radius_cm": 42,
+          "capsule_half_height_cm": 98,
+          "own_eye_height_cm": 174.00001525878906,
+          "query_scope": "Same-life/source original FindPath plus original ground at cover/open/retreat, three capsule segments cover->open->retreat->cover, closed/open focus rays and four finite static risk rays, under existing shared query budgets."
+        },
+        "risk_sample": {
+          "scope": "Four authored static map directions only, from authored open plus original own eye height; not all firing angles or enemy occupancy.",
+          "direction_order": [
+            "focus",
+            "left",
+            "right",
+            "rear"
+          ],
+          "endpoint_rule": "Focus endpoint; lateral/rear endpoints at focus height, rotated around open by +/-90/180 degrees, using min(horizontal open-to-focus distance, CoverMaximumAnnotationDistanceCm).",
+          "endpoints": [
+            [
+              -2587.116943359375,
+              -3861.16015625,
+              276.1500244140625
+            ],
+            [
+              -2930.84716796875,
+              -4544.571533203125,
+              276.1500244140625
+            ],
+            [
+              -1903.70556640625,
+              -4204.890380859375,
+              276.1500244140625
+            ],
+            [
+              -2247.435791015625,
+              -4888.3017578125,
+              276.1500244140625
+            ]
+          ],
+          "results": [
+            "Clear",
+            "Clear",
+            "Clear",
+            "Blocked"
+          ],
+          "risk_rule": "risk = Clear directions / 4; flank_risk = Clear left/right/rear directions / 3; exposed_angles = Clear directions.",
+          "explicit_test_maximum_exposed_angles": 4,
+          "default_cap2_scope": "Gate comparison only: exposed_angles <= default cap 2 admits this exposure gate for 1501 and rejects 1502. This pair used cap 4; no native default-cap-2 run is claimed."
+        },
+        "physical_validation": {
+          "same_life_source": {
+            "epoch": 1,
+            "life_token": 1088748439775557,
+            "source": "3245883aea04892e"
+          },
+          "request_key": 1,
+          "original_native_route": true,
+          "stationary_sequence_range": [
+            78,
+            118
+          ],
+          "stationary_rows": 41,
+          "dwell_seconds": 2.5,
+          "original_velocity_xyz": [
+            0,
+            0,
+            0
+          ],
+          "grounded_throughout": true,
+          "arrival_tolerance_cm": 18.0,
+          "actual_arrival_feet_for_evidence_only": [
+            -2407.210693359375,
+            -4389.54833984375,
+            102.29795837402344
+          ],
+          "original_release_submissions": 4386,
+          "original_release_physics_completed": 952,
+          "release_submitted": true,
+          "host_critical_errors": 0,
+          "client_critical_errors": 0,
+          "scope": "Two-person forced-class Scenario14 geometry/physical hold test only; firing disabled, other peek/tactics actions disabled, author confidence was 0.5 and exposure cap was 4. No competing-point preference or per-intent native-consumption proof."
+        },
+        "coverage_limit": "This single authored Ascent hold and its measured local query/physical scope only. No all-map coverage, live enemy coordinates, human heat-map, native default-cap-2 run or retained runtime proof. Normal production path/ground/capsule/cover and lifecycle checks remain required."
+      },
+      "route_ref": null,
+      "activation": {
+        "status": "native_geometry_revalidated",
+        "evidence": ".local/local-server/pair-hold14-1303-004/host/bridge-state.json#map_hold_fixture; .local/local-server/pair-hold14-1303-004/host/map-hold-fixture-own-native.jsonl#sequences=78-118; module_sha256=ff36ba0fb68fcc195ffccc190f48b304ae2d6461127238a278045a58bb2a1837"
+      }
+    }
+  ]
+}

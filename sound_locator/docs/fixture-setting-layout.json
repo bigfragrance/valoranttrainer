@@ -1,0 +1,30 @@
+[
+  {
+    "name": "SetBoolSetting",
+    "descriptor_rva": "0xd5311a0",
+    "outer_resolver_rva": "0x651cd20",
+    "parameter_size": 3,
+    "parameters": [
+      {
+        "name": "UnderlyingType",
+        "offset": 0,
+        "kind": 0
+      },
+      {
+        "name": "SettingEnum",
+        "offset": 0,
+        "kind": 30
+      },
+      {
+        "name": "Value",
+        "offset": 1,
+        "kind": 12
+      },
+      {
+        "name": "bSaveToRoamingServiceImmediately",
+        "offset": 2,
+        "kind": 12
+      }
+    ]
+  }
+]
