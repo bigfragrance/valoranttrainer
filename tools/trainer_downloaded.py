@@ -20,10 +20,23 @@ def file_hash(path):
 
 def manifest(root):
     from trainer_patch import read_json
-    data = read_json(root/'profiles/downloaded-files.json')
+    profile = root/'.local/download-resource-profile.json'
+    minimal = profile.is_file() and read_json(profile).get('resource_profile') == 'minimal'
+    data = read_json(root/('profiles/downloaded-files-minimal.json' if minimal else 'profiles/downloaded-files.json'))
     if data.get('schema_version') != 1 or data.get('manifest_id') != '448DAE34A9D16C88':
         raise RuntimeError('下载资源的版本清单不受支持')
     return data
+
+
+def valid_contents(path, row):
+    if 'ranges' not in row:
+        return file_hash(path) == row['sha256']
+    with path.open('rb') as stream:
+        for offset, size, expected in row['ranges']:
+            stream.seek(offset)
+            if hashlib.sha256(stream.read(size)).hexdigest() != expected:
+                return False
+    return True
 
 
 def finalize(root, records):
@@ -47,7 +60,10 @@ def finalize(root, records):
     settings = owned(root, SETTINGS)
     if not settings.exists():
         settings.parent.mkdir(parents=True, exist_ok=True)
-        shutil.copyfile(root/'profiles/patch-default-settings.json', settings)
+        defaults = read_json(root/'profiles/patch-default-settings.json')
+        if (root/'.local/download-resource-profile.json').is_file() and read_json(root/'.local/download-resource-profile.json').get('resource_profile') == 'minimal':
+            defaults['map_id'] = 'jam'
+        write_json(settings, defaults)
     write_json(root/'.local/download-environment.json', {'prepared': True, 'manifest_id': data['manifest_id'],
         'prepared_utc': datetime.now(timezone.utc).isoformat()})
 
@@ -71,7 +87,7 @@ def state(root=ROOT, *, full=False):
         if stat.st_size != row['size'] or record.get('sha256') != row['sha256']:
             raise RuntimeError('游戏文件版本不一致，请打开安装器进行校验修复 · '+path.name)
         if full or stat.st_mtime_ns != record.get('mtime_ns'):
-            if file_hash(path) != row['sha256']:
+            if not valid_contents(path, row):
                 raise RuntimeError('游戏文件校验失败，请打开安装器进行校验修复 · '+path.name)
             if stat.st_mtime_ns != record.get('mtime_ns'):
                 record['mtime_ns'] = stat.st_mtime_ns

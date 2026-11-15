@@ -22,7 +22,7 @@ DONOR_ZIP = DONOR.with_suffix('.zip')
 
 def stage_patch(info, *, donor=DONOR, donor_sha256=None, release=None):
     donor = Path(donor).resolve()
-    donor_archive = donor.with_suffix('.zip')
+    donor_archive = Path(str(donor)+'.zip')
     expected = donor_sha256 or ('a5bf690bec4aadf5c384dbbcc62725986c1a457bb9ca197ddc423a0cc1673c7f' if donor == DONOR.resolve() else None)
     if not expected or digest(donor_archive) != expected:
         raise RuntimeError('The accepted patch archive has changed')
@@ -42,6 +42,8 @@ def stage_patch(info, *, donor=DONOR, donor_sha256=None, release=None):
     db.row_factory = sqlite3.Row
     rows = [dict(row) for row in db.execute('SELECT path,size,sha256 FROM files ORDER BY id')]
     db.close()
+    minimal = json.loads((BUILD/'resource-plan-minimal.json').read_text(encoding='utf-8'))
+    atomic_json(stage/'profiles/downloaded-files-minimal.json', {'schema_version': 1, 'manifest_id': info['manifest_id'], 'files': minimal['files']})
     atomic_json(stage/'profiles/downloaded-files.json', {'schema_version': 1,
         'manifest_id': info['manifest_id'], 'manifest_sha256': info['manifest_sha256'],
         'languages': info['languages'], 'files': rows})
@@ -65,7 +67,7 @@ def stage_patch(info, *, donor=DONOR, donor_sha256=None, release=None):
     channel = ROOT/'profiles/github-update.json'
     shutil.copyfile(channel, stage/'profiles/github-update.json')
     (stage/'检查更新.cmd').write_text('@echo off\n"%~dp0runtime\\pythonw.exe" -I -B -X utf8 "%~dp0tools\\github_update.py" --gui --target "%~dp0."\n', encoding='utf-8-sig')
-    packaged_names = set(inventory) | {'tools/github_update.py', 'tools/apply_trainer_update.py', 'tools/installer_engine.py', 'profiles/github-update.json', '检查更新.cmd'} | {'tools/trainer_downloaded.py', 'profiles/downloaded-files.json'}
+    packaged_names = set(inventory) | {'tools/github_update.py', 'tools/apply_trainer_update.py', 'tools/installer_engine.py', 'profiles/github-update.json', '检查更新.cmd'} | {'tools/trainer_downloaded.py', 'profiles/downloaded-files.json', 'profiles/downloaded-files-minimal.json'}
     hashes = {name: digest(owned(stage, name)) for name in sorted(packaged_names)}
     atomic_json(stage/'package-sha256.json', hashes)
     archive = PAYLOAD/'patch.zip'
@@ -93,8 +95,12 @@ def main():
     PAYLOAD.mkdir(exist_ok=True)
     info = json.loads((BUILD/'resource-plan.json').read_text(encoding='utf-8'))
     assert digest(BUILD/'resource-plan.sqlite') == info['plan_sha256']
+    from build_minimal_resource_plan import build
+    minimal = build(BUILD/'resource-plan.sqlite', ROOT/'exports/ValorantTrainer-Standalone-Duel1-Lotus-20261108/profiles/standalone-dependencies.json', BUILD/'resource-plan-minimal.sqlite')
+    atomic_json(BUILD/'resource-plan-minimal.json', minimal)
     patch_hash, patch_size, module_hash = stage_patch(info, donor=args.donor, donor_sha256=args.donor_sha256, release=args.release)
     shutil.copyfile(BUILD/'resource-plan.sqlite', PAYLOAD/'resource-plan.sqlite')
+    shutil.copyfile(BUILD/'resource-plan-minimal.sqlite', PAYLOAD/'resource-plan-minimal.sqlite')
     shutil.copyfile(ROOT/'profiles/github-update.json', PAYLOAD/'github-update.json')
     shutil.copyfile('E:/Program Files/Git/mingw64/bin/libzstd.dll', PAYLOAD/'libzstd.dll')
     licenses = PAYLOAD/'licenses'
@@ -108,6 +114,7 @@ def main():
     descriptor = {**info, 'patch_sha256': patch_hash, 'patch_expanded_bytes': patch_size,
                   'module_sha256': module_hash, 'cdn_installation_tested': False,
                   'plan_profile': 'full-en-audio-zh-tw-text'}
+    descriptor['minimal'] = {key: value for key,value in minimal.items() if key != 'files'}
     atomic_json(PAYLOAD/'installer.json', descriptor)
     environment = dict(os.environ)
     environment['PYINSTALLER_CONFIG_DIR'] = str(BUILD/'pyinstaller-cache')

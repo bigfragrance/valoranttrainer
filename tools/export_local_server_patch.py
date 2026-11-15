@@ -127,6 +127,10 @@ def downloaded_metadata(destination, info, plan):
     json_file(destination / 'profiles/downloaded-files.json', {
         'schema_version': 1, 'manifest_id': info['manifest_id'],
         'manifest_sha256': info['manifest_sha256'], 'languages': info['languages'], 'files': rows})
+    minimal_path = ROOT / '.local/installer-build/resource-plan-minimal.json'
+    if minimal_path.is_file():
+        minimal = json.loads(minimal_path.read_text(encoding='utf-8'))
+        json_file(destination / 'profiles/downloaded-files-minimal.json', {'schema_version': 1, 'manifest_id': '448DAE34A9D16C88', 'files': minimal['files']})
     for name in ('trainer_downloaded.py', 'resource_bundle.py'):
         copy(ROOT / 'tools' / name, destination / 'tools' / name)
     return dict(kind='local-server-downloaded-full-v1', distribution='complete-game-cdn-installer',

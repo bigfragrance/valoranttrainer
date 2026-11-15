@@ -502,7 +502,7 @@ class Installer:
         self.cdn_route = cdn_route
         self.downloaded = 0
         self.done = 0
-        self.total = descriptor['game_bytes']
+        self.total = descriptor.get('written_bytes', descriptor['game_bytes'])
         self.stats_lock = threading.Lock()
         self.last_emit = 0
 
@@ -655,6 +655,18 @@ class Installer:
             checkpoint.flush(force=True)
             self.network_diagnostics(transport, started)
 
+    def file_valid(self, path, item, plan):
+        if not path.is_file() or path.stat().st_size != item['size']:
+            return False
+        if self.descriptor.get('resource_profile') != 'minimal':
+            return digest(path) == item['sha256']
+        with path.open('rb') as stream:
+            for chunk in plan.chunks(item['id']):
+                stream.seek(chunk['file_offset'])
+                if hashlib.sha256(stream.read(chunk['usize'])).hexdigest() != chunk['sha256']:
+                    return False
+        return True
+
     def run(self):
         self.validate_target()
         lock = self.lock()
@@ -691,9 +703,9 @@ class Installer:
                 if part.resolve() != part:
                     raise InstallationError('下载临时文件路径指向了其他位置')
                 self.event('verify', '检查已有文件 · '+Path(item['path']).name)
-                if path.is_file() and path.stat().st_size == item['size'] and digest(path) == item['sha256']:
+                if self.file_valid(path, item, plan):
                     finished.add(item['id'])
-                    self.done += item['size']
+                    self.done += sum(c['usize'] for c in plan.chunks(item['id']))
                     continue
                 if path.exists() and not part.exists():
                     os.replace(path, part)
@@ -703,8 +715,6 @@ class Installer:
                     with part.open('rb') as stream:
                         for chunk in file_chunks:
                             self.control.checkpoint()
-                            if chunk['ordinal'] not in completed[item['id']]:
-                                continue
                             stream.seek(chunk['file_offset'])
                             raw = stream.read(chunk['usize'])
                             if len(raw) == chunk['usize'] and hashlib.sha256(raw).hexdigest() == chunk['sha256']:
@@ -712,8 +722,10 @@ class Installer:
                                 self.done += chunk['usize']
                 state.executemany('DELETE FROM done WHERE file_id=? AND ordinal=?',
                                   ((item['id'], n) for n in completed[item['id']]-valid))
+                state.executemany('INSERT OR IGNORE INTO done VALUES(?,?)',
+                                  ((item['id'], n) for n in valid))
                 allocated = allocated_bytes(part)
-                needed_space += max(0, item['size']-allocated)
+                needed_space += max(0, sum(c['usize'] for c in file_chunks)-allocated)
                 active_files[item['id']] = (item, path, part)
                 for chunk in file_chunks:
                     if chunk['ordinal'] in valid:
@@ -727,6 +739,11 @@ class Installer:
             for item, path, part in active_files.values():
                 path.parent.mkdir(parents=True, exist_ok=True)
                 with part.open('r+b' if part.exists() else 'w+b') as stream:
+                    if self.descriptor.get('resource_profile') == 'minimal' and os.name == 'nt':
+                        import msvcrt
+                        result = ctypes.windll.kernel32.DeviceIoControl(ctypes.c_void_p(msvcrt.get_osfhandle(stream.fileno())), 0x900C4, None, 0, None, 0, ctypes.byref(ctypes.c_ulong()), None)
+                        if not result:
+                            raise InstallationError('精简资源需要支持稀疏文件的 NTFS 磁盘')
                     stream.truncate(item['size'])
             self.download(chunks, consumers, active_files, state, handles)
             handles.close()
@@ -737,7 +754,7 @@ class Installer:
                 if item['id'] not in finished:
                     part = active_files[item['id']][2]
                     self.event('verify', '校验文件 · '+Path(item['path']).name)
-                    if part.stat().st_size != item['size'] or digest(part) != item['sha256']:
+                    if not self.file_valid(part, item, plan):
                         with part.open('rb') as stream:
                             for chunk in plan.chunks(item['id']):
                                 stream.seek(chunk['file_offset'])
@@ -754,7 +771,7 @@ class Installer:
             if self.prepare:
                 self.prepare(self.root, receipt_files)
             result = {'complete': True, 'manifest_id': plan.meta['manifest_id'],
-                      'plan_sha256': self.descriptor['plan_sha256'], 'files': receipt_files,
+                      'plan_sha256': self.descriptor['plan_sha256'], 'resource_profile': self.descriptor.get('resource_profile', 'full'), 'files': receipt_files,
                       'installed_utc': datetime.now(timezone.utc).isoformat(), 'downloaded_this_run': self.downloaded}
             atomic_json(owned(self.root, '.local/download-installation.json'), result)
             self.event('complete', '安装完成')

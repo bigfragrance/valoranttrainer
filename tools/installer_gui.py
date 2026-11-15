@@ -43,6 +43,7 @@ def windows_root(root):
 
 def prepare_environment(target, records, payload, descriptor):
     extract_patch(payload/'patch.zip', descriptor['patch_sha256'], target)
+    atomic_json(target/'.local/download-resource-profile.json', {'resource_profile': descriptor.get('resource_profile', 'full')})
     atomic_json(target/'.setup/verified-files.json', {'files': records})
     environment = dict(os.environ)
     for key, folder in {'TEMP': 'temp', 'TMP': 'temp', 'LOCALAPPDATA': 'LocalAppData',
@@ -75,9 +76,10 @@ class SetupWindow:
         self.cdn_route = tk.StringVar(value='自动选线')
         self.network_mode = tk.StringVar(value='系统代理（如有）')
         self.last_progress = None
+        self.resource_mode = tk.StringVar(value='完整资源')
         root.title('ValorantTrainer 安装器')
-        root.geometry('800x620')
-        root.minsize(700, 600)
+        root.geometry('800x710')
+        root.minsize(700, 690)
         root.configure(background='#f5f6f8')
         style = ttk.Style(root)
         style.theme_use('clam')
@@ -104,8 +106,10 @@ class SetupWindow:
         totals.columnconfigure(1, weight=1)
         ttk.Label(totals, text='预计下载', style='Muted.TLabel').grid(row=0, column=0, sticky='w')
         ttk.Label(totals, text='游戏文件占用', style='Muted.TLabel').grid(row=0, column=1, sticky='w')
-        ttk.Label(totals, text=gb(descriptor['download_bytes']), style='Value.TLabel').grid(row=1, column=0, sticky='w', pady=(4, 0))
-        ttk.Label(totals, text=gb(descriptor['game_bytes']), style='Value.TLabel').grid(row=1, column=1, sticky='w', pady=(4, 0))
+        self.download_size = ttk.Label(totals, text=gb(descriptor['download_bytes']), style='Value.TLabel')
+        self.download_size.grid(row=1, column=0, sticky='w', pady=(4, 0))
+        self.disk_size = ttk.Label(totals, text=gb(descriptor['game_bytes']), style='Value.TLabel')
+        self.disk_size.grid(row=1, column=1, sticky='w', pady=(4, 0))
         ttk.Label(totals, text='并发连接', style='Muted.TLabel').grid(row=0, column=2, sticky='w')
         self.connections = ttk.Combobox(totals, textvariable=self.concurrency, values=tuple(range(1, 65)),
                                         width=5, height=8, state='readonly')
@@ -148,6 +152,12 @@ class SetupWindow:
         self.install.grid(row=0, column=2)
         self.update_button = ttk.Button(buttons, text='GitHub 更新', command=self.start_update)
         self.update_button.grid(row=1, column=0, sticky='w', pady=(8, 0))
+        modes = ttk.Frame(content)
+        modes.grid(row=12, column=0, sticky='ew', pady=(12,0))
+        self.mode_select = ttk.Combobox(modes, textvariable=self.resource_mode, values=('完整资源', '仅必要资源（实验性）'), state='readonly', width=27)
+        self.mode_select.pack(anchor='w')
+        ttk.Label(modes, text='精简范围为斗牛一、莲花古城及指定皮肤，尚未完成游戏内验收。\n其他地图或皮肤请使用完整模式，之后可切换并补齐。', style='Muted.TLabel').pack(anchor='w', pady=(5,0))
+        self.mode_select.bind('<<ComboboxSelected>>', lambda *_: self.update_space())
         self.target.trace_add('write', lambda *_: self.update_space())
         self.update_space()
         root.protocol('WM_DELETE_WINDOW', self.close)
@@ -168,8 +178,16 @@ class SetupWindow:
                 path /= 'ValorantTrainer'
             self.target.set(str(path))
 
+    def selected_descriptor(self):
+        if self.resource_mode.get() == '完整资源':
+            return self.descriptor
+        return {**self.descriptor, **self.descriptor['minimal'], 'resource_profile': 'minimal'}
+
     def update_space(self):
-        if self.success and Path(self.target.get()).absolute() != self.success_target:
+        selected = self.selected_descriptor()
+        self.download_size.configure(text=gb(selected['download_bytes']))
+        self.disk_size.configure(text=gb(selected.get('written_bytes', selected['game_bytes'])))
+        if self.success and (Path(self.target.get()).absolute() != self.success_target or self.resource_mode.get() != getattr(self, 'success_mode', None)):
             self.success = False
             self.success_target = None
             self.install.configure(text='开始安装')
@@ -178,7 +196,7 @@ class SetupWindow:
             self.stats.configure(text='支持暂停续传和已有文件校验')
         try:
             free = shutil.disk_usage(windows_root(self.target.get())).free
-            self.space.configure(text='所在磁盘可用 '+gb(free)+' · 首次安装还需约 '+gb(self.descriptor['game_bytes']+512*1024*1024))
+            self.space.configure(text='所在磁盘可用 '+gb(free)+' · 首次安装还需约 '+gb(selected.get('written_bytes', selected['game_bytes'])+512*1024*1024))
         except OSError:
             self.space.configure(text='请选择可写的本地磁盘目录')
 
@@ -189,6 +207,8 @@ class SetupWindow:
             os.startfile(str(Path(self.target.get())/'启动训练器.cmd'))
             return
         target = Path(self.target.get()).absolute()
+        descriptor = self.selected_descriptor()
+        plan_name = 'resource-plan-minimal.sqlite' if descriptor.get('resource_profile') == 'minimal' else 'resource-plan.sqlite'
         workers = self.concurrency.get()
         cdn_route = CDN_OPTIONS[self.cdn_route.get()]
         network_mode = NETWORK_OPTIONS[self.network_mode.get()]
@@ -197,7 +217,7 @@ class SetupWindow:
         self.last_progress = None
         self.control = Control()
         for widget in (self.entry, self.browse, self.repair, self.install, self.connections,
-                       self.cdn_select, self.network_select):
+                       self.cdn_select, self.network_select, self.mode_select):
             widget.configure(state='disabled')
         self.pause.configure(state='normal', text='暂停')
         self.status.configure(text='正在检查资源计划和已有文件')
@@ -205,10 +225,10 @@ class SetupWindow:
         def work():
             try:
                 codec = Zstd(self.payload/'libzstd.dll')
-                installer = Installer(self.payload/'resource-plan.sqlite', self.descriptor, target, codec,
+                installer = Installer(self.payload/plan_name, descriptor, target, codec,
                     control=self.control, notify=self.events.put, workers=workers,
                     cdn_route=cdn_route, network_mode=network_mode,
-                    prepare=lambda root, files: prepare_environment(root, files, self.payload, self.descriptor))
+                    prepare=lambda root, files: prepare_environment(root, files, self.payload, descriptor))
                 result = installer.run()
                 self.events.put({'phase': 'success', 'result': result, 'target': str(target)})
             except Stopped:
@@ -285,10 +305,11 @@ class SetupWindow:
                 self.pause.configure(state='disabled')
                 for widget in (self.entry, self.browse, self.repair, self.install):
                     widget.configure(state='normal')
-                for widget in (self.connections, self.cdn_select, self.network_select):
+                for widget in (self.connections, self.cdn_select, self.network_select, self.mode_select):
                     widget.configure(state='readonly')
                 self.last_progress = None
                 if phase == 'success':
+                    self.success_mode = self.resource_mode.get()
                     self.success = True
                     self.success_target = Path(event['target'])
                     self.status.configure(text='安装完成，资源和补丁环境已准备好')
@@ -346,12 +367,18 @@ def self_test(payload, descriptor, report):
         window = SetupWindow(root, payload, descriptor, Path(report).parent/'PreviewTrainer', preview=True)
         root.update_idletasks()
         requested = [root.winfo_reqwidth(), root.winfo_reqheight()]
-        assert requested[0] <= 800 and requested[1] <= 620, 'Window content needs '+str(requested)
+        assert requested[0] <= 800 and requested[1] <= 710, 'Window content needs '+str(requested)
         assert window.install.instate(['disabled']) and window.repair.instate(['disabled']), 'Preview download controls must be disabled'
         assert window.concurrency.get() == 32, 'Default concurrency must be 32'
         assert [int(value) for value in window.connections.cget('values')] == list(range(1, 65)), 'Concurrency choices must cover 1 through 64'
         assert CDN_OPTIONS[window.cdn_route.get()] == 'auto', 'CDN route must default to automatic selection'
         assert NETWORK_OPTIONS[window.network_mode.get()] == 'system', 'System proxy selection must be available'
+        window.resource_mode.set('仅必要资源（实验性）')
+        window.update_space()
+        assert window.selected_descriptor()['resource_profile'] == 'minimal'
+        assert window.selected_descriptor()['download_bytes'] < descriptor['download_bytes']
+        window.resource_mode.set('完整资源')
+        window.update_space()
         window.success = True
         window.success_target = Path(window.target.get()).absolute()
         window.install.configure(text='打开训练器')
