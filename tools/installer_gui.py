@@ -16,6 +16,7 @@ import time
 import tkinter as tk
 from tkinter import filedialog, messagebox, ttk
 import github_update
+import installer_self_update
 
 from installer_engine import Control, Installer, InstallationError, Plan, Stopped, Zstd, atomic_json, digest, extract_patch
 
@@ -150,8 +151,11 @@ class SetupWindow:
         self.pause.grid(row=0, column=1, padx=(8, 8))
         self.install = ttk.Button(buttons, text='开始安装', style='Primary.TButton', command=self.start)
         self.install.grid(row=0, column=2)
-        self.update_button = ttk.Button(buttons, text='GitHub 更新', command=self.start_update)
+        self.update_button = ttk.Button(buttons, text='训练器更新', command=self.start_update)
         self.update_button.grid(row=1, column=0, sticky='w', pady=(8, 0))
+        self.self_update_button = ttk.Button(buttons, text='更新安装器', command=self.start_self_update)
+        self.self_update_button.grid(row=1, column=2, sticky='e', pady=(8, 0))
+        root.title('ValorantTrainer 安装器 ' + descriptor.get('installer_version', ''))
         modes = ttk.Frame(content)
         modes.grid(row=12, column=0, sticky='ew', pady=(12,0))
         self.mode_select = ttk.Combobox(modes, textvariable=self.resource_mode, values=('完整资源', '仅必要资源（实验性）'), state='readonly', width=27)
@@ -216,7 +220,7 @@ class SetupWindow:
         self.network_history.clear()
         self.last_progress = None
         self.control = Control()
-        for widget in (self.entry, self.browse, self.repair, self.install, self.connections,
+        for widget in (self.entry, self.browse, self.repair, self.install, self.connections, self.update_button, self.self_update_button,
                        self.cdn_select, self.network_select, self.mode_select):
             widget.configure(state='disabled')
         self.pause.configure(state='normal', text='暂停')
@@ -251,7 +255,7 @@ class SetupWindow:
         self.status.configure(text='正在检查 GitHub 正式版本')
         self.control = None
         self.last_progress = None
-        for widget in (self.entry, self.browse, self.repair, self.install, self.update_button,
+        for widget in (self.entry, self.browse, self.repair, self.install, self.update_button, self.self_update_button,
                        self.connections, self.cdn_select, self.network_select, self.mode_select):
             widget.configure(state='disabled')
         self.progress.configure(mode='indeterminate')
@@ -261,6 +265,30 @@ class SetupWindow:
             try:
                 release = github_update.check(target, repository)
                 self.events.put({'phase': 'update_check', 'release': release, 'target': str(target)})
+            except Exception as error:
+                self.events.put({'phase': 'error', 'message': str(error)})
+        self.worker = threading.Thread(target=work, daemon=False)
+        self.worker.start()
+
+    def start_self_update(self):
+        if self.preview or (self.worker and self.worker.is_alive()):
+            return
+        if not os.environ.get('TRAINER_SETUP_EXE'):
+            messagebox.showinfo('安装器更新', '请运行打包后的安装器以更新自身。')
+            return
+        channel = json.loads((self.payload/'github-update.json').read_text(encoding='utf-8'))
+        self.control = None
+        self.last_progress = None
+        self.status.configure(text='正在检查安装器新版本')
+        for widget in (self.entry, self.browse, self.repair, self.install, self.update_button, self.self_update_button,
+                       self.connections, self.cdn_select, self.network_select, self.mode_select):
+            widget.configure(state='disabled')
+        self.progress.configure(mode='indeterminate')
+        self.progress.start(15)
+        def work():
+            try:
+                release = installer_self_update.check(channel['repository'], self.descriptor['installer_version'])
+                self.events.put({'phase': 'self_update_check', 'release': release})
             except Exception as error:
                 self.events.put({'phase': 'error', 'message': str(error)})
         self.worker = threading.Thread(target=work, daemon=False)
@@ -295,7 +323,31 @@ class SetupWindow:
             except queue.Empty:
                 break
             phase = event['phase']
-            if phase == 'update_progress':
+            if phase == 'self_update_check':
+                release = event['release']
+                if not release['available']:
+                    self.events.put({'phase': 'stopped', 'message': '安装器已是最新版本 ' + release['current']})
+                elif messagebox.askyesno('安装器更新', '发现安装器 ' + release['version'] + '\n是否下载并关闭当前窗口，替换后自动打开？'):
+                    target = self.target.get()
+                    def prepare_self_update(release=release, target=target):
+                        try:
+                            config = installer_self_update.prepare(release, os.environ['TRAINER_SETUP_EXE'], target,
+                                self.payload/'installer_replace.ps1', self.events.put)
+                            self.events.put({'phase': 'self_update_ready', 'config': str(config)})
+                        except Exception as error:
+                            self.events.put({'phase': 'error', 'message': str(error)})
+                    self.worker = threading.Thread(target=prepare_self_update, daemon=False)
+                    self.worker.start()
+                else:
+                    self.events.put({'phase': 'stopped', 'message': '已取消安装器更新'})
+            elif phase == 'self_update_ready':
+                try:
+                    installer_self_update.launch(event['config'])
+                    self.root.destroy()
+                    return
+                except Exception as error:
+                    self.events.put({'phase': 'error', 'message': str(error)})
+            elif phase == 'update_progress':
                 self.status.configure(text=event['message'])
                 total = event.get('total')
                 if total:
@@ -325,7 +377,7 @@ class SetupWindow:
                 self.progress.stop()
                 self.progress.configure(mode='determinate')
                 self.pause.configure(state='disabled')
-                for widget in (self.entry, self.browse, self.repair, self.install, self.update_button):
+                for widget in (self.entry, self.browse, self.repair, self.install, self.update_button, self.self_update_button):
                     widget.configure(state='normal')
                 for widget in (self.connections, self.cdn_select, self.network_select, self.mode_select):
                     widget.configure(state='readonly')
@@ -394,6 +446,9 @@ def self_test(payload, descriptor, report):
         requested = [root.winfo_reqwidth(), root.winfo_reqheight()]
         assert requested[0] <= 800 and requested[1] <= 710, 'Window content needs '+str(requested)
         assert window.install.instate(['disabled']) and window.repair.instate(['disabled']), 'Preview download controls must be disabled'
+        assert window.self_update_button.cget('text') == '更新安装器'
+        assert (payload/'installer_replace.ps1').is_file(), 'Self-update replacement worker missing'
+        assert descriptor.get('installer_version'), 'Installer version missing'
         assert window.concurrency.get() == 32, 'Default concurrency must be 32'
         assert [int(value) for value in window.connections.cget('values')] == list(range(1, 65)), 'Concurrency choices must cover 1 through 64'
         assert CDN_OPTIONS[window.cdn_route.get()] == 'auto', 'CDN route must default to automatic selection'
@@ -436,6 +491,7 @@ def main():
     parser.add_argument('--target', type=Path, required=True)
     parser.add_argument('--self-test', type=Path)
     parser.add_argument('--preview', action='store_true')
+    parser.add_argument('--self-update-ack', type=Path)
     args = parser.parse_args()
     payload = assets()
     descriptor = json.loads((payload/'installer.json').read_text(encoding='utf-8'))
@@ -449,6 +505,10 @@ def main():
             pass
     root = tk.Tk()
     SetupWindow(root, payload, descriptor, args.target, preview=args.preview)
+    if args.self_update_ack:
+        root.update_idletasks()
+        atomic_json(args.self_update_ack, {'sha256': digest(Path(os.environ['TRAINER_SETUP_EXE'])),
+                                        'version': descriptor['installer_version']})
     root.mainloop()
 
 

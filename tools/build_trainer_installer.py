@@ -102,6 +102,7 @@ def main():
     shutil.copyfile(BUILD/'resource-plan.sqlite', PAYLOAD/'resource-plan.sqlite')
     shutil.copyfile(BUILD/'resource-plan-minimal.sqlite', PAYLOAD/'resource-plan-minimal.sqlite')
     shutil.copyfile(ROOT/'profiles/github-update.json', PAYLOAD/'github-update.json')
+    shutil.copyfile(ROOT/'packaging/installer_replace.ps1', PAYLOAD/'installer_replace.ps1')
     shutil.copyfile('E:/Program Files/Git/mingw64/bin/libzstd.dll', PAYLOAD/'libzstd.dll')
     licenses = PAYLOAD/'licenses'
     licenses.mkdir(exist_ok=True)
@@ -115,6 +116,7 @@ def main():
                   'module_sha256': module_hash, 'cdn_installation_tested': False,
                   'plan_profile': 'full-en-audio-zh-tw-text'}
     descriptor['minimal'] = {key: value for key,value in minimal.items() if key != 'files'}
+    descriptor['installer_version'] = args.release or '2026.11.15.3'
     atomic_json(PAYLOAD/'installer.json', descriptor)
     environment = dict(os.environ)
     environment['PYINSTALLER_CONFIG_DIR'] = str(BUILD/'pyinstaller-cache')
@@ -174,6 +176,8 @@ def main():
               'game_bytes': info['game_bytes'], 'download_bytes': info['download_bytes'],
               'module_sha256': module_hash, 'cdn_installation_tested': False}
     atomic_json(BUILD/'delivery-build.json', record)
+    from installer_self_update import build_manifest
+    build_manifest(destination, descriptor['installer_version'], destination.parent/'installer-update.json')
     destination.with_name(destination.name+'.sha256.txt').write_text(record['sha256']+'  '+destination.name+'\n', encoding='utf-8')
     print(json.dumps(record, ensure_ascii=False), flush=True)
 

@@ -79,7 +79,7 @@ int WINAPI wWinMain(HINSTANCE instance,HINSTANCE,PWSTR,int) {
     CoInitializeEx(nullptr,COINIT_APARTMENTTHREADED);
     int argc=0;
     auto argv=CommandLineToArgvW(GetCommandLineW(),&argc);
-    fs::path target,report;
+    fs::path target,report,ack;
     bool preview=false;
     if (argc==3 && std::wstring(argv[1])==L"--self-test") {
         report=fs::absolute(argv[2]);
@@ -87,6 +87,9 @@ int WINAPI wWinMain(HINSTANCE instance,HINSTANCE,PWSTR,int) {
     } else if (argc==3 && std::wstring(argv[1])==L"--preview") {
         target=fs::absolute(argv[2]);
         preview=true;
+    } else if (argc==5 && std::wstring(argv[1])==L"--resume" && std::wstring(argv[3])==L"--self-update-ack") {
+        target=fs::absolute(argv[2]);
+        ack=fs::absolute(argv[4]);
     } else target=ChooseTarget();
     if (argv) LocalFree(argv);
     if (target.empty()) { CoUninitialize(); return 0; }
@@ -119,9 +122,14 @@ int WINAPI wWinMain(HINSTANCE instance,HINSTANCE,PWSTR,int) {
         SetEnvironmentVariableW(L"TEMP",session.c_str());
         SetEnvironmentVariableW(L"TMP",session.c_str());
         SetEnvironmentVariableW(L"PYTHONPYCACHEPREFIX",(session/L"pycache").c_str());
+        wchar_t executable[32768]{};
+        GetModuleFileNameW(nullptr,executable,32768);
+        SetEnvironmentVariableW(L"TRAINER_SETUP_EXE",executable);
+        SetEnvironmentVariableW(L"TRAINER_SETUP_PID",std::to_wstring(GetCurrentProcessId()).c_str());
         std::wstring command=Quote(extracted.wstring())+L" --target "+Quote(target.wstring());
         if (!report.empty()) command+=L" --self-test "+Quote(report.wstring());
         if (preview) command+=L" --preview";
+        if (!ack.empty()) command+=L" --self-update-ack "+Quote(ack.wstring());
         STARTUPINFOW startup{};
         startup.cb=sizeof(startup);
         PROCESS_INFORMATION process{};

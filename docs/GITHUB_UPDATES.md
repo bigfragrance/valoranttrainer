@@ -1,5 +1,9 @@
 # GitHub 更新
 
+安装器从 v2026.11.15.3 起提供“更新安装器”按钮。点击后检查正式 Release 中的 `installer-update.json`，显示新版本，确认后下载并显示进度。下载大小和 SHA256 校验通过后，当前安装器退出，由独立交接程序替换原 EXE 并打开新安装器。新窗口确认启动后完成交接，旧 EXE 保存在原安装器旁的 `.trainer-self-update-*` 文件夹中。启动失败时恢复旧 EXE，详情写入该文件夹的 `result.json`。
+
+旧版安装器需要手动下载一次 v2026.11.15.3 或更新版本。安装器自更新只替换正在使用的安装器 EXE，训练器更新仍通过“训练器更新”按钮执行。安装器所在目录需要可写。构建工具会生成 `installer-update.json`，发布时将它与 EXE、训练器 ZIP 和 `trainer-update.json` 一并上传至同一 Release。
+
 安装器的“GitHub 更新”按钮用于更新选中的已有完整资源版安装目录。安装完成后，也可双击安装目录的“检查更新.cmd”。首次资源安装仍从固定版本的 CDN 下载，GitHub Release 只分发训练器更新。
 
 公开渠道不需要下载者登录。发布者在 `profiles/github-update.json` 配置 `repository`，值为 `owner/repository`。当前正式仓库为 `bigfragrance/valoranttrainer`，安装器及更新包均已配置该渠道。更换渠道后重建安装器及更新包，确保二者携带相同配置。
