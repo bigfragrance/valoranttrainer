@@ -40,7 +40,7 @@ class Clock:
                 or control.read_json(self.directory.parent / 'latest-session.json'))
         if self.stop_at is not None and self.now >= self.stop_at:
             control.atomic_json(self.directory / 'stop-request.json',
-                                {'directory': str(self.directory), 'proof_id': pair['proof_id'],
+                                {'directory': str(self.directory.resolve()), 'proof_id': pair['proof_id'],
                                  'runner_pid': os.getpid(), 'reason': 'fixture_webui_stop'})
         if (self.directory / 'host/stop-network').is_file():
             host = control.read_json(self.directory / 'host/bridge-state.json')
@@ -116,6 +116,15 @@ class Process:
 
 
 class InteractiveLifecycleTests(unittest.TestCase):
+    def test_host_start_error_preserves_permission_details(self):
+        result = {'status': 'error', 'error': 'PermissionError',
+                  'error_detail': {'type': 'PermissionError', 'message': '[WinError 5] Access denied'},
+                  'startup_step': 'create_game_process'}
+        failure = runner.host_start_failure(result)
+        self.assertEqual(failure['detail']['message'], '[WinError 5] Access denied')
+        self.assertEqual(failure['startup_step'], 'create_game_process')
+        self.assertIsNone(runner.host_start_failure({'status': 'recorded'}))
+
     def simulate(self, *, stop_at=None, exit_early=False, wrong_identity=False, user_exit=False,
                  progress_error=False, host_ready_at=0, bounded=False, selected_config=None):
         with tempfile.TemporaryDirectory() as folder:

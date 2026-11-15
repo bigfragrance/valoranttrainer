@@ -1,4 +1,5 @@
 import hashlib
+import io
 import json
 from pathlib import Path
 import sys
@@ -13,6 +14,47 @@ from test_feedback_update_package import FeedbackUpdatePackageTests
 
 
 class GitHubUpdateTests(unittest.TestCase):
+    def test_download_reports_incremental_bytes(self):
+        events = []
+        data = b'x' * 200000
+        with tempfile.TemporaryDirectory() as temp:
+            target = Path(temp) / 'update.zip'
+            with patch.object(update, 'urlopen', return_value=io.BytesIO(data)):
+                self.assertEqual(update.fetch('https://github.com/a/b/file', limit=len(data),
+                                             destination=target, progress=events.append), len(data))
+            self.assertEqual(target.read_bytes(), data)
+        self.assertEqual(events[0]['completed'], 0)
+        self.assertEqual(events[-1]['completed'], len(data))
+        self.assertGreater(len(events), 3)
+        self.assertEqual(events[-1]['total'], len(data))
+        self.assertIn('总大小未知', update.progress_text({'stage': 'download', 'completed': 1, 'total': None}))
+
+    def test_install_progress_covers_download_and_apply(self):
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp)
+            package, target = self.fixture(root)
+            archive = root / 'release.zip'
+            with zipfile.ZipFile(archive, 'w') as bundle:
+                for path in package.rglob('*'):
+                    if path.is_file():
+                        bundle.write(path, path.relative_to(package).as_posix())
+            data = archive.read_bytes()
+            release = {'available': True, 'url': 'https://github.com/a/b/file', 'manifest': {
+                'bytes': len(data), 'sha256': hashlib.sha256(data).hexdigest(),
+                'version': offline.read(package / 'patch-version.json')['release']}}
+            events = []
+            with patch.object(update, 'urlopen', return_value=io.BytesIO(data)):
+                update.install(target, release, events.append)
+            stages = {event['stage'] for event in events}
+            self.assertTrue({'connect', 'download', 'checksum', 'extract', 'validate', 'backup', 'install', 'verify', 'complete'} <= stages)
+            self.assertEqual(events[-1]['stage'], 'complete')
+            events.clear()
+            release['manifest']['sha256'] = '0' * 64
+            with patch.object(update, 'urlopen', return_value=io.BytesIO(data)):
+                with self.assertRaises(offline.InstallationError):
+                    update.install(target, release, events.append)
+            self.assertNotIn('complete', {event['stage'] for event in events})
+
     def fixture(self, root):
         helper = FeedbackUpdatePackageTests()
         package, target = root / 'package', root / 'target'
@@ -96,10 +138,12 @@ class GitHubUpdateTests(unittest.TestCase):
             def fail(archive, expected, destination):
                 (target / 'patch-version.json').write_text('broken')
                 raise OSError('injected disk failure')
+            events = []
             with patch.object(offline, 'extract_patch', side_effect=fail):
-                with self.assertRaises(OSError): offline.apply(package, target)
+                with self.assertRaises(OSError): offline.apply(package, target, events.append)
             self.assertEqual((target / 'patch-version.json').read_bytes(), before)
             self.assertFalse((target / '.setup/update-transaction/journal.json').exists())
+            self.assertEqual(events[-1]['stage'], 'rollback')
 
     def test_recover_interrupted_update_before_retry(self):
         with tempfile.TemporaryDirectory() as temp:

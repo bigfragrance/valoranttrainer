@@ -410,6 +410,14 @@ def interactive_stop_requested(directory, proof_id, runner_pid):
                 and request.get('directory') == str(Path(directory).resolve()))
 
 
+def host_start_failure(result):
+    if result.get('status') != 'error':
+        return None
+    detail = result.get('error_detail') or {}
+    return {'error': result.get('error'), 'detail': detail,
+            'startup_step': result.get('startup_step')}
+
+
 class RunnerJob:
     """Close this supervisor's exact baseline runner even if the supervisor exits."""
     def __init__(self, process):
@@ -654,6 +662,12 @@ def run_interactive(args):
                     break
                 time.sleep(.1)
             if not report['host_listen_verified'] and not requested() and time.monotonic() < deadline:
+                result = read(directory / 'host-result.json')
+                failure = host_start_failure(result)
+                if failure:
+                    report['host_failure'] = failure
+                    message = failure['detail'].get('message') or failure['error'] or 'unknown error'
+                    raise RuntimeError('Host 启动失败: ' + str(message))
                 raise RuntimeError('Owned local server host did not reach its verified loopback bind')
         if report['host_listen_verified'] and launch('client'):
             last_save = 0

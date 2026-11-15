@@ -74,7 +74,7 @@ class SetupWindow:
         self.target = tk.StringVar(value=str(target))
         self.concurrency = tk.IntVar(value=32)
         self.cdn_route = tk.StringVar(value='自动选线')
-        self.network_mode = tk.StringVar(value='系统代理（如有）')
+        self.network_mode = tk.StringVar(value='直连')
         self.last_progress = None
         self.resource_mode = tk.StringVar(value='完整资源')
         root.title('ValorantTrainer 安装器')
@@ -249,6 +249,14 @@ class SetupWindow:
         channel = self.payload / 'github-update.json'
         repository = json.loads(channel.read_text(encoding='utf-8')).get('repository') if channel.is_file() else None
         self.status.configure(text='正在检查 GitHub 正式版本')
+        self.control = None
+        self.last_progress = None
+        for widget in (self.entry, self.browse, self.repair, self.install, self.update_button,
+                       self.connections, self.cdn_select, self.network_select, self.mode_select):
+            widget.configure(state='disabled')
+        self.progress.configure(mode='indeterminate')
+        self.progress.start(15)
+        self.stats.configure(text='正在连接 GitHub')
         def work():
             try:
                 release = github_update.check(target, repository)
@@ -275,7 +283,7 @@ class SetupWindow:
             self.closing = True
             if self.control:
                 self.control.stop()
-            self.status.configure(text='正在保存下载进度，请稍候')
+            self.status.configure(text='正在保存下载进度，请稍候' if self.control else '正在等待更新完成，请稍候')
             self.pause.configure(state='disabled')
             return
         self.root.destroy()
@@ -287,23 +295,37 @@ class SetupWindow:
             except queue.Empty:
                 break
             phase = event['phase']
-            if phase == 'update_check':
+            if phase == 'update_progress':
+                self.status.configure(text=event['message'])
+                total = event.get('total')
+                if total:
+                    self.progress.stop()
+                    self.progress.configure(mode='determinate', value=min(100, event['completed']/total*100))
+                elif str(self.progress['mode']) != 'indeterminate':
+                    self.progress.configure(mode='indeterminate')
+                    self.progress.start(15)
+                self.stats.configure(text=github_update.progress_text(event))
+            elif phase == 'update_check':
                 release = event['release']
                 if not release['available']:
-                    self.status.configure(text='当前已是最新版本 ' + release['current'])
+                    self.events.put({'phase': 'stopped', 'message': '当前已是最新版本 ' + release['current']})
                 elif messagebox.askyesno('训练器更新', '发现版本 ' + release['version'] + '\n关闭游戏和控制台后，是否下载并更新？'):
                     self.status.configure(text='正在下载并校验更新包')
                     def update_work(release=release, target=event['target']):
                         try:
-                            github_update.install(Path(target), release)
-                            self.events.put({'phase': 'stopped', 'message': '更新完成，请重新启动训练器'})
+                            github_update.install(Path(target), release, self.events.put)
+                            self.events.put({'phase': 'update_done', 'message': '更新完成，请重新启动训练器'})
                         except Exception as error:
                             self.events.put({'phase': 'error', 'message': str(error)})
                     self.worker = threading.Thread(target=update_work, daemon=False)
                     self.worker.start()
-            elif phase in ('success', 'error', 'stopped'):
+                else:
+                    self.events.put({'phase': 'stopped', 'message': '已取消更新'})
+            elif phase in ('success', 'error', 'stopped', 'update_done'):
+                self.progress.stop()
+                self.progress.configure(mode='determinate')
                 self.pause.configure(state='disabled')
-                for widget in (self.entry, self.browse, self.repair, self.install):
+                for widget in (self.entry, self.browse, self.repair, self.install, self.update_button):
                     widget.configure(state='normal')
                 for widget in (self.connections, self.cdn_select, self.network_select, self.mode_select):
                     widget.configure(state='readonly')
@@ -318,7 +340,10 @@ class SetupWindow:
                     self.stats.configure(text='全部游戏文件已通过校验')
                 else:
                     self.status.configure(text=event['message'])
-                    self.install.configure(text='继续安装')
+                    self.install.configure(text='打开训练器' if self.success else '继续安装')
+                    self.stats.configure(text='所有更新文件已通过校验' if phase == 'update_done' else '')
+                    if phase == 'update_done':
+                        self.progress['value'] = 100
             elif not self.closing and (not self.control or self.control.running.is_set()):
                 self.status.configure(text=event['message'])
                 total = event.get('total', self.descriptor['game_bytes'])
@@ -372,13 +397,25 @@ def self_test(payload, descriptor, report):
         assert window.concurrency.get() == 32, 'Default concurrency must be 32'
         assert [int(value) for value in window.connections.cget('values')] == list(range(1, 65)), 'Concurrency choices must cover 1 through 64'
         assert CDN_OPTIONS[window.cdn_route.get()] == 'auto', 'CDN route must default to automatic selection'
-        assert NETWORK_OPTIONS[window.network_mode.get()] == 'system', 'System proxy selection must be available'
+        assert NETWORK_OPTIONS[window.network_mode.get()] == 'direct', 'CDN downloads default to direct connections'
+        assert 'system' in NETWORK_OPTIONS.values(), 'System proxy selection must be available'
         window.resource_mode.set('仅必要资源（实验性）')
         window.update_space()
         assert window.selected_descriptor()['resource_profile'] == 'minimal'
         assert window.selected_descriptor()['download_bytes'] < descriptor['download_bytes']
         window.resource_mode.set('完整资源')
         window.update_space()
+        window.events.put({'phase': 'update_progress', 'stage': 'download', 'message': '正在下载更新包',
+                           'completed': 25_000_000, 'total': 100_000_000})
+        window.poll()
+        assert float(window.progress['value']) == 25
+        assert '25%' in window.stats.cget('text') and '25.0 MB' in window.stats.cget('text')
+        window.events.put({'phase': 'update_progress', 'stage': 'checksum', 'message': '正在校验更新包'})
+        window.poll()
+        assert str(window.progress['mode']) == 'indeterminate'
+        window.events.put({'phase': 'update_done', 'message': '更新完成'})
+        window.poll()
+        assert float(window.progress['value']) == 100 and str(window.progress['mode']) == 'determinate'
         window.success = True
         window.success_target = Path(window.target.get()).absolute()
         window.install.configure(text='打开训练器')

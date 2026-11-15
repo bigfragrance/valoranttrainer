@@ -22,7 +22,7 @@ def read(path):
     return json.loads(path.read_text(encoding='utf-8'))
 
 
-def validate_package(package):
+def validate_package(package, progress=None):
     version = read(package / 'patch-version.json')
     manifest = read(package / 'profiles/downloaded-files.json')
     build = read(package / '.local/local-server/module/build.json')
@@ -38,7 +38,7 @@ def validate_package(package):
         raise InstallationError('更新包文件清单不完整')
     if len(inventory) != len({name.casefold() for name in inventory}):
         raise InstallationError('更新包包含大小写重复路径')
-    for name, expected in inventory.items():
+    for index, (name, expected) in enumerate(inventory.items(), 1):
         source = owned(package, name)
         lower = name.casefold()
         if (lower.startswith(('client/', '.setup/', '.git/'))
@@ -46,6 +46,9 @@ def validate_package(package):
             raise InstallationError('更新包包含用户数据或游戏资源路径')
         if digest(source) != expected:
             raise InstallationError('更新包内容校验失败 · ' + name)
+        if progress:
+            progress({'phase': 'update_progress', 'stage': 'validate', 'message': '正在校验待安装文件',
+                      'completed': index, 'total': len(inventory)})
     module = package / '.local/local-server/module'
     if digest(module / 'local_server_bridge.dll') != version['module_sha256']:
         raise InstallationError('更新包模块校验失败')
@@ -77,14 +80,19 @@ def install_lock(target):
         yield
 
 
-def apply(package, target):
+def apply(package, target, progress=None):
     with install_lock(Path(target).resolve()):
-        return _apply(package, target)
+        return _apply(package, target, progress)
 
 
-def _apply(package, target):
+def _apply(package, target, progress=None):
     package, target = Path(package).resolve(), Path(target).resolve()
-    version, inventory = validate_package(package)
+    def notify(stage, message, completed=0, total=None):
+        if progress:
+            progress({'phase': 'update_progress', 'stage': stage, 'message': message,
+                      'completed': completed, 'total': total})
+    notify('validate', '正在校验待安装文件')
+    version, inventory = validate_package(package, progress)
     if target == package or target in package.parents or package in target.parents:
         raise InstallationError('请将更新包解压到原训练器目录外的新文件夹')
     previous = read(target / 'patch-version.json')
@@ -96,6 +104,7 @@ def _apply(package, target):
     def recover():
         if not journal.is_file():
             return
+        notify('rollback', '正在恢复更新前的文件')
         state = read(journal)
         for name in reversed(state['files']):
             destination = owned(target, name)
@@ -111,25 +120,28 @@ def _apply(package, target):
     recover()
     names = [*inventory, 'package-sha256.json']
     existed = []
-    for name in names:
+    for index, name in enumerate(names, 1):
         destination = owned(target, name)
         if destination.exists():
             backup = owned(transaction / 'backup', name)
             backup.parent.mkdir(parents=True, exist_ok=True)
             shutil.copyfile(destination, backup)
             existed.append(name)
+        notify('backup', '正在备份现有文件', index, len(names))
     from installer_engine import atomic_json
     atomic_json(journal, {'files': names, 'existed': existed})
     try:
+        notify('install', '正在安装更新文件')
         with tempfile.TemporaryDirectory(prefix='trainer-update-') as temporary:
             archive = Path(temporary) / 'patch.zip'
             with zipfile.ZipFile(archive, 'w', zipfile.ZIP_STORED) as bundle:
                 for name in names:
                     bundle.write(owned(package, name), name)
             extract_patch(archive, digest(archive), target)
-        for name, expected in inventory.items():
+        for index, (name, expected) in enumerate(inventory.items(), 1):
             if digest(owned(target, name)) != expected:
                 raise InstallationError('更新后文件校验失败 · ' + name)
+            notify('verify', '正在校验安装结果', index, len(inventory))
         journal.unlink()
     except BaseException:
         recover()

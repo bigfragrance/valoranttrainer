@@ -442,6 +442,7 @@ def main() -> int:
                                                 "sha256": hashlib.sha256(archive.read_bytes()).hexdigest()}
                 arguments.append("-IniBootstrap=" + str(archive))
             started = time.monotonic()
+            report['startup_step'] = 'validate_host_mode'
             if args.original_host_mode:
                 # Complete snapshot/hash/export validation before a child exists.
                 # The running-child pre-CDO window only performs owned loading,
@@ -451,9 +452,11 @@ def main() -> int:
                     package=selected_package, port=args.network_port, transport=args.network_transport)
             empty_bootstrap_request = native_request(args, executable)
             game_child_environment = child_environment(project_environment(ROOT), empty_bootstrap_request)
+            report['startup_step'] = 'create_game_process'
             process = subprocess.Popen([str(executable), *arguments], cwd=executable.parent,
                                        creationflags=subprocess.CREATE_NO_WINDOW | (4 if create_suspended else 0),
                                        env=game_child_environment)
+            report['startup_step'] = 'configure_game_process'
             if empty_bootstrap_request is not None:
                 report['empty_equipment_bootstrap_probe'] = arm_for_child(process, empty_bootstrap_request)
             if args.job or args.class_config_experiment or args.training_module:

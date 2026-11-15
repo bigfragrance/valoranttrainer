@@ -298,6 +298,22 @@ class InstallerTests(unittest.TestCase):
         self.assertTrue(transport.faster_route_available('primary'))
         self.assertEqual(transport.choose_route(), 'cloudflare')
 
+    def test_automatic_route_counts_header_wait_and_reuses_warm_connection(self):
+        transport = subject.RangeTransport(subject.Control(), cdn_route='auto')
+        try:
+            for stats in transport.route_stats.values():
+                stats.update(assignments=1, bytes=256*1024, read_seconds=1, header_seconds=10)
+            transport.route_stats['primary'].update(read_seconds=.01, header_seconds=5)
+            transport.route_stats['cloudflare'].update(read_seconds=.5, header_seconds=.1)
+            self.assertEqual(transport.choose_route(), 'cloudflare')
+            transport.local.route = 'primary'
+            transport.route_stats['primary'].update(read_seconds=.5, header_seconds=.2)
+            self.assertEqual(transport.choose_route(), 'primary')
+            transport.route_retry_at['primary'] = subject.time.monotonic()+30
+            self.assertEqual(transport.choose_route(), 'cloudflare')
+        finally:
+            transport.close()
+
     def test_range_groups_preserve_gaps_and_bundle_boundaries(self):
         chunks = [dict(id=str(n), bundle='A', offset=n*4*1024*1024, csize=4*1024*1024)
                   for n in range(5)]

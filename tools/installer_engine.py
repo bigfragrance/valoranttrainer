@@ -202,7 +202,7 @@ class RangeTransport:
             raise InstallationError('CDN 线路选项不受支持')
         self.cdn_route = 'primary' if local else cdn_route
         self.routes = ['primary'] if local else list(CDN_ROUTES)
-        self.route_stats = {key: {'assignments': 0, 'bytes': 0, 'read_seconds': 0.0, 'errors': 0} for key in self.routes}
+        self.route_stats = {key: {'assignments': 0, 'bytes': 0, 'read_seconds': 0.0, 'header_seconds': 0.0, 'errors': 0} for key in self.routes}
         self.route_retry_at = dict.fromkeys(self.routes, 0.0)
         self.proxy = None
         if network_mode not in ('direct', 'system'):
@@ -245,6 +245,10 @@ class RangeTransport:
                 chosen = unsampled[0]
             elif measured:
                 chosen = max(measured, key=self.route_speed)
+                # Retain a warm TLS connection while its provider is competitive.
+                current = getattr(self.local, 'route', None)
+                if current in measured and self.route_speed(current) >= self.route_speed(chosen)*.8:
+                    chosen = current
             else:
                 chosen = min(available, key=lambda key: self.route_stats[key]['assignments'])
             self.route_stats[chosen]['assignments'] += 1
@@ -252,7 +256,7 @@ class RangeTransport:
 
     def route_speed(self, key):
         stats = self.route_stats[key]
-        return stats['bytes']/max(stats['read_seconds'], .001)
+        return stats['bytes']/max(stats['read_seconds']+stats['header_seconds'], .001)
 
     def faster_route_available(self, route):
         if self.cdn_route != 'auto' or self.local.request_read_seconds < 1:
@@ -335,7 +339,9 @@ class RangeTransport:
                     'User-Agent': 'ValorantTrainerInstaller/1.0', 'Accept-Encoding': 'identity', 'Host': self.base.netloc})
                 response = connection.getresponse()
                 with self.connection_lock:
-                    self.metrics['header_wait_seconds'] += time.monotonic()-started
+                    header_seconds = time.monotonic()-started
+                    self.metrics['header_wait_seconds'] += header_seconds
+                    self.route_stats[route]['header_seconds'] += header_seconds
                     code = str(response.status)
                     self.metrics['http_statuses'][code] = self.metrics['http_statuses'].get(code, 0)+1
                 if response.status in (429, 500, 502, 503, 504):
@@ -488,7 +494,7 @@ def grouped_jobs(chunks):
 
 class Installer:
     def __init__(self, plan_path, descriptor, target, codec, *, control=None, notify=None,
-                 transport_factory=None, prepare=None, workers=32, network_mode='system', cdn_route='auto'):
+                 transport_factory=None, prepare=None, workers=32, network_mode='direct', cdn_route='auto'):
         self.plan_path = Path(plan_path)
         self.descriptor = descriptor
         self.root = Path(target).absolute()
@@ -611,10 +617,10 @@ class Installer:
                 raise InstallationError('下载块内容校验失败，进度已保存，可重新继续')
             while True:
                 try:
-                    received.put_nowait((chunk, raw))
+                    received.put((chunk, raw), timeout=.1)
                     return
                 except queue.Full:
-                    self.control.delay(.01)
+                    self.control.checkpoint()
 
         try:
             for _ in range(self.workers):
